@@ -1,0 +1,183 @@
+/****** Struktur og placering *****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+/****** Header ******/
+@media screen and (max-width: 800px) {
+
+.menu{
+  display: none;
+}
+
+.logo{
+    width: 30%;
+    height: auto;
+    margin-left: 5rem;
+
+}
+
+.burgermenu{
+    width: 20%;
+    height: auto;
+    margin-left: 10rem;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-block: 1.5rem;
+    background-color: rgba(207, 222, 232, 1);
+}
+
+/***** body *****/
+
+.blok2{
+  margin-left: 2rem;
+  padding-block: 1rem;
+}
+
+.blok img{
+  margin-left: -4rem;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-block: 1rem;
+}
+
+.blok1{
+  display: grid;
+  justify-self: end;
+}
+
+.blok1 img{
+  margin-left: 4rem;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-block: 1rem;
+}
+
+.order, .dankort{
+  display: grid;
+  justify-self: end;
+  margin-right: 1rem;
+}
+
+.indeximg2{
+  width: 90%;
+  height: auto;
+}
+
+/****** Fakta blok1 *****/
+.faktablok1 h1{
+  text-align: center;
+}
+.fakta_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.fakta_grid1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+/****** Alt om points ******/
+.points_card_grid{
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.points_card_grid img{
+  width: 150%;
+}
+
+/****** vidste du ******/
+
+.section{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}
+
+/**** footer ****/
+
+
+}
+
+@media screen and (min-width: 800px) {
+
+
+/***** Header *****/
+.burgermenu{
+  display: none;
+}
+
+.logo{
+    width: 10%;
+    height: auto;
+    margin-left: 10rem;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-block: 1.5rem;
+    background-color: rgba(207, 222, 232, 1);
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 1rem;
+}
+
+/********* Body ********/
+
+.blok{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.blok1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.order{
+    order: 2;
+}
+
+.indeximg1{
+    width: 95%;
+    height: auto;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    margin-right: -1rem;
+    justify-self: end;
+
+}
+
+.indeximg2{
+    width: 95%;
+    height: auto;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin-top: -15rem;
+}
+
+}

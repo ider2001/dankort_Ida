@@ -1,0 +1,290 @@
+/****** Design og udseende *****/
+
+@media screen and (max-width: 800px) {
+/****** Header ******/
+
+
+/****** Body *****/
+.kampagne_knap {
+  background-color: rgba(230, 29, 39, 1);
+  color: rgba(247, 247, 247, 1);
+  border: none;
+  padding: 12px 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgba(33, 48, 63, 1) ;
+}
+
+h2{
+    font-family: "Raleway", sans-serif;
+    color: rgba(33, 48, 63, 1) ;
+    font-weight:normal;
+    line-height: 3rem;
+
+}
+
+.faktablok1{
+  background-color: rgba(207, 222, 232, 1);
+}
+
+.faktablok {
+    text-align: center;
+    background-color: #dbe6f0;
+    padding: 3rem 2rem;
+}
+
+.faktablok h1 {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.fakta-item {
+    width: 160px;
+    padding: 1rem 1.5rem;
+    border-radius: 50px 50px 0 0; /* Runder toppen */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.faktablok {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.fakta-item .tal {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.grøn { background-color: rgba(150, 172, 78, 1); }
+.blå { background-color: rgba(63, 110, 138, 1); }
+.rød { background-color: rgba(213, 0, 21, 1); }
+.lyseblå { background-color: rgba(116, 164, 188, 1); }
+
+/**** Hent som app ***/
+.hentsomapp{
+  background-color: rgba(207, 222, 232, 1);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+    }
+
+li {
+  margin-bottom: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: rgba(33, 48, 63, 1) ;
+  line-height: 3rem;
+     }
+
+.hentsomapp_knap {
+  background-color: rgba(150, 172, 78, 1);
+  color: rgba(247, 247, 247, 1);
+  border: none;
+  padding: 12px 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/****** Alt om points ******/
+
+.knap_pil{
+  width: 20%;
+  margin-left: auto;}
+
+.points_card{
+  background-color: rgba(236, 236, 236, 1);
+  border-radius: 2rem;
+  padding: 20px 40px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.points_img{
+  width: 90%;
+  display: block; 
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 4rem;
+
+}
+
+.points_card p{
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+}
+
+/****** Vidste du ******/
+
+p{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.4rem;}
+
+.section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: ;
+}
+
+.card {
+    position: relative;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    width: 90%;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.vidstedu_boks {
+    width: 70%;
+    padding: 35px 40px;
+    border-radius: 40px;
+    margin-top: -70px; /* overlapper billedet */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.blue {
+    background: #dfeffc;
+}
+
+.green {
+    background: #eef7c9;
+}
+
+h1 {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+}
+
+p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+/***** footer *****/
+
+.footer_card{
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 4rem;
+  padding: 50px 60px;
+  margin-block: 2rem;
+}
+
+.footer_card ul{
+  padding-top: 1rem;
+}
+
+.footer_card2{
+  background-color: rgba(226, 30, 39, 1);
+  border-radius: 4rem;
+  padding: 50px 60px;
+}
+
+.footer_card2 h1{
+  color: rgba(247, 247, 247, 1);
+  padding-top: 2rem;
+}
+
+.footer_card2 img {
+  width: 20%;
+}
+
+}
+
+
+@media screen and (min-width: 800px) {
+
+/****** Header ******/
+nav li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a{
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(33, 48, 63, 1) ;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+/******* Body ********/
+h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgba(33, 48, 63, 1) ;
+}
+
+h2{
+    font-family: "Raleway", sans-serif;
+    color: rgba(33, 48, 63, 1) ;
+    font-weight:normal;
+    line-height: 3rem;
+
+}
+
+.kampagne_knap {
+  background-color: rgba(230, 29, 39, 1);
+  color: rgba(247, 247, 247, 1);
+  border: none;
+  padding: 12px 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+}
+
+
+
