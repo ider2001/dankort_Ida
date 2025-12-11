@@ -230,6 +230,67 @@ p {
   }
 
   /*************** footer mobil *********Ø*****/
+  /***** Belønninger ******/
+
+    .belonning_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1400px;
+    gap: 30px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .mærker{
+    background-color: rgba(186, 209, 223, 1);
+    padding: 50px 30px;
+    border-radius: 35px;
+  }
+
+  .pointsbanner{
+    background-color: rgba(247, 248, 237, 1);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 6px 10px;
+    width: 57%;
+    margin-left: -1.9rem;
+    margin-top: -1rem;
+  }
+
+  .tekstblok{
+    margin-top: 2rem;
+  }
+
+  .tekstblok h2{
+    font-family: "Raleway", sans-serif;
+    color: rgba(33, 48, 63, 1);
+
+  }
+
+  .tekstblok h4{
+    font-family: "Raleway", sans-serif;
+    color: rgba(33, 48, 63, 1);
+    font-weight: normal;
+  }
+
+.min_profil_knap{ 
+    background-color: rgba(230, 29, 39, 1);
+    color: rgba(247, 247, 247, 1);
+    border: none;
+    padding: 12px 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+  }  
+  a.min_profil_knap:hover {  
+    background-color: rgba(213, 0, 21, 1);    
+  }
+  /***** footer *****/
 
   .footer_card {
     background-color: rgba(217, 217, 217, 1);
@@ -318,5 +379,47 @@ p {
     border-radius: 4rem;
     cursor: pointer;
     margin-top: 10px;
+  }
+
+    .belonning_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1400px;
+    gap: 30px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .mærker{
+    background-color: rgba(186, 209, 223, 1);
+    padding: 50px 30px;
+    border-radius: 35px;
+  }
+
+  .pointsbanner{
+    background-color: rgba(247, 248, 237, 1);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 6px 10px;
+    width: 50%;
+    margin-left: -1.9rem;
+    margin-top: -1rem;
+  }
+
+  .tekstblok{
+    margin-top: 2rem;
+  }
+
+  .tekstblok h2{
+    font-family: "Raleway", sans-serif;
+    color: rgba(33, 48, 63, 1);
+
+  }
+
+  .tekstblok h4{
+    font-family: "Raleway", sans-serif;
+    color: rgba(33, 48, 63, 1);
+    font-weight: normal;
   }
 }

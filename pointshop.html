@@ -26,28 +26,50 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class="pointshop_h1">
-                <h1>POINTSHOP</h1>
-                <P></P>
-                <a href="">Gå til min profil her</a>
-            </div>
+        <section class="pointshop_site">
             <div class="img_pointshop_h1">
-                <img class="img_ps1" src="" alt="">
-                <img class="img_ps2" src="" alt="">
-                <img class="img_ps3" src="" alt="">
+                <img class="img_ps1" src="img/reffen.webp" alt="">
+                <img class="img_ps2" src="img/img_pointshop2.png" alt="">
+            </div>
+            <div class="pointshop_h1">
+                 <div>
+                <h1>POINTSHOP</h1>
+                <h3>Her kan du se alle de forskellige former for belønninger du kan bruge dine optjente point på. </h3>
+                <h3>Alt fra rabatter, kuponer, gavekort og meget mere. 
+Tag et kig her under for at få et overblik over dem alle. </h3>
+                <h3>Hvis du vil bruge dine point så gå til ‘Min profil’ herunder.</h3>
+                <a class="min_profil_knap" href="din_profil.html">Gå til min profil her</a>
+                </div>
+                <div>
+                <img class="img_ps3" src="img/cafe_challenges.webp" alt="">
+                </div>
+            </div>
+                <img class="img_ps4" src="img/img_5pointshop.png" alt="billede">
+
+            <div class="img_pointshop_h2">
+                <img class="img_ps5" src="img/reffen.webp" alt="">
+                <img class="img_ps6" src="img/museum.png" alt="">
             </div>
         </section>
         <Section>
             <div>
-                <h2>Belønninger du kan bruge dine optjente point på:</h2>
+                <h1 class="belonninger">Belønninger du kan bruge <br> dine optjente point på:</h1>
                 <p>Vælg kategori (skal være en knap)</p>
             </div>
-            <div>
+        
+           <section id="filters">
+  <button class="filter_knap" data-kategori="All" disabled>All</button>
+  <button class="filter_knap" data-kategori="Gavekort" disabled>Gavekort</button>
+  <button class="filter_knap" data-kategori="Årskort" disabled>Årskort</button>
+  <button class="filter_knap" data-kategori="Oplevelser" disabled>Oplevelser</button>
+</section>
 
-            </div>
+<section class="belonninger_container"></section>
+
+
         </Section>
 
+        <div id="belonning_container" class="belonning_container"></div>
 
     </main>
     <footer>
@@ -99,5 +121,8 @@
         </div>
     </footer>
 </body>
+
+<script type="module" src="pointshop.js"></script>
+
 
 </html>
