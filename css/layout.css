@@ -190,7 +190,63 @@ img {
     margin-left: 2rem;
     margin-bottom: 2rem;
   }
+  /******************************************* challenges - MOBIL *******************************************/
 
+  .challenges_imgimg {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .img_v {
+    display: grid;
+    grid-column: 1;
+    margin-top: 30px;
+    height: 120%;
+  }
+
+  .img_v1 {
+    border-radius: 35px;
+    height: 40%;
+    width: 130%;
+    margin-top: 5rem;
+    margin-left: -5rem;
+  }
+  .img_h {
+    display: grid;
+    grid-column: 2;
+  }
+
+  .img_hj1 {
+    height: 85%;
+    width: 85%;
+    border-radius: 35px;
+  }
+
+  .img_hj2 {
+    height: 110%;
+    width: 85%;
+    border-radius: 35px;
+    z-index: -1;
+    margin-left: 9rem;
+    margin-top: -6rem;
+  }
+
+  .img_hj3 {
+    height: 240%;
+    width: 70%;
+    border-radius: 30px;
+    margin-top: -9rem;
+    margin-left: 3rem;
+  }
+  .challenges_container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   /**** footer - layout - MOBIL  ****/
 }
 

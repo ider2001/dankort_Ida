@@ -479,19 +479,8 @@ p {
   a.min_profil_knap:hover {
     background-color: rgba(213, 0, 21, 1);
   }
- 
-   /***** Challenges - MOBIL *****/
 
-  
-  .challenges_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 1400px;
-    gap: 30px;
-    margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+  /***** Challenges - MOBIL *****/
 
   .mærker {
     background-color: rgba(186, 209, 223, 1);
@@ -508,8 +497,22 @@ p {
     margin-left: -1.9rem;
     margin-top: -1rem;
   }
- 
-  /***** footer - MOBIL *****/
+
+  /******************************************* challenges - MOBIL *******************************************/
+  .challengesh1 {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .nu_challenges_h1 {
+    font-size: 2.3rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /******************************************* footer - MOBIL ************************************************/
 
   .footer_card {
     background-color: rgba(217, 217, 217, 1);
@@ -909,9 +912,9 @@ p {
     margin-top: 5rem;
   }
 
-/*********** Challenges - DESKTOP ***********/
+  /*********** Challenges - DESKTOP ***********/
 
-    .challenges_container {
+  .challenges_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     max-width: 1400px;
@@ -936,7 +939,7 @@ p {
     margin-left: -1.9rem;
     margin-top: -1rem;
   }
-  
+
   /*********** footer - DESKTOP ***********/
 
   .footer_card {
