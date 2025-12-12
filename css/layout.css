@@ -117,6 +117,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 2rem;
+    margin-top: -6rem;
+    z-index: 3;
   }
 
   .pointshop_h1 h1 {
@@ -127,9 +129,10 @@ img {
 
   .pointshop_h1 h3 {
     font-family: "Raleway", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: lighter;
     margin-bottom: 2rem;
+    line-height: 2.3rem;
   }
 
   .img_ps1 {
@@ -146,7 +149,7 @@ img {
     height: auto;
     border-radius: 2rem;
     margin-left: 7rem;
-    z-index: 10;
+    z-index: 5;
     position: absolute;
     top: 120px;
   }
@@ -183,6 +186,11 @@ img {
     margin-right: 2rem;
     margin-top: 2rem;
     line-height: 3rem;
+  }
+
+  #filters {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
   }
 
   /**** footer mobil ****/

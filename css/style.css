@@ -57,7 +57,7 @@ p {
     width: 100%;
     height: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 5;
+    z-index: 6;
     text-align: end;
     max-height: 100vh; /* DENNE MANGLEDE! */
   }
@@ -246,34 +246,33 @@ p {
     margin-top: 10px;
   }
 
-    /**** Video mobil *****/
+  /**** Video mobil *****/
 
-.video-wrapper {
-  display: flex;
-  justify-content: center; /* vandret centrering */
-  align-items: center;     /* lodret centrering */
-  height: 100vh;           /* fylder hele skærmhøjden */
-}
+  .video-wrapper {
+    display: flex;
+    justify-content: center; /* vandret centrering */
+    align-items: center; /* lodret centrering */
+    height: 100vh; /* fylder hele skærmhøjden */
+  }
 
-  video{
-  width: 300px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 35px;
-  margin-top: -10rem;
+  video {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 35px;
+    margin-top: -10rem;
+  }
 
-}
-
-.videoh1{
-  position: absolute;       /* placerer ovenpå videoen */
-  background-color: white;
-  padding-left: 20px;
-  border-bottom-right-radius: 35px;
-  width: 200px;;
-  margin-left: 6.2rem;
-  margin-top: 5rem;
-  z-index: 10;
-}
+  .videoh1 {
+    position: absolute; /* placerer ovenpå videoen */
+    background-color: white;
+    padding-left: 20px;
+    border-bottom-right-radius: 35px;
+    width: 200px;
+    margin-left: 6.2rem;
+    margin-top: 5rem;
+    z-index: 10;
+  }
 
   /****** Alt om points mobil ******/
 
@@ -414,8 +413,7 @@ p {
     line-height: 1.5;
   }
 
-  /*************** footer mobil *********Ø*****/
-  /***** Belønninger ******/
+  /***** Pointshop mobil ******/
 
   .belonning_container {
     display: grid;
@@ -438,7 +436,7 @@ p {
     border-bottom-right-radius: 2rem;
     border-top-right-radius: 2rem;
     padding: 6px 10px;
-    width: 57%;
+    width: 82%;
     margin-left: -1.9rem;
     margin-top: -1rem;
   }
@@ -469,6 +467,7 @@ p {
     border-radius: 4rem;
     cursor: pointer;
     margin-top: 10px;
+
     text-decoration: none;
   }
   a.min_profil_knap:hover {
@@ -672,34 +671,32 @@ p {
 
   /**** Video *****/
 
-.video-wrapper {
-  display: flex;
-  justify-content: center; /* vandret centrering */
-  align-items: center;     /* lodret centrering */
-  height: 100vh;           /* fylder hele skærmhøjden */
-}
+  .video-wrapper {
+    display: flex;
+    justify-content: center; /* vandret centrering */
+    align-items: center; /* lodret centrering */
+    height: 100vh; /* fylder hele skærmhøjden */
+  }
 
-  video{
-  width: 70%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 35px;
-  margin-top: -5rem;
+  video {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 35px;
+    margin-top: -5rem;
+  }
 
-}
+  .videoh1 {
+    position: absolute; /* placerer ovenpå videoen */
+    background-color: white;
+    padding-left: 20px;
+    border-bottom-right-radius: 35px;
+    width: 475px;
+    margin-left: 13.5rem;
+    margin-top: 1rem;
+    z-index: 10;
+  }
 
-.videoh1{
-  position: absolute;       /* placerer ovenpå videoen */
-  background-color: white;
-  padding-left: 20px;
-  border-bottom-right-radius: 35px;
-  width: 475px;;
-  margin-left: 13.5rem;
-  margin-top: 1rem;
-  z-index: 10;
-}
-
-  
   /***** alt om points *****/
 
   .din_profil_tekst {
