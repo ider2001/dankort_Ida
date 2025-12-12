@@ -16,7 +16,7 @@ img {
   margin-right: 15px;
 }
 
-/****** Header ******/
+/***************************************************** MOBIL - starter her ***********************************************/
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
@@ -35,23 +35,22 @@ img {
     background-color: rgba(207, 222, 232, 1);
   }
 
-  /***** index mobil *****/
+  /***************************************************** index - MOBIL *************************************************/
 
+  /****** overskrift/billeder - layout - MOBIL *****/
   .blok2 {
     margin-left: 2rem;
     padding-block: 1rem;
   }
-
+  .blok1 {
+    display: grid;
+    justify-self: end;
+  }
   .blok img {
     margin-left: -4rem;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     padding-block: 1rem;
-  }
-
-  .blok1 {
-    display: grid;
-    justify-self: end;
   }
 
   .blok1 img {
@@ -76,8 +75,7 @@ img {
     height: auto;
   }
 
-  /****** Fakta blok1 mobil *****/
-
+  /****** Fakta blok1 - layout - MOBIL *****/
   .faktablok1 h1 {
     text-align: center;
   }
@@ -91,7 +89,7 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
-  /****** Alt om points mobil ******/
+  /****** Alt om points - layout - MOBIL ******/
 
   .din_profil_tekst {
     margin-top: 2rem;
@@ -106,7 +104,7 @@ img {
     width: 20%;
   }
 
-  /****** vidste du mobil ******/
+  /****** vidste du at... - layout - MOBIL ******/
 
   .pointshop_site {
     display: grid;
@@ -193,11 +191,12 @@ img {
     margin-bottom: 2rem;
   }
 
-  /**** footer mobil ****/
+  /**** footer - layout - MOBIL  ****/
 }
 
+/***************************************************** DESKTOP - starter her ***********************************************/
 @media screen and (min-width: 800px) {
-  /***** Header *****/
+  /***** menu - layout - DESKTOP *****/
   .burgermenu {
     display: none;
   }
@@ -220,8 +219,8 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 1rem;
   }
-
-  /********* Body ********/
+  /******************************************************** INDEX - DESKTOP ***********************************************/
+  /**** overskrift + billeder - layout - DESKTOP *****/
 
   .blok {
     display: grid;
@@ -255,7 +254,7 @@ img {
     margin-top: -15rem;
   }
 
-  /***** Fakta blok1 *****/
+  /***** Fakta blok1 - layout - DESKTOP *****/
 
   .fakta_grid {
     display: grid;
@@ -278,7 +277,7 @@ img {
     justify-items: end;
   }
 
-  /***** alt om points *****/
+  /***** alt om points - layout - DESKTOP *****/
   .altompoint {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -298,7 +297,7 @@ img {
     width: 20%;
   }
 
-  /***** vidste du at... desktop *****/
+  /***** vidste du at... - layout - DESKTOP *****/
   .card1 {
     display: grid;
     grid-column: 1;
@@ -314,7 +313,7 @@ img {
     margin-top: 5rem;
   }
 
-  /***** footer desktop *****/
+  /*********************************************** footer - DESKTOP *****************************************************/
 
   footer {
     display: grid;

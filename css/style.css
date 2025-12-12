@@ -1,10 +1,13 @@
-/****** Design og udseende *****/
+/*************** Design og udseende **************/
+
+/*** ændrer li'ernes farve ****/
 @media (prefers-color-scheme: light) {
   ul li::marker {
     color: rgba(230, 29, 39, 1);
   }
 }
 
+/*** fonts ****/
 h1 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -16,22 +19,21 @@ h2 {
   font-family: "Raleway", sans-serif;
   color: rgba(33, 48, 63, 1);
 }
+
 h3 {
   font-family: "Raleway", sans-serif;
   color: rgba(33, 48, 63, 1);
   font-weight: normal;
 }
+
 p {
   font-family: "Raleway", sans-serif;
   color: rgba(33, 48, 63, 1);
   font-weight: normal;
 }
-
+/**********************************************  MOBIL - starter her *************************************************/
 @media screen and (max-width: 800px) {
-  /****** Header ******/
-
   /**** Burgermenu ******/
-
   .menu {
     max-height: 0;
     overflow: hidden;
@@ -116,13 +118,13 @@ p {
   .menu-open .forside_indhold {
     opacity: 30%;
   }
-  /******* overskrift **********/
+  /******* logo **********/
   .logo {
     margin-left: -50px;
     margin-right: -40px;
   }
 
-  /****** Body *****/
+  /****** Body - MOBIL *****/
   h1 {
     font-size: 3rem;
   }
@@ -131,7 +133,7 @@ p {
     font-weight: normal;
     line-height: 3rem;
   }
-  /****************** index mobil ******************/
+  /******************************************* index - MOBIL *******************************************/
   .kampagne_knap {
     background-color: rgba(230, 29, 39, 1);
     color: rgba(247, 247, 247, 1);
@@ -145,7 +147,7 @@ p {
     margin-top: 10px;
   }
 
-  /******* faktablok 1 mobil ********/
+  /******* faktablok 1 - MOBIL ********/
 
   .faktablok1 {
     background-color: rgba(207, 222, 232, 1);
@@ -207,7 +209,7 @@ p {
     margin-top: 88px;
   }
 
-  /**** Hent som app mobil ***/
+  /******* Hent som app - MOBIL ******/
   .hentsomapp {
     background-color: rgba(207, 222, 232, 1);
     padding-left: 2rem;
@@ -246,7 +248,7 @@ p {
     margin-top: 10px;
   }
 
-  /**** Video mobil *****/
+  /****** video - MOBIL *******/
 
   .video-wrapper {
     display: flex;
@@ -274,7 +276,7 @@ p {
     z-index: 10;
   }
 
-  /****** Alt om points mobil ******/
+  /****** Alt om points - MOBIL ******/
 
   .knap_pil_1 img {
     height: 30%;
@@ -308,11 +310,11 @@ p {
     font-size: 1.4rem;
   }
 
-  .din_profil_tekst_2{
+  .din_profil_tekst_2 {
     display: none;
   }
 
-  /******* faktablok 2 mobil ********/
+  /******* faktablok 2 - MOBIL ********/
 
   .fakta-item1 {
     width: 500px;
@@ -349,7 +351,7 @@ p {
     margin-top: 88px;
   }
 
-  /****** Vidste du mobil ******/
+  /****** Vidste du CARDS - MOBIL  ******/
 
   p {
     font-family: "Raleway", sans-serif;
@@ -417,7 +419,7 @@ p {
     line-height: 1.5;
   }
 
-  /***** Pointshop mobil ******/
+  /***** Pointshop - MOBIL ******/
 
   .belonning_container {
     display: grid;
@@ -477,7 +479,7 @@ p {
   a.min_profil_knap:hover {
     background-color: rgba(213, 0, 21, 1);
   }
-  /***** footer mobil *****/
+  /***** footer - MOBIL *****/
 
   .footer_card {
     background-color: rgba(217, 217, 217, 1);
@@ -520,8 +522,9 @@ p {
   }
 }
 
+/************************************************ DESKTOP - starter her *********************************************/
 @media screen and (min-width: 800px) {
-  /****** Header desktop ******/
+  /****** menu - DESKTOP *****/
   nav li {
     list-style: none;
     padding: 0;
@@ -546,7 +549,9 @@ p {
     padding-right: 2rem;
   }
 
-  /******* Body ********/
+  /********************************************* index - DESKTOP **************************************/
+
+  /****** overskrift - DESKTOP *****/
   h1 {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
@@ -591,6 +596,7 @@ p {
     padding-top: 1rem;
   }
 
+  /****** alt om point knap - DESKTOP *****/
   .kampagne_knap {
     background-color: rgba(230, 29, 39, 1);
     color: rgba(247, 247, 247, 1);
@@ -604,8 +610,7 @@ p {
     margin-top: 10px;
   }
 
-  /******** Vidste du blok 1 ******/
-
+  /******** Vidste du at.... blok 1 - DESKTOP ******/
   .faktablok1 {
     background-color: rgba(207, 222, 232, 1);
   }
@@ -673,8 +678,7 @@ p {
     margin-top: 88px;
   }
 
-  /**** Video *****/
-
+  /********** video - DESKTOP **********/
   .video-wrapper {
     display: flex;
     justify-content: center; /* vandret centrering */
@@ -701,8 +705,7 @@ p {
     z-index: 10;
   }
 
-  /***** alt om points *****/
-
+  /************** alt om points sektion - DESKTOP **************/
   .din_profil_tekst {
     display: none;
   }
@@ -782,8 +785,7 @@ p {
     font-weight: normal;
   }
 
-  /**** Vidste du blok 2 ****/
-
+  /*********** Vidste du at... blok 2 - DESKTOP ***********/
   .fakta-item1 {
     width: 500px;
     padding: 1rem;
@@ -819,7 +821,7 @@ p {
     margin-top: 88px;
   }
 
-  /**** Vidste du at... hover desktop ****/
+  /********** Vidste du CARD HOVER - DESKTOP ***********/
   p {
     font-family: "Raleway", sans-serif;
     font-size: 1.4rem;
@@ -877,7 +879,7 @@ p {
     margin-top: 5rem;
   }
 
-  /***** footer desktop *****/
+  /*********** footer - DESKTOP ***********/
 
   .footer_card {
     display: grid;
