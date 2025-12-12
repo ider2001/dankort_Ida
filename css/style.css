@@ -246,6 +246,35 @@ p {
     margin-top: 10px;
   }
 
+    /**** Video mobil *****/
+
+.video-wrapper {
+  display: flex;
+  justify-content: center; /* vandret centrering */
+  align-items: center;     /* lodret centrering */
+  height: 100vh;           /* fylder hele skærmhøjden */
+}
+
+  video{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 35px;
+  margin-top: -10rem;
+
+}
+
+.videoh1{
+  position: absolute;       /* placerer ovenpå videoen */
+  background-color: white;
+  padding-left: 20px;
+  border-bottom-right-radius: 35px;
+  width: 200px;;
+  margin-left: 6.2rem;
+  margin-top: 5rem;
+  z-index: 10;
+}
+
   /****** Alt om points mobil ******/
 
   .knap_pil_1 img {
@@ -641,6 +670,36 @@ p {
     margin-top: 88px;
   }
 
+  /**** Video *****/
+
+.video-wrapper {
+  display: flex;
+  justify-content: center; /* vandret centrering */
+  align-items: center;     /* lodret centrering */
+  height: 100vh;           /* fylder hele skærmhøjden */
+}
+
+  video{
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 35px;
+  margin-top: -5rem;
+
+}
+
+.videoh1{
+  position: absolute;       /* placerer ovenpå videoen */
+  background-color: white;
+  padding-left: 20px;
+  border-bottom-right-radius: 35px;
+  width: 475px;;
+  margin-left: 13.5rem;
+  margin-top: 1rem;
+  z-index: 10;
+}
+
+  
   /***** alt om points *****/
 
   .din_profil_tekst {
