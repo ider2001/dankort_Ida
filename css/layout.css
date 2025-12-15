@@ -35,8 +35,6 @@ img {
     background-color: rgba(207, 222, 232, 1);
   }
 
-  
-
   /***************************************************** index - MOBIL *************************************************/
 
   /****** overskrift/billeder - layout - MOBIL *****/
@@ -254,8 +252,6 @@ img {
 
 /***************************************************** DESKTOP - starter her ***********************************************/
 @media screen and (min-width: 800px) {
-
-  
   /***** menu - layout - DESKTOP *****/
 
   .burgermenu {
@@ -293,16 +289,21 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
+  .blok3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .order {
     order: 2;
   }
 
   .indeximg1 {
-    width: 95%;
+    width: 100%;
     height: auto;
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;
-    margin-right: -1rem;
+    margin-right: -0.2rem;
     justify-self: end;
     margin-top: 3rem;
   }
@@ -312,7 +313,6 @@ img {
     height: auto;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
-    margin-top: -15rem;
   }
 
   /***** Fakta blok1 - layout - DESKTOP *****/
@@ -337,6 +337,15 @@ img {
     align-items: end;
     justify-items: end;
   }
+  /***** hent som app - layout - DESKTOP *****/
+  .hentsomapp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hentsomapp h1 {
+    margin-top: 3rem;
+  }
 
   /***** alt om points - layout - DESKTOP *****/
   .altompoint {
@@ -356,6 +365,11 @@ img {
     display: flex;
     justify-self: end;
     width: 20%;
+  }
+
+  .knap_pil {
+    display: flex;
+    justify-self: flex-end;
   }
 
   /***** vidste du at... - layout - DESKTOP *****/

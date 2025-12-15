@@ -43,11 +43,19 @@
         <div class="index_kampagne">
             <div class="blok">
                 <div class="blok2">
-                    <div>
-                        <h1>KAMPAGNENAVN</h1>
-                        <h2>OPTJEN POINTS, VED AT TAGE <br> BEDVISTE HANDLINGER,<br> SOM KAN BRUGES PÅ RABATTER.</h2>
-                        <button class="kampagne_knap">ALT OM POINTS</button>
+                    <div class="blok3">
+                        <h1>DANKORT</h1>
+                        <h3 class="plus">+</h3>
                     </div>
+                    <div>
+                        <h2>OPTJEN POINTS, VED AT TAGE <br> BEDVISTE HANDLINGER,<br> SOM KAN BRUGES PÅ RABATTER.
+                        </h2>
+                        <button class="kampagne_knap"
+                            onclick="document.getElementById('altompoints').scrollIntoView({ behavior: 'smooth' });">
+                            ALT OM POINTS
+                        </button>
+                    </div>
+
                 </div>
 
                 <img class="indeximg1" src="img/indeximg1.webp" alt="billede af vinduer">
@@ -55,10 +63,11 @@
 
             <div class="blok1">
                 <div class="order">
-                    <h1 class="dankort">DANKORT</h1>
+
                     <div class="dk_tekst">
                         <h2>MÅLET ER IKKE AT FORBRUGE MERE, <br> AT FORBRUGE MINDRE OG VÆRE SAMMEN.</h2>
                     </div>
+                    <a class="kampagne_knap" href="din_profil.html">TILMELD DIG HER</a>
                 </div>
                 <img class="indeximg2" src="img/indeximg2.webp" alt="billede af væg med citat">
             </div>
@@ -70,7 +79,8 @@
                 <div class="fakta_grid">
                     <div class="fakta-item grøn">
                         <p class="tal">64%</p>
-                        <p class="tekst">af danskerne mener, at det er svært at finde ud af, hvad der er bæredygtigt</p>
+                        <p class="tekst">af danskerne mener, at det er svært at finde ud af, hvad der er bæredygtigt
+                        </p>
                     </div>
 
                     <div class="fakta-item blå">
@@ -94,28 +104,36 @@
         <div>
             <h1 class="videoh1">Dankort. At handle med omtanke</h1>
             <div class="video-wrapper">
-            <video autoplay loop muted poster="preview.jpg">
-  <source src="img/2semeksamen.mp4" type="video/mp4">
-  </div>
-</video>
+                <video autoplay loop muted poster="preview.jpg">
+                    <source src="img/2semeksamen.mp4" type="video/mp4">
+            </div>
+            </video>
         </div>
 
         <div class="hentsomapp">
-            <h1>Hent som app</h1>
-            <h2>Download Dankort appen og få belønninger mens du mindsker dit forbrug.</h2>
             <div class="img_container">
-            <img class="app_img" src ="img/app_mockup-2.png" alt="billede af mobil med app">
+                <img class="app_img_desk" src="img/app_mockup-2.png" alt="billede af mobil med app">
             </div>
-            <h2 class="bold">Det kan du i appen</h2>
-            <ul>
-                <li>Få automatisk rabat når du ikke shopper på Black Friday, Cyber monday eller singels day</li>
-                <li>Optjen point og brug dem som rabatter til kulturelle oplevelser, transport eller butikker.</li>
-                <li>Bliv belønnet når du shopper eller sælger brugt.</li>
-            </ul>
-            <button class="hentsomapp_knap">DOWNLOAD HER</button>
+            <div>
+                <h1>Hent som app</h1>
+                <h2>Download Dankort appen og få belønninger mens du mindsker dit forbrug.</h2>
+
+                <div class="img_container">
+                    <img class="app_img" src="img/app_mockup-2.png" alt="billede af mobil med app">
+                </div>
+                <h2 class="bold">Det kan du i appen</h2>
+                <ul>
+                    <li>Få automatisk rabat når du ikke shopper på Black Friday, Cyber monday eller singels day</li>
+                    <li>Optjen point og brug dem som rabatter til kulturelle oplevelser, transport eller butikker.
+                    </li>
+                    <li>Bliv belønnet når du shopper eller sælger brugt.</li>
+                </ul>
+                <button class="hentsomapp_knap">DOWNLOAD HER</button>
+            </div>
         </div>
 
-        <div>
+        <div id="altompoints">
+
             <h1 class="din_profil_tekst">DIN PROFIL, POINTS <br> OG POINTSHOP</h1>
             <h1 class="din_profil_tekst_2">DIN PROFIL, POINTS OG POINTSHOP</h1>
             <div class="altompoint">
@@ -125,10 +143,10 @@
                         <div class="points_card_grid">
                             <div>
                                 <h1>Min profil</h1>
-                                <p>Her finder du din Dankort profil.</p>
+                                <p>Her finder du din Dankort profil, hvor du kan se dine
+                                    oplysninger.</p>
                             </div>
-                            <a href="din_profil.html">
-                                <img src="img/button_pil.png" alt="knap">
+                            <a class="knap_pil" href="din_profil.html" aria-label="Næste">&#8594;
                             </a>
                         </div>
                     </div>
@@ -142,8 +160,7 @@
                                 <h1>Mine points</h1>
                                 <p>Her finder du dine optjente point og omsætte dem til rabatter.</p>
                             </div>
-                            <a href="din_profil.html">
-                                <img class="knap_pil_2" src="img/button_pil.png" alt="knap">
+                            <a class="knap_pil" href="din_profil.html" aria-label="Næste">&#8594;
                             </a>
                         </div>
                     </div>
@@ -154,11 +171,11 @@
                         <div class="points_card_grid">
                             <div>
                                 <h1>Pointshop</h1>
-                                <p>Her finder du en oversigt over alle de mulige belønninger, man kan bruge points på.
+                                <p>Her finder du en oversigt over de belønninger, man kan bruge points på.
                                 </p>
                             </div>
-                            <a href="pointshop.html">
-                                <img class="knap_pil" src="img/button_pil.png" alt="knap">
+
+                            <a class="knap_pil" href="pointshop.html" aria-label="Næste">&#8594;
                             </a>
                         </div>
                     </div>
