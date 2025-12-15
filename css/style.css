@@ -218,6 +218,16 @@ p {
     padding-bottom: 2rem;
   }
 
+ .img_container {
+  display: flex;
+  justify-content: center;
+}
+
+.app_img {
+  width: 180%;
+  height: auto;
+}
+
   .bold {
     font-weight: bold;
   }
@@ -816,6 +826,10 @@ p {
     margin-top: 1rem;
     z-index: 10;
   }
+
+  /************** alt om points sektion - DESKTOP **************/
+
+ 
 
   /************** alt om points sektion - DESKTOP **************/
   .din_profil_tekst {

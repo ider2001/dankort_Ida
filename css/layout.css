@@ -35,6 +35,8 @@ img {
     background-color: rgba(207, 222, 232, 1);
   }
 
+  
+
   /***************************************************** index - MOBIL *************************************************/
 
   /****** overskrift/billeder - layout - MOBIL *****/
@@ -252,7 +254,10 @@ img {
 
 /***************************************************** DESKTOP - starter her ***********************************************/
 @media screen and (min-width: 800px) {
+
+  
   /***** menu - layout - DESKTOP *****/
+
   .burgermenu {
     display: none;
   }
