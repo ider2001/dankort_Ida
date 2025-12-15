@@ -1088,6 +1088,212 @@ p {
     margin-top: -1rem;
   }
 
+  /****** Min profil - DESKTOP *****/
+
+  .felx_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+
+  .flex-item {
+    font-size: 3rem;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .h1top {
+    font-size: 2rem;
+    margin: 0px 0px 0px 10px;
+  }
+
+  #dinepoints {
+    background-color: #96ac4e;
+    border-radius: 50px;
+    margin: 10px 0px 10px 10px;
+  }
+
+  #dinepoints h2,
+  h3 {
+    color: white;
+    margin: 10px 20px;
+  }
+
+  #dinpimg {
+    width: 100%;
+    border-radius: 50px;
+    margin: 10px 10px 10px 0px;
+  }
+
+  form {
+    background-color: rgba(217, 224, 182, 1);
+    border-radius: 50px;
+    margin: 10px 10px 10px 10px;
+    padding: 20px;
+  }
+
+  .inputfelt {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 0px;
+    background-color: #f7f8ed;
+    font-family: raleway, sans-serif;
+  }
+
+  label {
+    font-family: ralway, sans-serif;
+    color: #3b4225;
+  }
+
+  .baggrundimg {
+    background-color: #697b36;
+    border-radius: 50px;
+  }
+  .pb img {
+    border-radius: 100%;
+    max-width: 180px;
+  }
+
+  .vedvandet {
+    border-radius: 50px;
+    width: 100%;
+  }
+
+  .rødkasse {
+    background-color: #c2131c;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .rødkasse h2,
+  h3 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+
+  .grønkasse {
+    background-color: #3b4225;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .grønkasse h2,
+  h3 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+
+  /* LAYOUT TIL MIN PROFIL */
+
+  .grid_1-1desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .h1top {
+    order: -1;
+  }
+
+  /* Layout til din profil sektionen */
+  .grid_1-1-1desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .grid_1-1-1desk > .din_profil_grid_1-1:first-of-type {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .grid_1-1-1desk > div:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .grid_1-1-1desk > div:nth-of-type(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .grid_1-1-1desk > .din_profil_grid_1-1:last-of-type {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-top: 20px;
+  }
+
+  /* Din profil grid styling */
+  .din_profil_grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  #dinepoints {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #dinpimg {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .baggrundimg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  /* FORMULAR STYLING */
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .pb {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .form_container {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .form_container2 {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  @media (max-width: 1024px) {
+    .grid_1-1-1desk {
+      grid-template-columns: 1fr;
+    }
+
+    .grid_1-1-1desk > div:nth-of-type(2) {
+      grid-column: 1/2;
+      grid-row: 2 / 3;
+    }
+
+    .grid_1-1-1desk > div:nth-of-type(3) {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+  }
+
   /*********** footer - DESKTOP ***********/
 
   .footer_card {
