@@ -500,11 +500,35 @@ p {
 
   /****** Min profil - MOBIL *****/
 
+  h1 {
+    font-family: ralway, sans-serif;
+  }
+  h2 {
+    font-family: ralway, sans-serif;
+  }
+  h3 {
+    font-family: ralway, sans-serif;
+  }
+
+  p {
+    font-family: ralway, sans-serif;
+  }
+
   .felx_container {
     display: flex;
     justify-content: flex-end;
     margin-right: 2rem;
     margin-top: 2rem;
+  }
+
+  .flex-item {
+    font-size: 3rem;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .h1top {
+    font-size: 2rem;
+    margin: 0px 0px 0px 10px;
   }
 
   #dinepoints {
@@ -522,6 +546,7 @@ p {
   #dinpimg {
     width: 100%;
     border-radius: 50px;
+    margin: 10px 10px 10px 0px;
   }
 
   form {
@@ -531,16 +556,26 @@ p {
     padding: 20px;
   }
 
-  .form {
-    gap: 1rem;
-    padding: 20px;
-  }
-
   .inputfelt {
     padding: 10px;
     font-size: 1.2rem;
     border: 0px;
     background-color: #f7f8ed;
+    font-family: raleway, sans-serif;
+  }
+
+  label {
+    font-family: ralway, sans-serif;
+    color: #3b4225;
+  }
+
+  .baggrundimg {
+    background-color: #697b36;
+    border-radius: 50px;
+  }
+  .pb img {
+    border-radius: 100%;
+    max-width: 180px;
   }
 
   .vedvandet {
@@ -552,22 +587,30 @@ p {
     background-color: #c2131c;
     border-radius: 50px;
     margin-left: 10px;
+    margin-top: 10px;
   }
 
   .rødkasse h2,
   h3 {
     color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 30px;
   }
 
   .grønkasse {
     background-color: #3b4225;
     border-radius: 50px;
     margin-right: 10px;
+    margin-top: 10px;
   }
 
   .grønkasse h2,
   h3 {
     color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 30px;
   }
 
   /***** LAYOUT - MOBIL *****/
@@ -1107,10 +1150,6 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  padding: 0px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 15px;
 }
 
 /***************************************************** MOBIL - starter her ***********************************************/
