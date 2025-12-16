@@ -711,11 +711,6 @@ p {
     margin: 0px 0px 40px 0px;
   }
 
-  .h1top {
-    font-size: 2rem;
-    margin: 0px 0px 0px 10px;
-  }
-
   #dinepoints {
     background-color: #96ac4e;
     border-radius: 50px;
@@ -731,6 +726,16 @@ p {
     width: 100%;
     border-radius: 50px;
     margin: 10px 10px 10px 0px;
+  }
+
+  .udvidetform {
+    background-color: rgba(217, 224, 182, 1);
+    border-radius: 50px;
+  }
+
+  .udvidetform h2 {
+    margin-left: 30px;
+    padding-top: 30px;
   }
 
   form {
@@ -1561,10 +1566,14 @@ p {
     margin: 10px 20px;
   }
 
-  #dinpimg {
-    width: 100%;
+  .udvidetform {
+    background-color: rgba(217, 224, 182, 1);
     border-radius: 50px;
-    margin: 10px 10px 10px 0px;
+  }
+
+  .udvidetform h2 {
+    margin-left: 30px;
+    padding-top: 30px;
   }
 
   form {
@@ -1605,7 +1614,6 @@ p {
     background-color: #c2131c;
     border-radius: 50px;
     margin-left: 10px;
-    margin-top: 10px;
   }
 
   .rødkasse h2,
@@ -1620,7 +1628,6 @@ p {
     background-color: #3b4225;
     border-radius: 50px;
     margin-right: 10px;
-    margin-top: 10px;
   }
 
   .grønkasse h2,
@@ -1633,15 +1640,6 @@ p {
 
   /* LAYOUT TIL MIN PROFIL */
 
-  .grid_1-1desk {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .h1top {
-    order: -1;
-  }
-
   /* Layout til din profil sektionen */
   .grid_1-1-1desk {
     display: grid;
@@ -1651,14 +1649,24 @@ p {
     margin-top: 20px;
   }
 
-  .grid_1-1-1desk > .din_profil_grid_1-1:first-of-type {
-    grid-column: 1/2;
-    grid-row: 1/2;
+  /* NYT – gør at dinepoints og billedet ligger side om side */
+
+  #dinpimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
   }
 
-  .dinpimg {
-    grid-column: 2 /3;
-    grid-row: 1/2;
+  .dinpimg_container {
+    border-radius: 50px;
+    overflow: hidden;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    width: 100%;
+    border-radius: 50px;
+    margin: 10px 10px 10px 0px;
   }
 
   .grid_1-1-1desk > div:nth-of-type(2) {
@@ -1674,7 +1682,6 @@ p {
   .grid_1-1-1desk > .din_profil_grid_1-1:last-of-type {
     grid-column: 1/3;
     grid-row: 3/4;
-    margin-top: 20px;
   }
 
   /* Din profil grid styling */
@@ -1685,13 +1692,7 @@ p {
   }
 
   #dinepoints {
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-
-  #dinpimg {
-    grid-column: 2/4;
-    grid-row: 1 / 2;
+    grid-column: 1/2;
   }
 
   .baggrundimg {
