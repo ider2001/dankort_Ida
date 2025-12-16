@@ -722,8 +722,7 @@ p {
     margin: 10px 0px 10px 10px;
   }
 
-  #dinepoints h2,
-  h3 {
+  #dinepoints h2 {
     color: white;
     margin: 10px 20px;
   }
@@ -775,8 +774,7 @@ p {
     margin-top: 10px;
   }
 
-  .rødkasse h2,
-  h3 {
+  .rødkasse h2 {
     color: white;
     margin-left: 20px;
     margin-top: 20px;
@@ -791,8 +789,7 @@ p {
     margin-top: 10px;
   }
 
-  .grønkasse h2,
-  h3 {
+  .grønkasse h2 {
     color: white;
     margin-left: 20px;
     margin-top: 20px;
