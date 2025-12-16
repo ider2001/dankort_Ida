@@ -17,22 +17,36 @@
   </head>
 
   <body>
-    <div class="container">
-      <button type="klik" class="btn">klik</button>
-      <div class="popup">
-        <h1>TILLYKKE!</h1>
-        <h2>
-          Du får 20% på dine billetter til <br />
-          den blå planet
-        </h2>
-        <p>Din belønning vil blive sendt til din registreret Email</p>
-        <button type="tilbage">TILBAGE</button>
+    <input type="checkbox" id="offer-toggle" class="hidden-checkbox" />
+
+    <label for="offer-toggle" class="trigger-btn"> show special offer </label>
+    <div class="popup-overlay">
+      <div class="popup-content">
+        <label for="offer-toggle" class="close-btn">&times;</label>
+        <h2>TILLYKKE!</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          adipisci illum error aliquid ipsum facilis doloremque molestiae quo,
-          pariatur sit aliquam! Eaque saepe nobis consectetur labore, laboriosam
-          cumque natus quas.
+          Du får 20% rabat på dit næste køb af entrebiletter til Den blå planet
         </p>
+
+        <label for="offer-toggle" class="cta-btn"> Claim offer now</label>
+      </div>
+    </div>
+
+    <!--    GRØN     -->
+
+    <input type="checkbox" id="offer-toggle1" class="hidden-checkbox1" />
+
+    <label for="offer-toggle1" class="trigger-btn1"> show special offer </label>
+    <div class="popup-overlay1">
+      <div class="popup-content1">
+        <label for="offer-toggle1" class="close-btn1">&times;</label>
+        <h2>DU ER NU TILMELDT</h2>
+        <p>XXXXX</p>
+        <p>
+          Gå til pointshoppen og se hvilke belønninger denne challenge skal gå
+          til.
+        </p>
+        <label for="offer-toggle1" class="cta-btn1"> Claim offer now</label>
       </div>
     </div>
   </body>
