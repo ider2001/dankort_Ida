@@ -1730,6 +1730,16 @@ p {
     }
   }
 
+  .disabled {
+    opacity: 0.5;
+    background-color: red;
+  }
+
+  .disabled::after {
+    content: " ikke nok points";
+    background-color: red;
+  }
+
   /*********** footer - DESKTOP ***********/
 
   .footer_card {

@@ -43,8 +43,7 @@
       <section class="grid_1-1-1desk">
         <div>
           <div id="dinepoints">
-            <h2>Dine points</h2>
-            <h3>dynamisk tal</h3>
+            <h2>Dine points <span id="points"></span></h2>
           </div>
           <div class="dinpimg_container">
             <img id="dinpimg" src="img/surdej.png" alt="mad" />
@@ -83,12 +82,12 @@
 
         <div class="din_profil_grid_1-1">
           <div class="rødkasse">
-            <h2>Antal challenges gennemført i alt:</h2>
-            <h3>dynamisk tal</h3>
+            <h2>
+              Antal challenges gennemført i alt: <span id="completed"> </span>
+            </h2>
           </div>
           <div class="grønkasse">
-            <h2>Igangværende challenges:</h2>
-            <h3>dynamisk tal</h3>
+            <h2>Igangværende challenges: <span id="ongoing"></span></h2>
           </div>
         </div>
       </section>
@@ -97,7 +96,7 @@
         <p class="flex-item">vælg kategori</p>
       </section>
       <h1 class="nu_challenges_h1">Nuværende challenges:</h1>
-      <div id="challenges_container" class="challenges_container"></div>
+      <div id="belonning_container" class="belonning_container"></div>
     </main>
 
     <footer>
@@ -159,6 +158,6 @@
     </footer>
 
     <script src="js/menu.js"></script>
-    <script type="module" src="js/challenges.js"></script>
+    <script src="js/dinprofil.js"></script>
   </body>
 </html>

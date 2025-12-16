@@ -1,4 +1,4 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const supabase = createClient(
   "https://ybukjrunegrgimscoahw.supabase.co",
@@ -8,9 +8,7 @@ const supabase = createClient(
 const container = document.getElementById("belonning_container");
 
 async function getData() {
-  const { data, error } = await supabase
-    .from("belonninger")
-    .select("*");
+  const { data, error } = await supabase.from("belonninger").select("*");
 
   if (error) {
     console.error("Supabase fejl:", error);
@@ -34,14 +32,13 @@ function showData(data) {
         
   </div>
   <div class = "tekstblok">
-        <h2>${id.Titel}</h2>
+        <h2 class="id">${id.Titel}</h2>
         <h4>${id.Beskrivelse}</h4>
       </div>  
         </article>
 
     `;
   });
-
 }
 
 document.querySelector("#filters").addEventListener("click", showFiltered);
@@ -62,7 +59,7 @@ let allData, currentDataSet;
 
 function showCategory(Kategori) {
   belonninger_container.innerHTML = "";
-    data.forEach((id) => {
+  data.forEach((id) => {
     belonning_container.innerHTML += `
       <article class = "mærker"> 
         <div class ="${id.Pointpris ? "pointpris" : ""}">
