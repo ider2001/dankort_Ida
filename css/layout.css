@@ -60,7 +60,7 @@ img {
     padding-block: 1rem;
   }
 
-    .blok3 {
+  .blok3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -109,7 +109,7 @@ img {
     width: 20%;
   }
 
-   .knap_pil {
+  .knap_pil {
     display: flex;
     justify-self: flex-end;
   }
@@ -396,6 +396,66 @@ img {
     grid-column: 2;
     grid-row: 2;
     margin-top: 5rem;
+  }
+
+  /******************************************************** challenges - DESKTOP ***********************************************/
+  /***** Toppen af siden (img) - layout - DESKTOP *****/
+  .challenges_imgimg {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+  }
+
+  .img_v {
+    display: grid;
+  }
+
+  .img_v1 {
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 35px;
+    margin-top: 30px;
+    height: 40%;
+    width: 140%;
+    margin-top: 3rem;
+    margin-left: -5rem;
+  }
+  .img_h {
+    display: grid;
+  }
+
+  .img_hj1 {
+    grid-column: 2;
+    grid-row: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
+    margin-left: -10rem;
+    margin-top: -3rem;
+  }
+
+  .img_hj2 {
+    grid-column: 2;
+    grid-row: 2;
+    height: 50%;
+    width: 110%;
+    border-radius: 35px;
+    z-index: -1;
+    margin-right: -3rem;
+    margin-top: -7rem;
+  }
+
+  .img_hj3 {
+    grid-row: 2;
+    height: 40%;
+    width: 70%;
+    border-radius: 30px;
+    margin-right: 3rem;
+  }
+  /***** challenges bokse - layout - DESKTOP *****/
+
+  .nu_challenges_h1 {
+    margin-top: -20rem;
   }
 
   /*********************************************** footer - DESKTOP *****************************************************/

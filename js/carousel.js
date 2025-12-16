@@ -1,9 +1,6 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const supabase = createClient(
-  "https://ybukjrunegrgimscoahw.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlidWtqcnVuZWdyZ2ltc2NvYWh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUyNTczNDQsImV4cCI6MjA4MDgzMzM0NH0.C2NLegMt6TZTCaZfxDl3_Ww73uCNJLqYWhRB2w76mKA"
-);
+const supabase = createClient("https://ybukjrunegrgimscoahw.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlidWtqcnVuZWdyZ2ltc2NvYWh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUyNTczNDQsImV4cCI6MjA4MDgzMzM0NH0.C2NLegMt6TZTCaZfxDl3_Ww73uCNJLqYWhRB2w76mKA");
 
 // Global state
 let items = [];
@@ -22,28 +19,34 @@ function mod(n, m) {
 function render() {
   if (!items.length) return;
 
-  const leftIdx   = mod(currentIndex - 1, items.length);
+  const leftIdx = mod(currentIndex - 1, items.length);
   const centerIdx = mod(currentIndex, items.length);
-  const rightIdx  = mod(currentIndex + 1, items.length);
+  const rightIdx = mod(currentIndex + 1, items.length);
 
   const trio = [items[leftIdx], items[centerIdx], items[rightIdx]];
   const trioIdx = [leftIdx, centerIdx, rightIdx];
 
-  track.innerHTML = trio.map((item, i) => {
-    const isCenter = i === 1;
+  track.innerHTML = trio
+    .map((item, i) => {
+      const isCenter = i === 1;
 
-    // Kun midterkortet får beskrivelse og footer
-    return `
+      // Kun midterkortet får beskrivelse og footer
+      return `
       <article class="card ${isCenter ? "center" : ""}" data-index="${trioIdx[i]}">
         <h3>${item.title}</h3>
-        ${isCenter ? `<p class="desc">${item.desc}</p>
+        ${
+          isCenter
+            ? `<p class="desc">${item.desc}</p>
         <div class="footer">
           <span class="badge">${item.optjenpoints ?? ""}</span>
           <span class="badge">${item.dage_tilbage ?? ""} dage</span>
-        </div>` : ""}
+        </div>`
+            : ""
+        }
       </article>
     `;
-  }).join("");
+    })
+    .join("");
 }
 
 // Navigation
@@ -67,11 +70,7 @@ window.addEventListener("keydown", (e) => {
 // Hent data fra Supabase
 async function loadFromSupabase() {
   try {
-    const { data, error } = await supabase
-      .from("infocaru")
-      .select("Titel, Beskrivelse, optjenpoints, dage_tilbage")
-      .order("id", { ascending: true })
-      .limit(6);
+    const { data, error } = await supabase.from("infocaru").select("Titel, Beskrivelse, optjenpoints, dage_tilbage").order("id", { ascending: true }).limit(6);
 
     if (error) {
       console.error("Supabase error:", error);
@@ -79,11 +78,11 @@ async function loadFromSupabase() {
     }
 
     if (data && data.length) {
-      items = data.map(row => ({
+      items = data.map((row) => ({
         title: row.Titel,
         desc: row.Beskrivelse,
         optjenpoints: row.optjenpoints,
-        dage_tilbage: row.dage_tilbage
+        dage_tilbage: row.dage_tilbage,
       }));
       currentIndex = 1; // start med kort nr. 2 i midten
       render();
