@@ -8,7 +8,7 @@
     <title>Forside</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout.css">
-     <link rel="stylesheet" href="css/popupstyle.css" />
+    <link rel="stylesheet" href="css/popupstyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="img/dankort.svg">
@@ -41,55 +41,54 @@
         </nav>
 
     </header>
-   <main>
-  <div class="index_kampagne">
-    <div class="blok">
-      <div class="blok2">
-        <div class="blok3">
-          <h1>DANKORT</h1>
-          <h3 class="plus">+</h3>
-        </div>
-        <div>
-          <h2>OPTJEN POINTS, VED AT TAGE <br> BEDVISTE HANDLINGER,<br> SOM KAN BRUGES PÅ RABATTER.</h2>
-          <button class="kampagne_knap"
-            onclick="document.getElementById('altompoints').scrollIntoView({ behavior: 'smooth' });">
-            ALT OM POINTS
-          </button>
-        </div>
-      </div>
-      <img class="indeximg1" src="img/indeximg1.webp" alt="billede af vinduer">
-    </div>
 
-    <div class="blok1">
-      <div class="order">
-        <div class="dk_tekst">
-          <h2>MÅLET ER IKKE AT FORBRUGE MERE, <br> AT FORBRUGE MINDRE OG VÆRE SAMMEN.</h2>
+
+    <main>
+        <div class="index_kampagne">
+            <div class="blok">
+                <div class="blok2">
+                    <div class="blok3">
+                        <h1>DANKORT</h1>
+                        <h3 class="plus">+</h3>
+                    </div>
+                    <div>
+                        <h2>OPTJEN POINTS, VED AT TAGE <br> BEDVISTE HANDLINGER,<br> SOM KAN BRUGES PÅ RABATTER.</h2>
+                        <button class="kampagne_knap"
+                            onclick="document.getElementById('altompoints').scrollIntoView({ behavior: 'smooth' });">
+                            ALT OM POINTS
+                        </button>
+                    </div>
+                </div>
+                <img class="indeximg1" src="img/indeximg1.webp" alt="billede af vinduer">
+            </div>
+
+            <div class="blok1">
+                <div class="order">
+                    <div class="dk_tekst">
+                        <h2>MÅLET ER IKKE AT FORBRUGE MERE, <br> AT FORBRUGE MINDRE OG VÆRE SAMMEN.</h2>
+                    </div>
+
+                    <!-- ÆNDRING: fra <a> til <button> -->
+                    <button class="kampagne_knap trigger-btn" id="tilmeld-btn" data-title="Tilmelding"
+                        data-description="Her kan du tilmelde dig kampagnen og få adgang til dine fordele.">
+                        TILMELD DIG HER
+                    </button>
+                </div>
+                <img class="indeximg2" src="img/indeximg2.webp" alt="billede af væg med citat">
+            </div>
         </div>
 
-        <!-- ÆNDRING: fra <a> til <button> -->
-        <button 
-          class="kampagne_knap trigger-btn" 
-          id="tilmeld-btn"
-          data-title="Tilmelding"
-          data-description="Her kan du tilmelde dig kampagnen og få adgang til dine fordele.">
-          TILMELD DIG HER
-        </button>
-      </div>
-      <img class="indeximg2" src="img/indeximg2.webp" alt="billede af væg med citat">
-    </div>
-  </div>
+        <!-- Popup markup -->
+        <input type="checkbox" id="offer-toggle" class="hidden-checkbox" />
+        <div class="popup-overlay" id="popup-overlay">
+            <div class="popup-content">
+                <button type="button" class="close-btn" id="close-btn">&times;</button>
+                <h2 id="popup-title">Titel kommer her</h2>
+                <p id="popup-description">Beskrivelse kommer her</p>
+                <button type="button" class="cta-btn">Claim offer now</button>
+            </div>
+        </div>
 
-  <!-- Popup markup -->
-  <input type="checkbox" id="offer-toggle" class="hidden-checkbox" />
-  <div class="popup-overlay" id="popup-overlay">
-    <div class="popup-content">
-      <button type="button" class="close-btn" id="close-btn">&times;</button>
-      <h2 id="popup-title">Titel kommer her</h2>
-      <p id="popup-description">Beskrivelse kommer her</p>
-      <button type="button" class="cta-btn">Claim offer now</button>
-    </div>
-  </div>
-</main>
 
         <div class="faktablok">
             <h1>Vidste du at....?</h1>
@@ -251,6 +250,9 @@
         </div>
 
     </main>
+    <button id="topBtn" style="position:fixed; bottom:20px; right:20px; left:auto; background:#96ac4e; color:white;">
+        ↑ Til toppen
+    </button>
 
     <footer>
         <div class="footer_card">
@@ -308,6 +310,12 @@
         </div>
     </footer>
 
+
+
+
+
+
+    <script src="js/tilbagetiltop.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/index.js"></script>
 </body>
