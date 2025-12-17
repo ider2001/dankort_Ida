@@ -458,7 +458,9 @@ img {
   /***** challenges bokse - layout - DESKTOP *****/
 
   .nu_challenges_h1 {
-    margin-top: -28rem;
+    margin-top: -10rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
   }
 
   .nu_challenges_h1_dinprofil {
