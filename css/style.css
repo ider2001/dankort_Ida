@@ -540,7 +540,7 @@ p {
     grid-row: 2;
   }
 
-  .pointshop_h1 h3 {
+  .pointshop_h1 h2 {
     font-family: "Raleway", sans-serif;
     font-size: 30px;
     font-weight: 300;
@@ -587,6 +587,15 @@ p {
   .belonninger h1 {
     font-size: 30px;
   }
+
+  #btn-pulse {
+    background-color: rgb(247, 248, 237);
+    font-size: 20px;
+    border-radius: 35px;
+    padding: 10px;
+    font-family: "Raleway", sans-serif;
+    margin-left: 2rem;
+}
 
   /************************************************* Challenges - MOBIL ************************************************/
 
@@ -969,6 +978,11 @@ p {
     z-index: 1;
   }
 
+   .nu_challenges_h1_dinprofil {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
   .kobnu_knap {
     background-color: rgba(150, 172, 78, 1);
     color: rgba(247, 247, 247, 1);
@@ -1036,6 +1050,20 @@ p {
   footer{
     padding-bottom: 2rem;
   }
+
+  .disabled::after {
+  content: "Ikke nok points";
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(230, 29, 39, 1);
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 6px 10px;
+     width: 58%;
+    position: absolute;
+    top: 71px;
+  left: 0rem;
+  z-index: 1;
+}
 
   /********** tilbage til top knap - DESKTOP ***********/
 
@@ -2176,6 +2204,20 @@ p {
 footer{
     padding-bottom: 2rem;
   }
+
+  .disabled::after {
+  content: "Ikke nok points";
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(230, 29, 39, 1);
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 6px 10px;
+     width: 58%;
+    position: absolute;
+    top: 84px;
+  left: 0rem;
+  z-index: 1;
+}
 }
 
 /********** tilbage til top knap - DESKTOP ***********/
@@ -2220,16 +2262,4 @@ footer{
   background-color: rgba(0, 0, 0, 0.3); /* gør kortet “mørkere” */
 }
 
-.disabled::after {
-  content: "Ikke nok points";
-  font-family: "Raleway", sans-serif;
-  background-color: rgba(230, 29, 39, 1);
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
-  padding: 6px 10px;
-     width: 58%;
-    position: absolute;
-    top: 71px;
-  left: 0rem;
-  z-index: 1;
-}
+
