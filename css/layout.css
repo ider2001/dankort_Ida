@@ -132,22 +132,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 2rem;
-    margin-top: -6rem;
+    margin-top: -7rem;
     z-index: 3;
-  }
-
-  .pointshop_h1 h1 {
-    font-size: 3rem;
-    font-family: "Raleway", sans-serif;
-    color: rgba(28, 42, 53, 1);
-  }
-
-  .pointshop_h1 h3 {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    margin-bottom: 2rem;
-    line-height: 2.3rem;
   }
 
   .img_ps1 {
@@ -157,6 +143,7 @@ img {
     margin-right: -2rem;
     border-radius: 2rem;
     margin-top: 2rem;
+    object-fit: cover;
   }
 
   .img_ps2 {
@@ -167,6 +154,7 @@ img {
     z-index: 5;
     position: absolute;
     top: 120px;
+    object-fit: cover;
   }
 
   .img_ps3 {
@@ -176,6 +164,7 @@ img {
     margin-left: 150px;
     border-radius: 2rem;
     margin-top: 55px;
+    object-fit: cover;
   }
 
   .img_ps4 {
@@ -184,6 +173,7 @@ img {
     margin-top: 2rem;
     border-radius: 2rem;
     margin-left: -2rem;
+    object-fit: cover;
   }
 
   .img_pointshop_h1 {
@@ -221,6 +211,7 @@ img {
     grid-column: 1;
     margin-top: 30px;
     height: 120%;
+    object-fit: cover;
   }
 
   .img_v1 {
@@ -229,16 +220,18 @@ img {
     width: 130%;
     margin-top: 5rem;
     margin-left: -5rem;
+    object-fit: cover;
   }
   .img_h {
     display: grid;
-    grid-column: 2;
+    object-fit: cover;
   }
 
   .img_hj1 {
     height: 85%;
     width: 85%;
     border-radius: 35px;
+    object-fit: cover;
   }
 
   .img_hj2 {
@@ -248,6 +241,7 @@ img {
     z-index: -1;
     margin-left: 9rem;
     margin-top: -6rem;
+    object-fit: cover;
   }
 
   .img_hj3 {
@@ -256,6 +250,7 @@ img {
     border-radius: 30px;
     margin-top: -9rem;
     margin-left: 3rem;
+    object-fit: cover;
   }
   .challenges_container {
     display: grid;
@@ -429,6 +424,7 @@ img {
     width: 140%;
     margin-top: 3rem;
     margin-left: -5rem;
+    object-fit: cover;
   }
   .img_h {
     display: grid;
@@ -442,6 +438,7 @@ img {
     border-radius: 35px;
     margin-left: -10rem;
     margin-top: 0rem;
+    object-fit: cover;
   }
 
   .img_hj2 {
@@ -453,6 +450,7 @@ img {
     z-index: -1;
     margin-right: -3rem;
     margin-top: -7rem;
+    object-fit: cover;
   }
 
   .img_hj3 {
@@ -461,6 +459,7 @@ img {
     width: 70%;
     border-radius: 30px;
     margin-right: 3rem;
+    object-fit: cover;
   }
   /***** challenges bokse - layout - DESKTOP *****/
 
@@ -492,21 +491,6 @@ img {
     z-index: 3;
   }
 
-  .pointshop_h1 h1 {
-    font-size: 3rem;
-    font-family: "Raleway", sans-serif;
-    color: rgba(28, 42, 53, 1);
-  }
-
-  .pointshop_h1 h3 {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
-    font-weight: lighter;
-    margin-bottom: 2rem;
-    line-height: 2.3rem;
-    margin-right: -11rem;
-  }
-
   .img_ps1 {
     grid-column: 2;
     grid-row: 1;
@@ -516,6 +500,7 @@ img {
     margin-right: -2rem;
     border-radius: 2rem;
     margin-top: 2rem;
+    object-fit: cover;
   }
 
   .img_ps2 {
@@ -528,6 +513,7 @@ img {
     z-index: 5;
     position: absolute;
     top: 15rem;
+    object-fit: cover;
   }
 
   .img_ps3 {
@@ -539,6 +525,7 @@ img {
     margin-right: -0.5rem;
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;
+    object-fit: cover;
   }
 
   .img_ps4 {
@@ -547,6 +534,7 @@ img {
     margin-top: 2rem;
     border-radius: 2rem;
     margin-left: -2rem;
+    object-fit: cover;
   }
 
   .img_pointshop_h1 {

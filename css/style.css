@@ -51,7 +51,7 @@ p {
     background-color: rgba(207, 222, 232, 1);
     opacity: 95%;
     position: absolute;
-    top: 10%;
+    top: 6%;
     left: 0%;
     width: 100%;
     height: 100%;
@@ -122,9 +122,6 @@ p {
   }
 
   /****** Body - MOBIL *****/
-  h1 {
-    font-size: 3rem;
-  }
 
   h2 {
     font-weight: normal;
@@ -535,6 +532,23 @@ p {
     margin-top: -1rem;
   }
 
+  .pointshop_h1 h1 {
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    color: rgba(28, 42, 53, 1);
+    grid-row: 2;
+  }
+
+  .pointshop_h1 h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    margin-right: -11rem;
+    grid-row: 2;
+  }
+
   .tekstblok {
     margin-top: 2rem;
     overflow: visible;
@@ -549,6 +563,7 @@ p {
     font-family: "Raleway", sans-serif;
     color: rgba(33, 48, 63, 1);
     font-weight: normal;
+    padding-bottom: 1.5rem;
   }
 
   .min_profil_knap {
@@ -568,23 +583,40 @@ p {
   a.min_profil_knap:hover {
     background-color: rgba(213, 0, 21, 1);
   }
+  .belonninger h1 {
+    font-size: 30px;
+  }
 
   /************************************************* Challenges - MOBIL ************************************************/
 
   .challengesh1 {
-    font-size: 3rem;
+    font-size: 30px;
     margin-left: 1rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Raleway", sans-serif;
   }
 
   .nu_challenges_h1 {
     margin-left: 1.5rem;
-    font-size: 2rem;
+    font-size: 30px;
+    margin-bottom: 1rem;
   }
   .mærker {
     background-color: rgba(186, 209, 223, 1);
     padding: 50px 30px;
     border-radius: 35px;
+  }
+
+  .mærker_challenges {
+    background-color: #d9e0b6;
+    padding: 50px 30px;
+    border-radius: 35px;
+    transition: transform 0.3s ease;
+  }
+
+  .mærker_challenges:hover {
+    transform: scale(1.05);
   }
 
   .pointsbanner {
@@ -652,9 +684,9 @@ p {
     min-height: 600px;
     padding: 1rem;
     border-radius: 50px;
-    background: linear-gradient(180deg, rgba(217, 224, 182, 1), rgba(217, 224, 182, 1)), var(--card-bg);
-    border: 1px solid rgba(217, 224, 182, 1);
-    box-shadow: 0 10px 30px rgba(217, 224, 182, 1);
+    background: linear-gradient(180deg, rgba(116, 164, 188, 1), rgba(116, 164, 188, 1));
+    border: 1px solid rgba(116, 164, 188, 1);
+    box-shadow: 0 10px 30px rgba(116, 164, 188, 1);
     transition: transform 250ms ease, opacity 250ms ease, box-shadow 250ms ease;
     opacity: 0.7;
     transform: scale(0.95);
@@ -665,15 +697,15 @@ p {
     flex: 0 0 50%; /* fylder hele viewporten */
     transform: scale(1.05);
     opacity: 1;
-    background-color: rgba(165, 183, 100, 1);
-    box-shadow: 0 18px 32px rgba(217, 224, 182, 1);
-    border-color: rgba(217, 224, 182, 1);
+    background-color: rgba(63, 110, 138, 1);
+    box-shadow: 0 18px 32px rgba(116, 164, 188, 1);
+    border-color: rgba(116, 164, 188, 1);
     z-index: 2;
   }
 
   .badge {
-    background: rgba(217, 224, 182, 1);
-    color: var(--accent);
+    background: rgba(116, 164, 188, 1);
+    color: whitesmoke;
     border: 1px solid whitesmoke;
     padding: 0.25rem 0.5rem;
     border-radius: 35px;
@@ -691,9 +723,15 @@ p {
     margin: 0;
     font-size: clamp(1.5rem, 2.5vw, 1.25rem);
     letter-spacing: 0.4px;
-    color: rgba(28, 42, 53, 1);
+    color: whitesmoke;
     font-weight: bolder;
     margin-bottom: 1rem;
+  }
+
+  .card p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: whitesmoke;
   }
 
   /*********** samarbejdspartnere - MOBIL ***********/
@@ -717,16 +755,18 @@ p {
 
   .sam_blok h1 {
     text-align: center;
+    font-size: 30px;
   }
 
   .sam_h1 {
+    font-size: 30px;
     padding-top: 2rem;
     padding-left: 1rem;
     background-color: rgba(207, 222, 232, 1);
   }
 
   .flere_p_vej {
-    font-size: 1.5rem;
+    font-size: 30px;
     font-family: "Raleway", sans-serif;
     text-align: center;
     background-color: rgba(207, 222, 232, 1);
@@ -741,9 +781,6 @@ p {
     font-family: ralway, sans-serif;
   }
   h2 {
-    font-family: ralway, sans-serif;
-  }
-  h3 {
     font-family: ralway, sans-serif;
   }
 
@@ -1516,9 +1553,13 @@ p {
   }
 
   .challengesh1 {
-    font-size: 4rem;
+    font-size: 44px;
     margin-left: 5rem;
     margin-top: 5rem;
+  }
+
+  .nu_challenges_h1 {
+    font-size: 44px;
   }
 
   .mærker {
@@ -1593,7 +1634,7 @@ p {
   }
 
   .card {
-    background: linear-gradient(180deg, rgba(217, 224, 182, 1), rgba(217, 224, 182, 1)), var(--card-bg);
+    background: linear-gradient(180deg, rgba(116, 164, 188, 1), rgba(116, 164, 188, 1));
     border: 1px solid rgba(217, 224, 182, 1);
     border-radius: 16px;
     padding: 1rem;
@@ -1601,21 +1642,20 @@ p {
     flex-direction: column;
     justify-content: space-between;
     height: 75vh;
-    box-shadow: 0 10px 30px rgba(217, 224, 182, 1);
+    box-shadow: 0 10px 30px rgba(116, 164, 188, 1);
     transform: scale(0.94);
     opacity: 0.9;
     transition: transform 250ms ease, opacity 250ms ease, box-shadow 250ms ease;
-    background-color: rgba(217, 224, 182, 1);
   }
 
   .card.center {
     transform: scale(1.05);
     opacity: 1;
-    box-shadow: 0 3px 40px rgba(217, 224, 182, 1);
-    border-color: rgba(217, 224, 182, 1);
+    background-color: rgba(63, 110, 138, 1);
+    box-shadow: 0 18px 32px rgba(63, 110, 138, 1);
+    border-color: rgba(116, 164, 188, 1);
     margin-top: 10px;
     margin-bottom: 20px;
-    background-color: rgba(165, 183, 100, 1);
   }
 
   .card h3 {
@@ -1623,15 +1663,15 @@ p {
     font-size: 3rem;
     margin-top: 3rem;
     letter-spacing: 0.4px;
-    color: rgba(28, 42, 53, 1);
+    color: whitesmoke;
     font-weight: bolder;
     text-align: center;
   }
 
   .card p {
     margin: 0;
-    font-size: 2rem;
-    color: rgba(28, 42, 53, 1);
+    font-size: 44px;
+    color: whitesmoke;
   }
 
   .card .desc {
@@ -1644,9 +1684,9 @@ p {
 
   .card.center .desc {
     display: block; /* vis kun på midterkortet */
-    font-size: 1rem; /* gør teksten mindre */
+    font-size: 25px; /* gør teksten mindre */
     line-height: 1.6;
-    color: rgba(28, 42, 53, 1);
+    color: whitesmoke;
     padding: 2rem;
   }
 
@@ -1657,8 +1697,8 @@ p {
   .badge {
     font-family: "Raleway", sans-serif;
     font-size: 1rem;
-    background: rgba(217, 224, 182, 1);
-    color: var(--accent);
+    background: rgba(116, 164, 188, 1);
+    color: whitesmoke;
     border: 1px solid whitesmoke;
     padding: 0.25rem 0.5rem;
     border-radius: 35px;
@@ -1682,6 +1722,7 @@ p {
     padding-top: 2rem;
     padding-left: 3rem;
     background-color: rgba(207, 222, 232, 1);
+    font-size: 44px;
   }
   .sam_blok {
     border-radius: 35px;
@@ -1693,12 +1734,8 @@ p {
     text-align: center;
   }
 
-  .sam_blok h1 {
-    text-align: center;
-  }
-
   .flere_p_vej {
-    font-size: 1.5rem;
+    font-size: 44px;
     font-family: "Raleway", sans-serif;
     text-align: center;
     background-color: rgba(207, 222, 232, 1);
@@ -1707,6 +1744,23 @@ p {
   }
 
   /********************************************* Pointshop - DESKTOP ***************************************************/
+  .pointshop_h1 h1 {
+    font-size: 44px;
+    font-family: "Raleway", sans-serif;
+    color: rgba(28, 42, 53, 1);
+    grid-row: 2;
+    margin-bottom: 1rem;
+  }
+
+  .pointshop_h1 h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 44px;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    line-height: 3rem;
+    margin-right: -11rem;
+    grid-row: 2;
+  }
 
   .belonning_container {
     display: grid;
@@ -1783,6 +1837,9 @@ p {
   }
   a.min_profil_knap:hover {
     background-color: rgba(213, 0, 21, 1);
+  }
+  .belonninger h1 {
+    font-size: 44px;
   }
 
   /************************************************ Min profil - DESKTOP ************************************************/
@@ -2015,6 +2072,9 @@ p {
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .belonninger h1 {
+    font-size: 44px;
   }
 
   /* FORMULAR STYLING */
