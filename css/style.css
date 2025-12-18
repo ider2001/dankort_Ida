@@ -56,7 +56,7 @@ p {
     background-color: rgba(207, 222, 232, 1);
     opacity: 95%;
     position: absolute;
-    top: 12%;
+    top: 10%;
     left: 0%;
     width: 100%;
     height: 100%;
@@ -150,14 +150,35 @@ p {
     text-decoration: none;
   }
 
+  .kampagne_knap:hover {
+    background-color: rgba(213, 0, 21, 1);
+  }
+
   .blok2 h3 {
-    font-size: 4rem;
-    margin-top: -1.4rem;
-    margin-left: -5.5rem;
+    font-size: 35px;
+    margin-top: 2.7rem;
+    margin-left: -6.7rem;
+  }
+
+  .blok3 h1 {
+    font-size: 30px;
+    margin-top: 3rem;
+  }
+
+  .blok2 h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
   }
 
   .order a {
     margin-left: 2rem;
+  }
+
+  .dk_tekst h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
   }
 
   /******* faktablok 1 - MOBIL ********/
@@ -1012,9 +1033,9 @@ p {
     text-decoration: none;
   }
 
-  .kampagne_knap:hover{
+  .kampagne_knap:hover {
     background-color: #d50015;
-  transform: translateY(-2px);
+    transform: translateY(-2px);
   }
 
   /******** Vidste du at.... blok 1 - DESKTOP ******/
@@ -1193,9 +1214,8 @@ p {
     margin-top: 1rem;
   }
 
-  .knap_pil:hover{
-      transform: translateY(-2px);
-
+  .knap_pil:hover {
+    transform: translateY(-2px);
   }
 
   .points_card {
