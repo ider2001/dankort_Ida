@@ -79,7 +79,7 @@
   background-color: #a0141b;
 }
 
-#formindex input{
+#formindex input {
   margin-bottom: 1rem;
   background-color: whitesmoke;
   border-radius: 35px;
@@ -132,7 +132,6 @@
   background-color: #a5b764;
   border-radius: 35px;
   transform: translateY(-2px);
-
 }
 
 .app-download-popup-overlay {
@@ -258,7 +257,7 @@
 /*** kanppen der trigger popup style ***/
 .trigger-btn {
   padding: 12px 24px;
-  background-color: rgba(105, 123, 54, 1);
+  background-color: #74a4bc;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -268,7 +267,7 @@
 }
 
 .trigger-btn:hover {
-  background-color: rgba(105, 123, 54, 1);
+  background-color: #3f6e8a;
   transform: translateY(-2px);
 }
 
