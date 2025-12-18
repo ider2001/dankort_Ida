@@ -1,192 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Min Profil</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/popupstyle.css" />
-  </head>
 
-  <body>
-    <header>
-      <div>
-        <a href="index.html"
-          ><img class="logo" src="img/dankort.svg" alt="logo"
-        /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Min Profil</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/popupstyle.css" />
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="index.html"><img class="logo" src="img/dankort.svg" alt="logo" /></a>
+    </div>
+
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="index.html">Dankort+</a></li>
+        <li><a href="din_profil.html">Min profil</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="pointshop.html">Pointshop</a></li>
+        <li><a href="dankort.html">Dankort</a></li>
+      </ul>
+
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="grid_1-1desk">
+      <div class="felx_container">
+        <h1 class="flex-item">Min Profil</h1>
+      </div>
+      <h1 class="h1top">Godaften 'navn'</h1>
+    </div>
+
+    <section class="grid_1-1-1desk">
+      <div class="points_container">
+        <div id="dinepoints">
+          <h2>
+            Dine points: <br />
+            <span id="points"></span>
+          </h2>
+        </div>
+        <div class="dinpimg_container">
+          <img id="dinpimg" src="img/cafe_challenges.webp" alt="mad" />
+        </div>
       </div>
 
-      <nav class="navbar">
-        <ul class="menu">
-          <li><a href="index.html">Dankort+</a></li>
-          <li><a href="din_profil.html">Min profil</a></li>
-          <li><a href="challenges.html">Challenges</a></li>
-          <li><a href="pointshop.html">Pointshop</a></li>
-          <li><a href="dankort.html">Dankort</a></li>
-        </ul>
-
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="grid_1-1desk">
-        <div class="felx_container">
-          <h1 class="flex-item">MIN PROFIL</h1>
-        </div>
-        <h1 class="h1top">GODAFTEN "NAVN"</h1>
-      </div>
-
-      <section class="grid_1-1-1desk">
-        <div class="points_container">
-          <div id="dinepoints">
-            <h2>
-              Dine points: <br />
-              <span id="points"></span>
-            </h2>
-          </div>
-          <div class="dinpimg_container">
-            <img id="dinpimg" src="img/cafe_challenges.webp" alt="mad" />
-          </div>
-        </div>
-
-        <div class="udvidetform">
-          <h2>Kontooplysninger:</h2>
-          <form class="form">
+      <div class="udvidetform">
+        <h2 class="din_konto_1">Kontooplysninger:</h2>
+        <form class="form">
+          <div>
             <div class="baggrundimg">
-              <div class="pb">
-                <img src="img/profil.svg" alt="profilbilledeeksempel" />
-              </div>
+              <img class="pb" src="img/profil.svg" alt="profilbilledeeksempel" />
             </div>
-
-            <div class="form_container">
-              <label> Navn </label>
-              <input class="inputfelt" type="text" placeholder="Navn" />
-              <label> Efternavn </label>
-              <input class="inputfelt" type="text" placeholder="Efternavn" />
-            </div>
-            <div class="form_container2">
-              <label> E-mail </label>
-              <input class="inputfelt" type="text" placeholder="E-mail" />
-              <label> Telefon </label>
-              <input class="inputfelt" type="text" placeholder="Telefon" />
-              <label> Adresse </label>
-              <input class="inputfelt" type="text" placeholder="Adresse" />
-            </div>
-          </form>
-        </div>
-
-        <div>
-          <img class="vedvandet" src="img/vedvandet.svg" alt="vedvandet" />
-        </div>
-
-        <div class="din_profil_grid_1-1">
-          <div class="rødkasse">
-            <h2>
-              Antal challenges gennemført i alt: <span id="completed"> </span>
-            </h2>
           </div>
-          <div class="grønkasse">
-            <h2>Igangværende challenges: <span id="ongoing"></span></h2>
+          <h2 class="din_konto_2">Kontooplysninger:</h2>
+          <div class="form_container">
+            <label> Navn </label>
+            <input class="inputfelt" type="text" placeholder="'Navn'" />
+            <label> Efternavn </label>
+            <input class="inputfelt" type="text" placeholder="'Efternavn'" />
           </div>
+          <div class="form_container2">
+            <label> E-mail </label>
+            <input class="inputfelt" type="text" placeholder="'E-mail'" />
+            <label> Telefon </label>
+            <input class="inputfelt" type="text" placeholder="'Telefon'" />
+            <label> Adresse </label>
+            <input class="inputfelt" type="text" placeholder="'Adresse'" />
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <img class="vedvandet" src="img/vedvandet.svg" alt="vedvandet" />
+      </div>
+
+      <div class="din_profil_grid_1-1">
+        <div class="rødkasse">
+          <h2>
+            Antal challenges gennemført i alt: <span id="completed"> </span>
+          </h2>
         </div>
+        <div class="grønkasse">
+          <h2>Igangværende challenges: <span id="ongoing"></span></h2>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="nu_challenges_h1_dinprofil">Her kan du bruge dine points:</h1>
+    <section class="belonninger_container">
+      <section id="filters">
+        <button class="filter_knap" data-kategori="All">All</button>
+        <button class="filter_knap" data-kategori="Gavekort">Gavekort</button>
+        <button class="filter_knap" data-kategori="Årskort">Årskort</button>
+        <button class="filter_knap" data-kategori="Oplevelser">
+          Oplevelser
+        </button>
+        <button class="filter_knap" data-kategori="Restauranter og cafeer">
+          Restauranter og cafeer
+        </button>
       </section>
+    </section>
+    <div id="belonning_container" class="belonning_container"></div>
 
-      <h1 class="nu_challenges_h1_dinprofil">Her kan du bruge dine points:</h1>
-      <section class="belonninger_container">
-        <section id="filters">
-          <button class="filter_knap" data-kategori="All">All</button>
-          <button class="filter_knap" data-kategori="Gavekort">Gavekort</button>
-          <button class="filter_knap" data-kategori="Årskort">Årskort</button>
-          <button class="filter_knap" data-kategori="Oplevelser">
-            Oplevelser
-          </button>
-          <button class="filter_knap" data-kategori="Restauranter og cafeer">
-            Restauranter og cafeer
-          </button>
-        </section>
-      </section>
-      <div id="belonning_container" class="belonning_container"></div>
-
-      <!-- Popup markup -->
-      <input type="checkbox" id="offer-toggle" class="hidden-checkbox" />
-      <div class="popup-overlay" id="popup-overlay">
-        <div class="popup-content">
-          <button type="button" class="close-btn" id="close-btn">
-            &times;
-          </button>
-          <h2 id="popup-title">Titel kommer her</h2>
-          <p id="popup-description">Beskrivelse kommer her</p>
-          <button type="button" class="cta-btn">Claim offer now</button>
-        </div>
+    <!-- Popup markup -->
+    <input type="checkbox" id="offer-toggle" class="hidden-checkbox" />
+    <div class="popup-overlay" id="popup-overlay">
+      <div class="popup-content">
+        <button type="button" class="close-btn" id="close-btn">
+          &times;
+        </button>
+        <h2 id="popup-title">Titel kommer her</h2>
+        <p id="popup-description">Beskrivelse kommer her</p>
+        <button type="button" class="cta-btn">Claim offer now</button>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer>
-      <div class="footer_card">
-        <div>
-          <h3>Dankort</h3>
-          <ul>
-            <li>
-              <p>Om dankort</p>
-            </li>
-            <li>
-              <p>Presse</p>
-            </li>
-            <li>
-              <p>Logo og billeder</p>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Support</h3>
-          <ul>
-            <li>
-              <p>Kontakt salg</p>
-            </li>
-            <li>
-              <p>Kontakt kundeservice</p>
-            </li>
-            <li>
-              <p>Support erhverv</p>
-            </li>
-            <li>
-              <p>Support privat</p>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Politikker</h3>
-          <ul>
-            <li>
-              <p>Privatlivspolitik</p>
-            </li>
-            <li>
-              <p>Cookies</p>
-            </li>
-            <li>
-              <p>AEE regulativ</p>
-            </li>
-          </ul>
-        </div>
+  <footer>
+    <div class="footer_card">
+      <div>
+        <h3>Dankort</h3>
+        <ul>
+          <li>
+            <p>Om dankort</p>
+          </li>
+          <li>
+            <p>Presse</p>
+          </li>
+          <li>
+            <p>Logo og billeder</p>
+          </li>
+        </ul>
       </div>
-
-      <div class="footer_card2">
-        <img src="img/dankort.svg" alt="logo" />
-        <h1>
-          Når vi handler <br />
-          sammen
-        </h1>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li>
+            <p>Kontakt salg</p>
+          </li>
+          <li>
+            <p>Kontakt kundeservice</p>
+          </li>
+          <li>
+            <p>Support erhverv</p>
+          </li>
+          <li>
+            <p>Support privat</p>
+          </li>
+        </ul>
       </div>
-    </footer>
+      <div>
+        <h3>Politikker</h3>
+        <ul>
+          <li>
+            <p>Privatlivspolitik</p>
+          </li>
+          <li>
+            <p>Cookies</p>
+          </li>
+          <li>
+            <p>AEE regulativ</p>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    <script src="js/menu.js"></script>
-    <script src="js/dinprofil.js"></script>
-    <script type="module" src="js/pointshop_dinprofil.js"></script>
-  </body>
+    <div class="footer_card2">
+      <img src="img/dankort.svg" alt="logo" />
+      <h1>
+        Når vi handler <br />
+        sammen
+      </h1>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/dinprofil.js"></script>
+  <script type="module" src="js/pointshop_dinprofil.js"></script>
+</body>
+
 </html>
