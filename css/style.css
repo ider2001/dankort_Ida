@@ -464,14 +464,11 @@ p {
     background-color: rgba(186, 209, 223, 1);
     padding: 50px 30px;
     border-radius: 35px;
-        transition: transform 0.3s ease;
-    
-}
-.mærker:hover {
-    transform: scale(1.05);
-
+    transition: transform 0.3s ease;
   }
-  
+  .mærker:hover {
+    transform: scale(1.05);
+  }
 
   .pointsbanner {
     background-color: rgba(247, 248, 237, 1);
@@ -600,12 +597,7 @@ p {
     min-height: 600px;
     padding: 1rem;
     border-radius: 50px;
-    background: linear-gradient(
-        180deg,
-        rgba(217, 224, 182, 1),
-        rgba(217, 224, 182, 1)
-      ),
-      var(--card-bg);
+    background: linear-gradient(180deg, rgba(217, 224, 182, 1), rgba(217, 224, 182, 1)), var(--card-bg);
     border: 1px solid rgba(217, 224, 182, 1);
     box-shadow: 0 10px 30px rgba(217, 224, 182, 1);
     transition: transform 250ms ease, opacity 250ms ease, box-shadow 250ms ease;
@@ -759,7 +751,8 @@ p {
     padding: 10px;
     font-size: 1.2rem;
     border: 0px;
-    background-color: #f7f8ed;
+    border-color: #697b36;
+    background-color: #697b36;
     font-family: raleway, sans-serif;
   }
 
@@ -1139,7 +1132,7 @@ p {
   .hentsomapp h2 {
     font-size: 2rem;
     margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .bold {
@@ -1170,7 +1163,7 @@ p {
     font-size: 1.5rem;
     border-radius: 4rem;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 2rem;
   }
   /************** alt om points sektion - DESKTOP **************/
 
@@ -1425,7 +1418,6 @@ p {
     background-color: rgba(186, 209, 223, 1);
     padding: 100px 60px;
     border-radius: 35px;
-    
   }
 
   .pointsbanner {
@@ -1494,12 +1486,7 @@ p {
   }
 
   .card {
-    background: linear-gradient(
-        180deg,
-        rgba(217, 224, 182, 1),
-        rgba(217, 224, 182, 1)
-      ),
-      var(--card-bg);
+    background: linear-gradient(180deg, rgba(217, 224, 182, 1), rgba(217, 224, 182, 1)), var(--card-bg);
     border: 1px solid rgba(217, 224, 182, 1);
     border-radius: 16px;
     padding: 1rem;
@@ -1632,11 +1619,9 @@ p {
     padding: 50px 30px;
     border-radius: 35px;
     transition: transform 0.3s ease;
-    
-}
-.mærker:hover {
+  }
+  .mærker:hover {
     transform: scale(1.05);
-
   }
 
   .pointsbanner {
@@ -1694,13 +1679,13 @@ p {
   }
 
   .flex-item {
-    font-size: 3rem;
-    margin: 0px 0px 40px 0px;
+    font-size: 44px;
+    margin: 29px 11px -57px 20px;
   }
 
   .h1top {
-    font-size: 2rem;
-    margin: 0px 0px 0px 10px;
+    font-size: 44px;
+    margin: 0px 0px 0px 44px;
   }
 
   /********** grid bokse top - DESKTOP ***********/
@@ -1736,6 +1721,7 @@ p {
     gap: 30px;
     width: 100%;
     grid-column: 1 / 3;
+    margin-bottom: -6.5rem;
   }
   /********** styling bokse top - DESKTOP ***********/
   #dinepoints {
@@ -1743,12 +1729,13 @@ p {
     grid-column: 1;
     background-color: #96ac4e;
     border-radius: 35px;
-    padding: 20px;
+    padding: 32px;
     grid-column: 1;
     width: 100%;
     margin-left: 1rem;
     object-fit: cover; /* fylder containeren, bevarer proportioner */
     object-position: center; /* beskærer lige meget top og bund */
+    height: 68%;
   }
 
   #dinepoints h2 {
@@ -1777,8 +1764,6 @@ p {
   }
 
   #dinpimg {
-    width: 100%;
-    height: 100%;
     object-fit: cover; /* fylder containeren, bevarer proportioner */
     object-position: center; /* beskærer lige meget top og bund */
     border-radius: 35px;
@@ -1787,15 +1772,26 @@ p {
   form {
     background-color: rgba(217, 224, 182, 1);
     border-radius: 50px;
-    margin: 10px 10px 10px 10px;
-    padding: 20px;
+    margin: 10px 35px 10px 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .din_konto_1 {
+    display: none;
+  }
+  .din_konto_2 {
+    font-size: xx-large;
   }
 
   .inputfelt {
     padding: 10px;
     font-size: 1.2rem;
-    border: 0px;
-    background-color: #f7f8ed;
+    border: 2px;
+    background-color: rgba(217, 224, 182, 1);
+    border-color: #697b36;
+    border-style: solid;
     font-family: raleway, sans-serif;
   }
 
@@ -1806,16 +1802,23 @@ p {
 
   .pb img {
     border-radius: 35px;
-    max-width: 180px;
+    max-width: 200px;
   }
   .baggrundimg {
     background-color: #697b36;
+    border-radius: 135px;
+    width: 40%;
+    height: 10%;
+    margin-left: 6.5rem;
   }
 
   .vedvandet {
     border-radius: 35px;
     width: 98%;
+    height: 98%;
+    object-fit: cover;
     margin-left: 1rem;
+    margin-top: 0.3rem;
   }
 
   .rødkasse {
@@ -1824,7 +1827,7 @@ p {
     margin-left: 1rem;
     object-fit: cover; /* fylder containeren, bevarer proportioner */
     object-position: center; /* beskærer lige meget top og bund */
-    padding: 20px;
+    padding: 9px;
   }
 
   .rødkasse h2 {
@@ -1841,7 +1844,8 @@ p {
     margin-left: 1rem;
     object-fit: cover; /* fylder containeren, bevarer proportioner */
     object-position: center; /* beskærer lige meget top og bund */
-    padding: 20px;
+    padding: 6px;
+    padding-left: 10px;
   }
 
   .grønkasse h2 {
@@ -1859,7 +1863,7 @@ p {
   #dinpimg {
     border-radius: 35px;
     max-width: 100%; /* så det ikke sprænger containeren */
-    height: auto;
+    height: 71%;
   }
 
   .dinpimg_container {
@@ -1995,91 +1999,43 @@ p {
     grid-row: 3/4;
   }
 }
-  .disabled {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.3); /* gør kortet “mørkere” */
-  }
+.disabled {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3); /* gør kortet “mørkere” */
+}
 
-  .disabled::after {
-    content: "Ikke nok points";
-    font-family: "Raleway", sans-serif;
-    background-color: rgba(230, 29, 39, 1);
-    border-bottom-right-radius: 2rem;
-    border-top-right-radius: 2rem;
-    padding: 6px 10px;
-    width: 35%;
+.disabled::after {
+  content: "Ikke nok points";
+  font-family: "Raleway", sans-serif;
+  background-color: rgba(230, 29, 39, 1);
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 6px 10px;
+  width: 35%;
 
-    position: absolute; /* placér mærkatet absolut */
-    top: 70px;
-    left: 0rem;
-    z-index: 1;
-  }
+  position: absolute; /* placér mærkatet absolut */
+  top: 70px;
+  left: 0rem;
+  z-index: 1;
+}
 
-  .kobnu_knap {
-    background-color: rgba(150, 172, 78, 1);
-    color: rgba(247, 247, 247, 1);
-    border: none;
-    padding: 7px 14px;
-    font-family: "Raleway", sans-serif;
-    font-weight: normal;
-    font-size: 1rem;
-    border-radius: 4rem;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 1rem;
-  }
+.kobnu_knap {
+  background-color: rgba(150, 172, 78, 1);
+  color: rgba(247, 247, 247, 1);
+  border: none;
+  padding: 7px 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+}
 
-  .kobnu_knap[disabled] {
-    background-color: #ccc;
-    color: #666;
-    cursor: not-allowed;
-    opacity: 0.7;
-  }
-
-  /*********** footer - DESKTOP ***********/
-
- /* .footer_card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgba(217, 217, 217, 1);
-    border-radius: 2rem;
-    padding: 30px 60px;
-    width: 100%;
-    height: 100%;
-  }
-  .footer_card h3 {
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 4rem;
-    margin-left: 3rem;
-  }
-
-  .footer_card p {
-    line-height: 3rem;
-  }
-  .footer_card li {
-    margin-left: 3rem;
-  }
-  .footer_card p:hover {
-    text-decoration: underline;
-  }
-
-  .footer_card2 {
-    grid-column: 2;
-    background-color: rgba(226, 30, 39, 1);
-    border-radius: 2rem;
-    padding: 40px 60px;
-    height: 100%;
-    width: 80%;
-  }
-
-  .footer_card2 h1 {
-    color: rgba(247, 247, 247, 1);
-    padding-top: 9rem;
-    font-size: xx-large;
-  }
-
-  .footer_card2 img {
-    width: 35%;
-  }
-
+.kobnu_knap[disabled] {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
