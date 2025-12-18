@@ -21,12 +21,11 @@
   border-radius: 35px;
   cursor: pointer;
   font-size: 16px;
-  transition: all 0.3s ease;
 }
 
 .trigger-btn2:hover {
   background-color: #d50015;
-  transform: translateY(-2px);
+  margin-left: 2rem;
 }
 
 /*** popuo desktop formatet style ***/

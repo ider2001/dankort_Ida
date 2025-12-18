@@ -79,12 +79,23 @@
         <button class="nav-btn next" aria-label="Næste">&#8594;</button>
       </div>
 
+      <!-- Popup markup -->
+      <input type="checkbox" id="offer-toggle1" class="hidden-checkbox1" />
+      <div class="popup-overlay1" id="popup-overlay1">
+        <div class="popup-content1">
+          <button type="button" class="close-btn1" id="close-btn1">
+            &times;
+          </button>
+          <h2 id="popup-title1">Titel kommer her</h2>
+          <p id="popup-description1">Beskrivelse kommer her</p>
+          <button type="button" class="cta-btn1">Bekræft tilmelding</button>
+        </div>
+      </div>
+
       <h1 class="sam_h1">SAMARBEJDSPARTNERE</h1>
       <section id="samarbejdspartnere_container"></section>
       <h4 class="flere_p_vej">Flere partnere på vej</h4>
     </main>
-       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
     <footer>
       <div class="footer_card">
         <div>
@@ -123,8 +134,6 @@
       </div>
     </footer>
     <script src="js/menu.js"></script>
-    <script src="js/tilbagetiltop.js"></script>
-
     <script type="module" src="js/challenges.js"></script>
     <script type="module" src="js/carousel.js"></script>
     <script type="module" src="js/samarbejdspartnere.js"></script>
