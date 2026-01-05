@@ -317,7 +317,6 @@ p {
     margin-bottom: -10rem;
   }
 
-
   video {
     width: 80%;
     height: 60%;
@@ -595,7 +594,7 @@ p {
     padding: 10px;
     font-family: "Raleway", sans-serif;
     margin-left: 2rem;
-}
+  }
 
   /************************************************* Challenges - MOBIL ************************************************/
 
@@ -694,7 +693,11 @@ p {
     min-height: 600px;
     padding: 1rem;
     border-radius: 50px;
-    background: linear-gradient(180deg, rgba(116, 164, 188, 1), rgba(116, 164, 188, 1));
+    background: linear-gradient(
+      180deg,
+      rgba(116, 164, 188, 1),
+      rgba(116, 164, 188, 1)
+    );
     border: 1px solid rgba(116, 164, 188, 1);
     box-shadow: 0 10px 30px rgba(116, 164, 188, 1);
     transition: transform 250ms ease, opacity 250ms ease, box-shadow 250ms ease;
@@ -815,7 +818,7 @@ p {
     font-family: "Raleway", sans-serif;
   }
 
-  .h1top{
+  .h1top {
     font-size: 30px;
     font-weight: 300;
     margin-left: 1rem;
@@ -864,7 +867,7 @@ p {
   }
 
   .inputfelt {
-   padding: 8px;
+    padding: 8px;
     font-size: 1.2rem;
     border: 2px;
     background-color: rgba(217, 224, 182, 1);
@@ -872,7 +875,6 @@ p {
     border-style: solid;
     font-family: "Raleway", sans-serif;
   }
-
 
   label {
     font-family: ralway, sans-serif;
@@ -923,7 +925,7 @@ p {
     font-size: 1.3rem;
   }
 
-  .din_konto_2{
+  .din_konto_2 {
     display: none;
   }
 
@@ -981,7 +983,7 @@ p {
     z-index: 1;
   }
 
-   .nu_challenges_h1_dinprofil {
+  .nu_challenges_h1_dinprofil {
     margin-left: 2rem;
     margin-top: 2rem;
   }
@@ -1007,12 +1009,12 @@ p {
     opacity: 0.7;
   }
 
-   .points_container {
+  .points_container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* venstre og højre */
     gap: 10px;
     margin-bottom: -5rem;
-   }
+  }
   /******************************************* footer - MOBIL ************************************************/
 
   .footer_card {
@@ -1026,7 +1028,6 @@ p {
   .footer_card h3 {
     font-weight: bold;
     margin-top: 40px;
-    
   }
 
   .footer_card p {
@@ -1056,23 +1057,23 @@ p {
     width: 22%;
   }
 
-  footer{
+  footer {
     padding-bottom: 2rem;
   }
 
   .disabled::after {
-  content: "Ikke nok points";
-  font-family: "Raleway", sans-serif;
-  background-color: rgba(230, 29, 39, 1);
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
-  padding: 6px 10px;
-     width: 58%;
+    content: "Ikke nok points";
+    font-family: "Raleway", sans-serif;
+    background-color: rgba(230, 29, 39, 1);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 6px 10px;
+    width: 58%;
     position: absolute;
     top: 71px;
-  left: 0rem;
-  z-index: 1;
-}
+    left: 0rem;
+    z-index: 1;
+  }
 
   /********** tilbage til top knap - DESKTOP ***********/
 
@@ -1270,7 +1271,7 @@ p {
     height: 100vh; /* fylder hele skærmhøjden */
   }
 
-  .video_container{
+  .video_container {
     position: relative;
     display: inline-block;
   }
@@ -1298,10 +1299,13 @@ p {
   /************** hent som app - DESKTOP **************/
   .hentsomapp {
     background-color: rgba(207, 222, 232, 1);
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 2;
+    border-radius: 50px;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .app_img {
     display: none;
@@ -1701,7 +1705,11 @@ p {
   }
 
   .card {
-    background: linear-gradient(180deg, rgba(116, 164, 188, 1), rgba(116, 164, 188, 1));
+    background: linear-gradient(
+      180deg,
+      rgba(116, 164, 188, 1),
+      rgba(116, 164, 188, 1)
+    );
     border: 1px solid rgba(116, 164, 188, 1);
     border-radius: 16px;
     padding: 1rem;
@@ -2025,7 +2033,6 @@ p {
     font-size: xx-large;
   }
 
-
   .inputfelt {
     padding: 10px;
     font-size: 1.2rem;
@@ -2209,23 +2216,23 @@ p {
     width: 35%;
   }
 
-footer{
+  footer {
     padding-bottom: 2rem;
   }
 
   .disabled::after {
-  content: "Ikke nok points";
-  font-family: "Raleway", sans-serif;
-  background-color: rgba(230, 29, 39, 1);
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
-  padding: 6px 10px;
-     width: 58%;
+    content: "Ikke nok points";
+    font-family: "Raleway", sans-serif;
+    background-color: rgba(230, 29, 39, 1);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 6px 10px;
+    width: 58%;
     position: absolute;
     top: 84px;
-  left: 0rem;
-  z-index: 1;
-}
+    left: 0rem;
+    z-index: 1;
+  }
 }
 
 /********** tilbage til top knap - DESKTOP ***********/
@@ -2247,7 +2254,12 @@ footer{
 }
 
 #myBtn:hover {
-  background-color: rgba(194, 19, 28, 1); /* Add a dark-grey background on hover */
+  background-color: rgba(
+    194,
+    19,
+    28,
+    1
+  ); /* Add a dark-grey background on hover */
 }
 
 @media (max-width: 1024px) {
@@ -2269,5 +2281,3 @@ footer{
   position: relative;
   background-color: rgba(0, 0, 0, 0.3); /* gør kortet “mørkere” */
 }
-
-
