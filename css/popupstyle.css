@@ -274,8 +274,7 @@
 
 .kobnu_knap:disabled {
   opacity: 0.5;
-      cursor: not-allowed;
-
+  cursor: not-allowed;
 }
 
 .trigger-btn {
@@ -406,7 +405,4 @@
   border: none;
   border-radius: 35px;
   font-family: "Raleway", sans-serif;
-}
-.belonninger_container {
-  margin-top: 2rem;
 }

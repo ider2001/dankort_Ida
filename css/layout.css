@@ -469,10 +469,6 @@ img {
     margin-left: 2rem;
   }
 
-  .nu_challenges_h1_dinprofil {
-    margin-bottom: 2rem;
-  }
-
   /****************************************** pointshop - DESKTOP *****************************************/
 
   .pointshop_site {
@@ -510,10 +506,10 @@ img {
     width: 40%;
     height: auto;
     border-radius: 2rem;
-    margin-left: 20rem;
+    margin-left: 16rem;
     z-index: 5;
     position: absolute;
-    top: 15rem;
+    top: 11rem;
     object-fit: cover;
   }
 
@@ -552,7 +548,7 @@ img {
     color: rgba(28, 42, 53, 1);
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: 2rem;
+    margin-top: 21rem;
     line-height: 3rem;
   }
 
