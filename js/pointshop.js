@@ -1,11 +1,18 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const supabase = createClient("https://ybukjrunegrgimscoahw.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlidWtqcnVuZWdyZ2ltc2NvYWh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUyNTczNDQsImV4cCI6MjA4MDgzMzM0NH0.C2NLegMt6TZTCaZfxDl3_Ww73uCNJLqYWhRB2w76mKA");
+const supabase = createClient(
+  "https://ybukjrunegrgimscoahw.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlidWtqcnVuZWdyZ2ltc2NvYWh3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjUyNTczNDQsImV4cCI6MjA4MDgzMzM0NH0.C2NLegMt6TZTCaZfxDl3_Ww73uCNJLqYWhRB2w76mKA"
+);
 
 const container = document.getElementById("belonning_container");
 
 let allData = []; // her gemmer vi alle belønninger
 let currentDataSet = []; // her gemmer vi det udsnit, der skal vises
+
+// Antal points som brugeren har
+const userPoints = Math.floor(Math.random() * (680 - 50 + 1)) + 50;
+document.getElementById("points").textContent = userPoints;
 
 async function getData() {
   //Henter data fra SupaBase
@@ -28,7 +35,9 @@ async function getData() {
 getData();
 
 // Tilføj event listeners til knapper
-document.querySelectorAll("button").forEach((knap) => knap.addEventListener("click", showFiltered));
+document
+  .querySelectorAll("button")
+  .forEach((knap) => knap.addEventListener("click", showFiltered));
 
 // Filtreringsfunktion
 function showFiltered(event) {
@@ -43,91 +52,65 @@ function showFiltered(event) {
   showData(currentDataSet);
 }
 
-// Viser data i DOM
-function showData(data) {
-  container.innerHTML = ""; // ryd containeren først
-  data.forEach((id) => {
+function showData(dataset) {
+  const sorted = [...dataset].sort(
+    (a, b) => (a.Pointpris ?? 0) - (b.Pointpris ?? 0)
+  );
+
+  container.innerHTML = "";
+  sorted.forEach((item) => {
+    const price = item.Pointpris ?? 0;
+    const disabledClass = price > userPoints ? "disabled" : "";
+    const disabledAttr = price > userPoints ? "disabled" : "";
+
     container.innerHTML += `
-      <article class="mærker"> 
-        <div class="${id.Pointpris ? "pointpris" : ""}">
-          <div class="pointsbanner">
-            ${id.Pointpris ? `<h3 class="point">${id.Pointpris} points</h3>` : ""}
-          </div>
+      <article class="mærker item ${disabledClass}" data-price="${price}"> 
+        <div class="pointsbanner">
+          <h3 class="point">${price} points</h3>
         </div>
         <div class="tekstblok">
-          <h2>${id.Titel}</h2>
-          <h4>${id.Beskrivelse}</h4>
+          <h2>${item.Titel ?? ""}</h2>
+          <h4>${item.Beskrivelse ?? ""}</h4>
+          <button 
+            class="kobnu_knap" 
+            ${disabledAttr}
+            data-title="${item.Titel ?? ""}" 
+            data-description="${item.Beskrivelse ?? ""}"
+            data-price="${price}">
+            KØB NU
+          </button>
         </div>  
       </article>
     `;
   });
 }
 
-// document.querySelector("#filters").addEventListener("click", showFiltered);
-//document.querySelectorAll("button").forEach((knap) => knap.addEventListener("click", showFiltered));
+// --- Popup ÅBN: via knapper genereret i innerHTML ---
+container.addEventListener("click", (e) => {
+  const btn = e.target.closest(".kobnu_knap");
+  if (!btn) return;
+  if (btn.disabled) return;
 
-// function showFiltered(event) {
-//   //console.log(event.target);
-//   const kategori = event.target.dataset.kategori;
-//   if (kategori == "All") {
-//     currentDataSet = allData;
-//   } else {
-//     const udsnit = allData.filter((id) => id.Kategori == kategori);
-//     currentDataSet = udsnit;
-//   }
-//   showCategory(currentDataSet);
-// }
-// function showFiltered() {
-//this: refererer til den knap (button) som der er klikket på
-//dataset: Indbygget dom-element som samler alle attributer der starter med data-, i et objekt.
-// const filter = this.dataset.kategori;
-// if (filter == "All") {
-//   showCategory(getData);
-// } else {
-//   const rewards = getData.filter((item) => item.Kategori == filter);
-//   getData(rewards);
-// }
-//}
-// let getData;
+  // Hent tekst fra knappen
+  const title = btn.dataset.title || "Titel";
+  const description = btn.dataset.description || "";
 
-// let allData, currentDataSet;
+  // Sæt tekst ind i popup
+  document.getElementById("popup-title").textContent = title;
+  document.getElementById("popup-description").textContent = description;
 
-// function showData(data) {
-//   data.forEach((id) => {
-//     belonning_container.innerHTML += `
-//       <article class = "mærker">
-//         <div class ="${id.Pointpris ? "pointpris" : ""}">
-//       <div class = "pointsbanner">
-//       ${id.Pointpris ? `<h3 class="point">${id.Pointpris} points</h3>` : ""}
-//          </div>
+  // Åbn popup
+  document.getElementById("offer-toggle").checked = true;
+});
 
-//   </div>
-//   <div class = "tekstblok">
-//         <h2 class="id">${id.Titel}</h2>
-//         <h4>${id.Beskrivelse}</h4>
-//       </div>
-//         </article>
+// --- Popup LUK: via kryds-knap ---
+document.getElementById("close-btn").addEventListener("click", () => {
+  document.getElementById("offer-toggle").checked = false;
+});
 
-//     `;
-//   });
-// }
-
-// function showCategory(Kategori) {
-//   belonninger_container.innerHTML = "";
-//   data.forEach((id) => {
-//     belonning_container.innerHTML += `
-//       <article class = "mærker">
-//         <div class ="${id.Pointpris ? "pointpris" : ""}">
-//       <div class = "pointsbanner">
-//       ${id.Pointpris ? `<h3 class="point">${id.Pointpris} points</h3>` : ""}
-//          </div>
-
-//   </div>
-//   <div class = "tekstblok">
-//         <h2>${id.Titel}</h2>
-//         <h4>${id.Beskrivelse}</h4>
-//       </div>
-//         </article>
-// `;
-//   });
-// }
+// --- Popup LUK: klik på overlay udenfor indholdet ---
+document.getElementById("popup-overlay").addEventListener("click", (e) => {
+  if (e.target.id === "popup-overlay") {
+    document.getElementById("offer-toggle").checked = false;
+  }
+});
