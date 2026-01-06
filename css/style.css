@@ -1195,107 +1195,6 @@ p {
     background-color: #d50015;
   }
 
-  /******** Vidste du at.... blok 1 - DESKTOP ******/
-  .faktablok1 {
-    background-color: rgba(207, 222, 232, 1);
-  }
-
-  .faktablok {
-    text-align: center;
-    background-color: #dbe6f0;
-    padding-top: 2rem;
-  }
-
-  .faktablok p {
-    font-size: 1.8rem;
-    color: rgba(247, 247, 247, 1);
-  }
-
-  .faktablok h1 {
-    font-size: 3rem;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  .fakta-item {
-    width: 250px;
-    padding: 1rem;
-    border-radius: 50px 50px 0 0; /* Runder toppen */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .faktablok {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .fakta-item .tal {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-
-  .grøn {
-    background-color: rgba(150, 172, 78, 1);
-    height: 75%;
-    margin-top: 100px;
-  }
-  .blå {
-    background-color: rgba(63, 110, 138, 1);
-    height: 90%;
-    margin-top: 40px;
-  }
-  .rød {
-    background-color: rgba(213, 0, 21, 1);
-    height: 63%;
-    margin-top: 148px;
-  }
-  .lyseblå {
-    background-color: rgba(116, 164, 188, 1);
-    height: 78%;
-    margin-top: 88px;
-  }
-
-  /********** video - DESKTOP **********/
-  .video-wrapper {
-    display: flex;
-    justify-content: center; /* vandret centrering */
-    align-items: center; /* lodret centrering */
-    height: 100vh; /* fylder hele skærmhøjden */
-  }
-
-  .video_container {
-    position: relative;
-    display: inline-block;
-  }
-
-  video {
-    width: 70%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 35px;
-    margin-top: -5rem;
-  }
-
-  .videoh1 {
-    position: absolute; /* placerer ovenpå videoen */
-    background-color: white;
-    padding-left: 20px;
-    border-bottom-right-radius: 35px;
-    width: 475px;
-    margin-left: 13rem;
-    top: 3rem;
-    z-index: 10;
-    font-size: 44px;
-  }
-
   /************** hent som app - DESKTOP **************/
   .hentsomapp {
     background-color: rgba(207, 222, 232, 1);
@@ -1414,12 +1313,18 @@ p {
     border-radius: 2rem;
   }
   .points_card_grid h1 {
-    font-size: 2rem;
+    font-size: 20px;
     margin-bottom: 0.5rem;
   }
   .points_card p {
     font-family: "Raleway", sans-serif;
-    font-size: 1.2rem;
+    font-size: 16px;
+  }
+
+  #altompoints {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 4rem;
   }
 
   .belonning_container {
@@ -1463,40 +1368,104 @@ p {
     font-weight: normal;
   }
 
-  /*********** Vidste du at... blok 2 - DESKTOP ***********/
-  .fakta-item1 {
+  /****************** HVORFOR DANKORT PLUS ********************/
+
+  .dankortplus {
+    background-color: #e1e1e1;
+    border-radius: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .dankortplus p {
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+
+  .dankortplus h2 {
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+
+  .dankortplus h1 {
+    font-size: 36px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+
+  .dankortplus ul {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  .nomaimg {
+    max-width: 100vh;
     width: 500px;
-    padding: 1rem;
-    border-radius: 50px 50px 0 0; /* Runder toppen */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    border-radius: 50px;
+  }
+  .hvorfordk {
+    background-color: #cfdee8;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
   }
 
-  .fakta-item p {
-    color: rgba(247, 247, 247, 1);
+  .hvorfordk h1 {
+    font-size: 36px;
+    padding-bottom: 30px;
   }
 
-  .grøn1 {
-    background-color: rgba(150, 172, 78, 1);
-    height: 75.5%;
-    margin-top: 100px;
+  .hvorfordk ul {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
   }
-  .blå1 {
-    background-color: rgba(63, 110, 138, 1);
-    height: 90%;
-    margin-top: 40px;
+
+  .hvorfordk ul h1 {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
   }
-  .rød1 {
-    background-color: rgba(213, 0, 21, 1);
-    height: 64.5%;
-    margin-top: 148px;
+
+  .hvorfordk ul p {
+    font-weight: normal;
+    padding-bottom: 20px;
+    line-height: 30px;
   }
-  .lyseblå1 {
-    background-color: rgba(116, 164, 188, 1);
-    height: 78%;
-    margin-top: 88px;
+
+  .sodanvirkerdet {
+    background-color: #d9e0b6;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+  }
+
+  .sodanvirkerdet h1 {
+    font-size: 36px;
+    padding-bottom: 30px;
+  }
+
+  .sodanvirkerdet ol {
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
+  }
+
+  .sodanvirkerdet p {
+    font-weight: normal;
+    padding-bottom: 20px;
+    line-height: 30px;
   }
 
   /********** Vidste du CARD HOVER - DESKTOP ***********/

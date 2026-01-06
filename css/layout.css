@@ -332,6 +332,15 @@ img {
     margin-top: -3rem;
   }
 
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 6rem;
+    margin-left: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
   /***** Fakta blok1 - layout - DESKTOP *****/
 
   .fakta_grid {

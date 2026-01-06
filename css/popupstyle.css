@@ -16,7 +16,7 @@
 /*** kanppen der trigger popup style ***/
 .trigger-btn2 {
   padding: 12px 24px;
-  background-color: #e61d27;
+  background-color: rgba(150, 172, 78, 1);
   color: white;
   border-radius: 35px;
   cursor: pointer;
@@ -26,7 +26,7 @@
 }
 
 .trigger-btn2:hover {
-  background-color: #d50015;
+  background-color: #a5b764;
 }
 
 /*** popuo desktop formatet style ***/

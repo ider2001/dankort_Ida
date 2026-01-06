@@ -43,59 +43,61 @@
     </header>
 
     <main>
-      <div class="index_kampagne">
-        <div class="blok">
-          <div class="blok2">
-            <div class="blok3">
-              <h1>Dankort</h1>
-              <h3 class="plus">+</h3>
+      <section>
+        <div class="index_kampagne">
+          <div class="blok">
+            <div class="blok2">
+              <div class="blok3">
+                <h1>Dankort</h1>
+                <h3 class="plus">+</h3>
+              </div>
+              <div>
+                <h2>
+                  Optjen points. <br />Tag bevidste handlinger. <br />Brug
+                  points på oplevelser.
+                </h2>
+                <button
+                  class="kampagne_knap"
+                  onclick="document.getElementById('altompoints').scrollIntoView({ behavior: 'smooth' });"
+                >
+                  ALT OM POINTS
+                </button>
+              </div>
             </div>
-            <div>
-              <h2>
-                Optjen points. <br />Tag bevidste handlinger. <br />Brug points
-                på oplevelser.
-              </h2>
+            <img
+              class="indeximg1"
+              src="img/indeximg1.webp"
+              alt="billede af vinduer"
+            />
+          </div>
+
+          <div class="blok1">
+            <div class="order">
+              <div class="dk_tekst">
+                <h2>
+                  Opret dig som bruger her eller <br />
+                  download appen og tilmeld dig der.
+                </h2>
+              </div>
+
+              <!-- ÆNDRING: fra <a> til <button> -->
               <button
-                class="kampagne_knap"
-                onclick="document.getElementById('altompoints').scrollIntoView({ behavior: 'smooth' });"
+                class="kampagne_knap trigger-btn2"
+                id="tilmeld-btn2"
+                data-title="Tilmelding"
+                data-description="Her kan du tilmelde dig kampagnen og få adgang til dine fordele."
               >
-                ALT OM POINTS
+                TILMELD DIG HER
               </button>
             </div>
+            <img
+              class="indeximg2"
+              src="img/indeximg2.webp"
+              alt="billede af væg med citat"
+            />
           </div>
-          <img
-            class="indeximg1"
-            src="img/indeximg1.webp"
-            alt="billede af vinduer"
-          />
         </div>
-
-        <div class="blok1">
-          <div class="order">
-            <div class="dk_tekst">
-              <h2>
-                Opret dig som bruger her eller <br />
-                download appen og tilmeld dig der.
-              </h2>
-            </div>
-
-            <!-- ÆNDRING: fra <a> til <button> -->
-            <button
-              class="kampagne_knap trigger-btn2"
-              id="tilmeld-btn2"
-              data-title="Tilmelding"
-              data-description="Her kan du tilmelde dig kampagnen og få adgang til dine fordele."
-            >
-              TILMELD DIG HER
-            </button>
-          </div>
-          <img
-            class="indeximg2"
-            src="img/indeximg2.webp"
-            alt="billede af væg med citat"
-          />
-        </div>
-      </div>
+      </section>
 
       <!-- Popup markup -->
       <input type="checkbox" id="offer-toggle2" class="hidden-checkbox2" />
@@ -178,6 +180,108 @@
           </div>
         </div>
       </div>
+
+      <section class="grid_1_1">
+        <div class="dankortplus">
+          <p>
+            Dankort + hjælper dig med at holde overblik over dit forbrug og gør
+            det sjovt undervejs.Deltag i challenges, optjen points og få adgang
+            til unikke rabatter på oplevelser og det, der gør hverdagen lettere
+            og sjovere.
+          </p>
+          <h2>Udfordr dit forbrug. Bliv belønnet for det.</h2>
+          <p>
+            Målet er ikke at forbruge mere, men forbruge mindre og bruge mere
+            tid sammen. <br />
+            Download appen og bliv en del af Dankort +
+          </p>
+
+          <h1>Hvad får du af fordele?</h1>
+
+          <ul>
+            <li>Mere tid med venner og familie</li>
+            <li>Mere indblik i dit forbrug</li>
+            <li>
+              Sjove challenges du kan lave med venner og familie, eller alene.
+            </li>
+            <li>En app til at holde det hele samlet</li>
+            <li>En app til at holde det hele samlet</li>
+          </ul>
+        </div>
+
+        <div class="nomaimg">
+          <img src="img/nomaimg.svg" alt="nomaprojects" />
+        </div>
+      </section>
+
+      <section class="grid_1_1">
+        <div class="hvorfordk">
+          <h1>Hvorfor Dankort+ ?</h1>
+
+          <ul>
+            <li>
+              Fordi forbrug handler om valg
+              <p>
+                Dankort + hjælper dig med at træffe mere bevidste valg uden at
+                du skal give afkald på det, der betyder noget.
+              </p>
+            </li>
+            <li>
+              Fordi oplevelser skaber mere værdi
+              <p>
+                I stedet for flere ting giver Dankort + adgang til oplevelser og
+                tid sammen med dem, du holder af.
+              </p>
+            </li>
+            <li>
+              Fordi motivation virker bedre end begrænsning
+              <p>
+                Challenges og belønninger gør det nemmere og sjovere at holde
+                fokus på dit forbrug.
+              </p>
+            </li>
+          </ul>
+          <button
+            class="kampagne_knap trigger-btn2"
+            id="tilmeld-btn2"
+            data-title="Tilmelding"
+            data-description="Her kan du tilmelde dig kampagnen og få adgang til dine fordele."
+          >
+            TILMELD DIG HER
+          </button>
+        </div>
+
+        <div class="sodanvirkerdet">
+          <h1>Sådan virker det</h1>
+          <ol>
+            <li>
+              Download appen
+              <p>
+                Opret dig som medlem af Dankort + og få samlet dit forbrug ét
+                sted.
+              </p>
+            </li>
+            <li>
+              Deltag i challenges
+              <p>
+                Små udfordringer hjælper dig med at blive mere opmærksom på dit
+                forbrug – uden at det føles som en begrænsning.
+              </p>
+            </li>
+            <li>
+              Optjen points
+              <p>Når du gennemfører challenges, optjener du points.</p>
+            </li>
+            <li>
+              Brug dine points
+              <p>
+                Indløs points til unikke rabatter på oplevelser, dagligvarer og
+                løsninger, der gør hverdagen nemmere.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
 
       <div id="altompoints">
         <h1 class="din_profil_tekst">
