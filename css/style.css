@@ -181,78 +181,8 @@ p {
 
   .dk_tekst h2 {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-  }
-
-  /******* faktablok 1 - MOBIL ********/
-
-  .faktablok1 {
-    background-color: rgba(207, 222, 232, 1);
-  }
-
-  .faktablok {
-    text-align: center;
-    background-color: #dbe6f0;
-    padding-top: 2rem;
-  }
-
-  .faktablok h1 {
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
-  }
-
-  .fakta-item {
-    width: 125px;
-    padding: 1rem;
-    border-radius: 50px 50px 0 0; /* Runder toppen */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .faktablok {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .fakta-item .tal {
-    font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .fakta-item .tekst {
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .grøn {
-    background-color: rgba(150, 172, 78, 1);
-    height: 75%;
-    margin-top: 96px;
-  }
-  .blå {
-    background-color: rgba(63, 110, 138, 1);
-    height: 90%;
-    margin-top: 40px;
-  }
-  .rød {
-    background-color: rgba(213, 0, 21, 1);
-    height: 63%;
-    margin-top: 139px;
-  }
-  .lyseblå {
-    background-color: rgba(116, 164, 188, 1);
-    height: 78%;
-    margin-top: 86px;
+    font-size: 28px;
+    font-weight: 400;
   }
 
   /******* Hent som app - MOBIL ******/
@@ -265,13 +195,15 @@ p {
   }
   .hentsomapp h1 {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
   }
   .hentsomapp h2 {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    font-weight: 300px;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 1rem;
+    line-height: 2rem;
   }
 
   .img_container {
@@ -283,14 +215,15 @@ p {
     display: none;
   }
   .app_img {
-    width: 250%;
+    width: 170%;
     height: auto;
   }
 
-  .bold {
+  #bold {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
+    color: #21303f;
   }
 
   ul {
@@ -301,9 +234,9 @@ p {
   li {
     margin-bottom: 0.5rem;
     font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
+    font-size: 16px;
     color: rgba(33, 48, 63, 1);
-    line-height: 3rem;
+    line-height: 2rem;
   }
 
   .hentsomapp_knap {
@@ -319,46 +252,144 @@ p {
     margin-top: 10px;
   }
 
-  /****** video - MOBIL *******/
+  /****** HVORFOR DANKORT PLUS *******/
 
-  .video-wrapper {
-    display: flex;
-    justify-content: center; /* vandret centrering */
-    align-items: center; /* lodret centrering */
-    height: 100vh; /* fylder hele skærmhøjden */
-    margin-bottom: -10rem;
+  .nu_challenges_h1_3 {
+    font-size: 28px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+  .dankortplus {
+    background-color: #e1e1e1;
+    border-radius: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
-  video {
-    width: 80%;
-    height: 60%;
-    object-fit: cover;
-    border-radius: 35px;
-    margin-top: -12rem;
+  .dankortplus p {
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 30px;
   }
 
-  .videoh1 {
-    position: absolute; /* placerer ovenpå videoen */
-    background-color: white;
-    padding-left: 15px;
-    padding-bottom: 5px;
-    border-bottom-right-radius: 35px;
-    width: 200px;
-    margin-left: 3rem;
-    margin-top: 3rem;
-    z-index: 10;
-    font-size: 30px;
+  .dankortplus h2 {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 30px;
+    font-weight: bold;
+    margin-bottom: -10px;
+  }
+
+  .dankortplus h1 {
+    font-size: 28px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+
+  .dankortplus ul {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .ulhvorfordk {
+    padding-bottom: 2rem;
+  }
+
+  .nomaimg {
+    margin-top: 0px;
+    width: 93%;
+    margin-left: 1rem;
+  }
+  .hvorfordk {
+    background-color: #cfdee8;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: -10px;
+    padding-bottom: 2rem;
+  }
+
+  .hvorfordk h1 {
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+
+  .hvorfordk ul {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
+  }
+
+  .hvorfordk ul h1 {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
+  }
+
+  .hvorfordk ul p {
+    font-weight: normal;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+
+  .sodanvirkerdet {
+    background-color: #d9e0b6;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .sodanvirkerdet h1 {
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+
+  .sodanvirkerdet ol {
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
+  }
+
+  .sodanvirkerdet p {
+    font-weight: normal;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+
+  .atag {
+    font-size: 16px;
+    padding-bottom: 40px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
   }
 
   /****** Alt om points - MOBIL ******/
-  .din_profil_tekst h1 {
+  #din_profil_tekstid {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
+    line-height: 40px;
+    margin-bottom: -1rem;
+    margin-top: 4rem;
   }
   .knap_pil {
     background: white;
-
     color: red;
     padding: 0.6rem 0.8rem;
     border-radius: 999px;
@@ -371,9 +402,14 @@ p {
   .points_card {
     background-color: rgba(236, 236, 236, 1);
     border-radius: 2rem;
-    padding: 20px 40px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    padding: 10px 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .points_card_grid h1 {
+    font-size: 20px;
+    line-height: 2rem;
   }
 
   .points_img {
@@ -387,67 +423,14 @@ p {
 
   .points_card p {
     font-family: "Raleway", sans-serif;
-    font-size: 1.4rem;
+    font-size: 16px;
   }
 
   .din_profil_tekst_2 {
     display: none;
   }
 
-  /******* faktablok 2 - MOBIL ********/
-
-  .fakta-item1 {
-    width: 500px;
-    padding: 1rem;
-    border-radius: 50px 50px 0 0; /* Runder toppen */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .fakta-item p {
-    color: rgba(247, 247, 247, 1);
-  }
-
-  .fakta-item .tal {
-    font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .fakta-item .tekst {
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-  }
-
-  .grøn1 {
-    background-color: rgba(150, 172, 78, 1);
-    height: 75.5%;
-    margin-top: 98px;
-  }
-  .blå1 {
-    background-color: rgba(63, 110, 138, 1);
-    height: 90%;
-    margin-top: 40px;
-  }
-  .rød1 {
-    background-color: rgba(213, 0, 21, 1);
-    height: 64.5%;
-    margin-top: 140px;
-  }
-  .lyseblå1 {
-    background-color: rgba(116, 164, 188, 1);
-    height: 78%;
-    margin-top: 88px;
-  }
-
   /****** Vidste du CARDS - MOBIL  ******/
-
-  p {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.4rem;
-  }
 
   .section {
     width: 100%;
@@ -500,15 +483,17 @@ p {
   }
 
   .vidstedu_boks h1 {
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 5px;
+    font-family: "Raleway", sans-serif;
   }
 
   .vidstedu_boks p {
     margin: 0;
-    font-size: 30px;
+    font-size: 16px;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
   }
 
   /********************************************* Pointshop - MOBIL ***************************************************/
@@ -1032,19 +1017,23 @@ p {
   .footer_card {
     background-color: rgba(217, 217, 217, 1);
     border-radius: 2rem;
-    padding: 30px 60px;
-    margin-block: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-  }
-  .footer_card h3 {
-    font-weight: bold;
-    margin-top: 40px;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
   }
 
   .footer_card p {
-    padding: -20px;
+    font-size: 16px;
   }
+
+  .footer_card h3 {
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
   .footer_card p:hover {
     text-decoration: underline;
   }
@@ -1053,10 +1042,10 @@ p {
     background-color: rgba(226, 30, 39, 1);
     border-radius: 2rem;
     padding: 40px 60px;
-    margin-left: 2rem;
-    margin-right: 2rem;
     margin-bottom: 2rem;
     margin-top: -15px;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .footer_card2 h1 {
@@ -1067,10 +1056,6 @@ p {
 
   .footer_card2 img {
     width: 22%;
-  }
-
-  footer {
-    padding-bottom: 2rem;
   }
 
   .disabled::after {
@@ -1931,369 +1916,371 @@ p {
     font-weight: normal;
     padding: 25px;
   }
-}
 
-.min_profil_knap_margin {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
+  .min_profil_knap_margin {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 
-.min_profil_knap {
-  background-color: rgba(230, 29, 39, 1);
-  color: rgba(247, 247, 247, 1);
-  border: none;
-  padding: 12px 24px;
-  font-family: "Raleway", sans-serif;
-  font-weight: normal;
-  font-size: 1rem;
-  border-radius: 4rem;
-  cursor: pointer;
-  margin-top: 2rem;
-  text-decoration: none;
-}
-a.min_profil_knap:hover {
-  background-color: rgba(213, 0, 21, 1);
-}
-.belonninger h1 {
-  font-size: 44px;
-}
+  .min_profil_knap {
+    background-color: rgba(230, 29, 39, 1);
+    color: rgba(247, 247, 247, 1);
+    border: none;
+    padding: 12px 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    text-decoration: none;
+  }
+  a.min_profil_knap:hover {
+    background-color: rgba(213, 0, 21, 1);
+  }
+  .belonninger h1 {
+    font-size: 44px;
+  }
 
-/************************************************ Min profil - DESKTOP ************************************************/
+  /************************************************ Min profil - DESKTOP ************************************************/
 
-/********** overskrift - DESKTOP ***********/
-.grid_1-1desk {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  /********** overskrift - DESKTOP ***********/
+  .grid_1-1desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-.felx_container {
-  display: flex;
-  margin-left: 6rem;
-  margin-top: 2rem;
-}
+  .felx_container {
+    display: flex;
+    margin-left: 6rem;
+    margin-top: 2rem;
+  }
 
-.flex-item {
-  font-size: 44px;
-}
+  .flex-item {
+    font-size: 44px;
+  }
 
-.h1top {
-  font-size: 32px;
-  display: flex;
-  justify-content: end;
-  margin-top: 4rem;
-  margin-right: 10rem;
-}
+  .h1top {
+    font-size: 32px;
+    display: flex;
+    justify-content: end;
+    margin-top: 4rem;
+    margin-right: 10rem;
+  }
 
-/********** grid bokse top - DESKTOP ***********/
-.grid_1-1-1desk {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 3rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
+  /********** grid bokse top - DESKTOP ***********/
+  .grid_1-1-1desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
 
-.grid_1-1-1desk > div:nth-of-type(2) {
-  grid-column: 3/5;
-  grid-row: 1/4;
-}
+  .grid_1-1-1desk > div:nth-of-type(2) {
+    grid-column: 3/5;
+    grid-row: 1/4;
+  }
 
-.grid_1-1-1desk > div:nth-of-type(3) {
-  grid-column: 1/3;
-  grid-row: 2/3;
-}
+  .grid_1-1-1desk > div:nth-of-type(3) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
 
-.grid_1-1-1desk > .din_profil_grid_1-1:last-of-type {
-  grid-column: 1/3;
-  grid-row: 3/4;
-}
+  .grid_1-1-1desk > .din_profil_grid_1-1:last-of-type {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
 
-.points_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* venstre og højre */
-  gap: 30px;
-  width: 100%;
-  grid-column: 1 / 3;
-  margin-bottom: -6.5rem;
-}
-/********** styling bokse top - DESKTOP ***********/
-#dinepoints {
-  display: grid;
-  grid-column: 1;
-  background-color: #96ac4e;
-  border-radius: 35px;
-  padding: 32px;
-  grid-column: 1;
-  width: 100%;
-  margin-left: 1rem;
-  object-fit: cover; /* fylder containeren, bevarer proportioner */
-  object-position: center; /* beskærer lige meget top og bund */
-  height: 68%;
-}
+  .points_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* venstre og højre */
+    gap: 30px;
+    width: 100%;
+    grid-column: 1 / 3;
+    margin-bottom: -6.5rem;
+  }
+  /********** styling bokse top - DESKTOP ***********/
+  #dinepoints {
+    display: grid;
+    grid-column: 1;
+    background-color: #96ac4e;
+    border-radius: 35px;
+    padding: 32px;
+    grid-column: 1;
+    width: 100%;
+    margin-left: 1rem;
+    object-fit: cover; /* fylder containeren, bevarer proportioner */
+    object-position: center; /* beskærer lige meget top og bund */
+    height: 68%;
+  }
 
-#dinepoints h2 {
-  color: white;
-  margin: 10px 20px;
-  font-size: xxx-large;
-  font-weight: bold;
-  margin-top: 20px;
-}
+  #dinepoints h2 {
+    color: white;
+    margin: 10px 20px;
+    font-size: xxx-large;
+    font-weight: bold;
+    margin-top: 20px;
+  }
 
-.udvidetform {
-  background-color: rgba(217, 224, 182, 1);
-  border-radius: 35px;
-}
+  .udvidetform {
+    background-color: rgba(217, 224, 182, 1);
+    border-radius: 35px;
+  }
 
-.udvidetform h2 {
-  margin-left: 30px;
-  padding-top: 30px;
-}
+  .udvidetform h2 {
+    margin-left: 30px;
+    padding-top: 30px;
+  }
 
-.login {
-  text-decoration: underline;
-  color: #697b36;
-  text-align: center;
-  margin-top: 1rem;
-}
+  .login {
+    text-decoration: underline;
+    color: #697b36;
+    text-align: center;
+    margin-top: 1rem;
+  }
 
-.h1_minprofil {
-  margin-left: 6rem;
-  margin-bottom: 2rem;
-}
+  .h1_minprofil {
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+  }
 
-.h1_minprofil p {
-  margin-top: 1rem;
-}
+  .h1_minprofil p {
+    margin-top: 1rem;
+  }
 
-/***** styling img bokse - DESKTOP *******/
-.dinpimg_container {
-  width: 100%; /* fylder hele bredden */
-  height: 300px; /* den højde du ønsker */
-  overflow: hidden;
-  flex: 2;
-}
+  /***** styling img bokse - DESKTOP *******/
+  .dinpimg_container {
+    width: 100%; /* fylder hele bredden */
+    height: 300px; /* den højde du ønsker */
+    overflow: hidden;
+    flex: 2;
+  }
 
-#dinpimg {
-  object-fit: cover; /* fylder containeren, bevarer proportioner */
-  object-position: center; /* beskærer lige meget top og bund */
-  border-radius: 35px;
-}
+  #dinpimg {
+    object-fit: cover; /* fylder containeren, bevarer proportioner */
+    object-position: center; /* beskærer lige meget top og bund */
+    border-radius: 35px;
+  }
 
-form {
-  background-color: rgba(217, 224, 182, 1);
-  border-radius: 50px;
-  margin: 10px 35px 10px 10px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+  form {
+    background-color: rgba(217, 224, 182, 1);
+    border-radius: 50px;
+    margin: 10px 35px 10px 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-.din_konto_1 {
-  display: none;
-}
-.din_konto_2 {
-  font-size: xx-large;
-}
+  .din_konto_1 {
+    display: none;
+  }
+  .din_konto_2 {
+    font-size: xx-large;
+  }
 
-.inputfelt {
-  padding: 10px;
-  font-size: 1.2rem;
-  border: 2px;
-  background-color: rgba(217, 224, 182, 1);
-  border-color: #697b36;
-  border-style: solid;
-  font-family: "Raleway", sans-serif;
-}
+  .inputfelt {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px;
+    background-color: rgb(232, 235, 216);
+    border-color: #697b36;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    font-family: "Raleway", sans-serif;
+    margin-top: 1rem;
+  }
 
-label {
-  font-family: ralway, sans-serif;
-  color: #3b4225;
-}
+  label {
+    font-family: ralway, sans-serif;
+    color: #3b4225;
+  }
 
-.pb img {
-  border-radius: 35px;
-  max-width: 200px;
-}
-.baggrundimg {
-  background-color: #697b36;
-  border-radius: 135px;
-  width: 40%;
-  height: 10%;
-  margin-left: 6.5rem;
-}
+  .pb img {
+    border-radius: 35px;
+    max-width: 200px;
+  }
+  .baggrundimg {
+    background-color: #697b36;
+    border-radius: 135px;
+    width: 40%;
+    height: 10%;
+    margin-left: 6.5rem;
+  }
 
-.vedvandet {
-  border-radius: 35px;
-  width: 98%;
-  height: 98%;
-  object-fit: cover;
-  margin-left: 1rem;
-  margin-top: 0.3rem;
-}
+  .vedvandet {
+    border-radius: 35px;
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+  }
 
-.rødkasse {
-  background-color: #c2131c;
-  border-radius: 35px;
-  margin-left: 1rem;
-  object-fit: cover; /* fylder containeren, bevarer proportioner */
-  object-position: center; /* beskærer lige meget top og bund */
-  padding: 9px;
-}
+  .rødkasse {
+    background-color: #c2131c;
+    border-radius: 35px;
+    margin-left: 1rem;
+    object-fit: cover; /* fylder containeren, bevarer proportioner */
+    object-position: center; /* beskærer lige meget top og bund */
+    padding: 9px;
+  }
 
-.rødkasse h2 {
-  font-size: xx-large;
-  color: white;
-  margin-left: 20px;
-  margin-top: 20px;
-  line-height: 3rem;
-}
+  .rødkasse h2 {
+    font-size: xx-large;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 3rem;
+  }
 
-.grønkasse {
-  background-color: #3b4225;
-  border-radius: 35px;
-  margin-left: 1rem;
-  object-fit: cover; /* fylder containeren, bevarer proportioner */
-  object-position: center; /* beskærer lige meget top og bund */
-  padding: 6px;
-  padding-left: 10px;
-}
+  .grønkasse {
+    background-color: #3b4225;
+    border-radius: 35px;
+    margin-left: 1rem;
+    object-fit: cover; /* fylder containeren, bevarer proportioner */
+    object-position: center; /* beskærer lige meget top og bund */
+    padding: 6px;
+    padding-left: 10px;
+  }
 
-.grønkasse h2 {
-  font-size: xx-large;
-  color: white;
-  margin-left: 20px;
-  margin-top: 20px;
-  line-height: 3rem;
-}
+  .grønkasse h2 {
+    font-size: xx-large;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 3rem;
+  }
 
-/* LAYOUT TIL MIN PROFIL */
+  /* LAYOUT TIL MIN PROFIL */
 
-/* NYT – gør at dinepoints og billedet ligger side om side */
+  /* NYT – gør at dinepoints og billedet ligger side om side */
 
-#dinpimg {
-  border-radius: 35px;
-  max-width: 100%; /* så det ikke sprænger containeren */
-  height: 71%;
-}
+  #dinpimg {
+    border-radius: 35px;
+    max-width: 100%; /* så det ikke sprænger containeren */
+    height: 71%;
+  }
 
-.dinpimg_container {
-  display: flex; /* gør containeren til flex */
-  justify-content: flex-end; /* skubber indholdet (billedet) mod højre */
-  flex: 2;
-}
+  .dinpimg_container {
+    display: flex; /* gør containeren til flex */
+    justify-content: flex-end; /* skubber indholdet (billedet) mod højre */
+    flex: 2;
+  }
 
-/* Din profil grid styling */
-.din_profil_grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
+  /* Din profil grid styling */
+  .din_profil_grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 
-#dinepoints {
-  grid-column: 1/2;
-  flex: 1;
-}
+  #dinepoints {
+    grid-column: 1/2;
+    flex: 1;
+  }
 
-.baggrundimg {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
-.belonninger_container {
-  max-width: 1700px;
-  gap: 30px;
-  margin-top: 0px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.belonninger h1 {
-  font-size: 44px;
-}
+  .baggrundimg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .belonninger_container {
+    max-width: 1700px;
+    gap: 30px;
+    margin-top: 0px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .belonninger h1 {
+    font-size: 44px;
+  }
 
-/* FORMULAR STYLING */
+  /* FORMULAR STYLING */
 
-.form_container {
-  display: grid;
-  grid-column: 4/5;
-  grid-row: 1/2;
-}
+  .form_container {
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
 
-.form_container2 {
-  display: grid;
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
+  .form_container2 {
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
 
-/*********** footer - DESKTOP ***********/
+  /*********** footer - DESKTOP ***********/
 
-.footer_card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: #ebebeb;
-  border-radius: 2rem;
-  padding: 30px 60px;
-  width: 100%;
-  height: 100%;
-}
-.footer_card h3 {
-  font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 1rem;
-  margin-left: 2rem;
-  font-size: 16px;
-}
+  .footer_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ebebeb;
+    border-radius: 2rem;
+    padding: 30px 60px;
+    width: 100%;
+    height: 100%;
+  }
+  .footer_card h3 {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-size: 16px;
+  }
 
-.footer_card p {
-  line-height: 20px;
-  font-size: 16px;
-  font-weight: 300;
-  padding-bottom: 10px;
-}
-.footer_card li {
-  margin-left: 3rem;
-}
-.footer_card p:hover {
-  text-decoration: underline;
-}
+  .footer_card p {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 10px;
+  }
+  .footer_card li {
+    margin-left: 3rem;
+  }
+  .footer_card p:hover {
+    text-decoration: underline;
+  }
 
-.footer_card2 {
-  grid-column: 2;
-  background-color: rgba(226, 30, 39, 1);
-  border-radius: 2rem;
-  padding: 40px 60px;
-  height: 100%;
-  width: 100%;
-}
+  .footer_card2 {
+    grid-column: 2;
+    background-color: rgba(226, 30, 39, 1);
+    border-radius: 2rem;
+    padding: 40px 60px;
+    height: 100%;
+    width: 100%;
+  }
 
-.footer_card2 h1 {
-  color: rgba(247, 247, 247, 1);
-  padding-top: 3rem;
-  font-size: 30px;
-}
+  .footer_card2 h1 {
+    color: rgba(247, 247, 247, 1);
+    padding-top: 3rem;
+    font-size: 30px;
+  }
 
-.footer_card2 img {
-  width: 35%;
-}
+  .footer_card2 img {
+    width: 35%;
+  }
 
-.disabled::after {
-  content: "Ikke nok points";
-  font-family: "Raleway", sans-serif;
-  background-color: rgba(230, 29, 39, 1);
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
-  padding: 6px 10px;
-  width: 58%;
-  position: absolute;
-  top: 84px;
-  left: 0rem;
-  z-index: 1;
+  .disabled::after {
+    content: "Ikke nok points";
+    font-family: "Raleway", sans-serif;
+    background-color: rgba(230, 29, 39, 1);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 6px 10px;
+    width: 58%;
+    position: absolute;
+    top: 84px;
+    left: 0rem;
+    z-index: 1;
+  }
 }
-
 /********** tilbage til top knap - DESKTOP ***********/
 
 #myBtn {
