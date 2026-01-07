@@ -498,20 +498,24 @@ p {
 
   /********************************************* Pointshop - MOBIL ***************************************************/
 
+  .nu_challenges_h1_dinprofil {
+    font-size: 24px;
+  }
+
   .belonning_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1400px;
-    gap: 30px;
+    gap: 10px;
     margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 4rem;
   }
 
   .mærker {
     background-color: rgba(186, 209, 223, 1);
-    padding: 50px 30px;
+    padding: 25px 15px;
     border-radius: 35px;
     transition: transform 0.3s ease;
   }
@@ -519,48 +523,40 @@ p {
     transform: scale(1.05);
   }
 
-  .pointsbanner {
-    background-color: rgba(247, 248, 237, 1);
-    border-bottom-right-radius: 2rem;
-    border-top-right-radius: 2rem;
-    padding: 6px 10px;
-    width: 82%;
-    margin-left: -1.9rem;
-    margin-top: -1rem;
-  }
-
   .pointshop_h1 h1 {
-    font-size: 30px;
+    font-size: 28px;
     font-family: "Raleway", sans-serif;
     color: rgba(28, 42, 53, 1);
     grid-row: 2;
+    margin-bottom: 1rem;
   }
 
   .pointshop_h1 h2 {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 2rem;
-    line-height: 3rem;
+    line-height: 1.5rem;
     margin-right: -11rem;
     grid-row: 2;
   }
 
   .tekstblok {
-    margin-top: 2rem;
     overflow: visible;
   }
 
   .tekstblok h2 {
     font-family: "Raleway", sans-serif;
     color: rgba(33, 48, 63, 1);
+    font-size: 20px;
   }
 
   .tekstblok h4 {
     font-family: "Raleway", sans-serif;
     color: rgba(33, 48, 63, 1);
     font-weight: normal;
-    padding-bottom: 1.5rem;
+    padding-bottom: 16px;
+    margin-top: -40px;
   }
 
   .min_profil_knap {
@@ -608,15 +604,10 @@ p {
     font-size: 30px;
     margin-bottom: 1rem;
   }
-  .mærker {
-    background-color: rgba(186, 209, 223, 1);
-    padding: 50px 30px;
-    border-radius: 35px;
-  }
 
   .mærker_challenges {
     background-color: #d9e0b6;
-    padding: 50px 30px;
+    padding: 25px 15px;
     border-radius: 35px;
     transition: transform 0.3s ease;
   }
@@ -631,8 +622,8 @@ p {
     border-top-right-radius: 2rem;
     padding: 6px 10px;
     width: 95%;
-    margin-left: -1.9rem;
-    margin-top: -1rem;
+    margin-left: -15px;
+    margin-top: 1px;
   }
 
   /******************************************* challenges - MOBIL *******************************************/

@@ -132,7 +132,6 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 2rem;
-    margin-top: -7rem;
     z-index: 3;
   }
 
