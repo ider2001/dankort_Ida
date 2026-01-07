@@ -592,17 +592,82 @@ p {
   /************************************************* Challenges - MOBIL ************************************************/
 
   .challengesh1 {
-    font-size: 30px;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    font-size: 28px;
+    margin-left: 2rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     font-family: "Raleway", sans-serif;
   }
 
+  .challenges_text {
+    font-size: 16px;
+    line-height: 2rem;
+    margin-left: 2rem;
+    margin-right: -3rem;
+  }
+
+  .challenges_text2 h2 {
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin-left: 2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+
+  .challenges_text2 p {
+    font-size: 16px;
+    line-height: 2rem;
+    margin-left: 2rem;
+    margin-right: -10rem;
+  }
+
+  .img_vj1 {
+    height: 0%;
+    width: 0%;
+    border-radius: 35px;
+    object-fit: cover;
+  }
+
+  .img_hj1 {
+    height: 70%;
+    width: 70%;
+    border-radius: 35px;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    object-fit: cover;
+    margin-bottom: 0rem;
+  }
+
+  .img_hj2 {
+    height: 70%;
+    width: 75%;
+    border-radius: 35px;
+    z-index: -1;
+    margin-left: 10rem;
+    margin-top: 0rem;
+    object-fit: cover;
+  }
+
+  .img_hj3 {
+    height: 50%;
+    width: 70%;
+    border-radius: 30px;
+    margin-top: -2rem;
+    margin-left: 3rem;
+    object-fit: cover;
+  }
+
   .nu_challenges_h1 {
     margin-left: 1.5rem;
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 1rem;
+  }
+
+  .nu_challenges_h1_2 {
+    font-size: 28px;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    margin-bottom: -2rem;
   }
 
   .mærker_challenges {
@@ -741,7 +806,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1600px;
-    gap: 30px;
+    gap: 10px;
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: rgba(207, 222, 232, 1);
@@ -751,12 +816,15 @@ p {
   .sam_blok {
     border-radius: 35px;
     background-color: whitesmoke;
-    padding: 30px 40px;
+    padding: 15px 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #21303f;
   }
 
   .sam_blok h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .sam_h1 {
@@ -767,26 +835,26 @@ p {
   }
 
   .flere_p_vej {
-    font-size: 30px;
+    font-size: 16px;
+    font-weight: 400;
     font-family: "Raleway", sans-serif;
     text-align: center;
     background-color: rgba(207, 222, 232, 1);
     padding-bottom: 2rem;
-    font-weight: lighter;
     margin-bottom: 4rem;
   }
 
   /*********************************************** Min profil - MOBIL **************************************************/
 
   h1 {
-    font-family: ralway, sans-serif;
+    font-family: "Raleway", sans-serif;
   }
   h2 {
-    font-family: ralway, sans-serif;
+    font-family: "Raleway", sans-serif;
   }
 
   p {
-    font-family: ralway, sans-serif;
+    font-family: "Raleway", sans-serif;
   }
 
   .grid_1-1-1desk {
@@ -845,28 +913,31 @@ p {
     margin-left: 30px;
     padding-top: 30px;
     font-family: "Raleway", sans-serif;
+    font-weight: 500;
   }
 
   form {
     background-color: rgba(217, 224, 182, 1);
     border-radius: 50px;
-    margin: 10px 10px 10px 10px;
     padding: 20px;
+    margin-bottom: 1rem;
   }
 
   .inputfelt {
-    padding: 8px;
-    font-size: 1.2rem;
+    font-size: 16px;
     border: 2px;
-    background-color: rgba(217, 224, 182, 1);
+    background-color: #eef7c9;
     border-color: #697b36;
     border-style: solid;
+    border-radius: 15px;
     font-family: "Raleway", sans-serif;
+    margin-top: 3rem;
   }
 
-  label {
-    font-family: ralway, sans-serif;
-    color: #3b4225;
+  .login {
+    font-size: 16px;
+    color: #697b36;
+    text-decoration: underline;
   }
 
   .baggrundimg {
@@ -917,6 +988,19 @@ p {
     display: none;
   }
 
+  .h1_minprofil h1 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .h1_minprofil p {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+
   /***** LAYOUT - MOBIL *****/
 
   .din_profil_grid_1-1 {
@@ -930,6 +1014,7 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
+    margin-top: -6rem;
   }
 
   .pb {
@@ -1788,7 +1873,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     max-width: 2000px;
-    gap: 10px;
+    gap: 15px;
     margin: 0 auto;
     padding-left: 4rem;
     padding-right: 4rem;
@@ -1800,12 +1885,12 @@ p {
     padding-top: 2rem;
     padding-left: 3rem;
     background-color: rgba(207, 222, 232, 1);
-    font-size: 44px;
+    font-size: 32px;
   }
   .sam_blok {
     border-radius: 35px;
     background-color: whitesmoke;
-    padding: 30px 40px;
+    padding: 30px 10px;
     border-style: solid;
     border-width: 0.5px;
     border-color: #21303f;
@@ -1813,6 +1898,7 @@ p {
 
   .sam_blok h1 {
     text-align: center;
+    font-size: 24px;
   }
 
   .flere_p_vej {
