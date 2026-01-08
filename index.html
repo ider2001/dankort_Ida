@@ -1,351 +1,338 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <title>Forside</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/popupstyle.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/x-icon" href="img/dankort.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/dankort.svg">
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-  <body>
+
+</head>
+
+<body>
     <header>
-      <div>
-        <a href="index.html"
-          ><img class="logo" src="img/dankort.svg" alt="logo"
-        /></a>
-      </div>
-
-      <nav class="navbar">
-        <ul class="menu">
-          <li><a href="index.html">Dankort+</a></li>
-          <li><a href="din_profil.html">Min profil</a></li>
-          <li><a href="challenges.html">Challenges</a></li>
-          <li><a href="pointshop.html">Pointshop</a></li>
-          <li><a href="dankort.html">Dankort</a></li>
-        </ul>
-
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <div>
+            <a href="index.html"><img class="logo" src="img/dankort.svg" alt="logo"></a>
         </div>
-      </nav>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Dankort+</a></li>
+                <li><a href="din_profil.html">Min profil</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="pointshop.html">Pointshop</a></li>
+                <li><a href="dankort.html">Dankort</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+
     </header>
 
+
     <main>
-      <div class="index_kampagne">
-        <div class="blok">
-          <div class="blok2">
-            <div class="blok3">
-              <h1>Dankort</h1>
-              <h3 class="plus">+</h3>
+        <div class="index_kampagne">
+            <div class="blok">
+                <div class="blok2">
+                    <div class="blok3">
+                        <h1>Dankort</h1>
+                        <h3 class="plus">+</h3>
+                    </div>
+                    <div>
+                        <h2>Optjen points. <br>Tag bevidste handlinger. <br>Brug points på oplevelser.</h2>
+                        <button class="kampagne_knap"
+                            onclick="document.getElementById('altompoints').scrollIntoView({ behavior: 'smooth' });">
+                            ALT OM POINTS
+                        </button>
+                    </div>
+                </div>
+                <img class="indeximg1" src="img/indeximg1.webp" alt="billede af vinduer">
+            </div>
+
+            <div class="blok1">
+                <div class="order">
+                    <div class="dk_tekst">
+                        <h2>Målet er ikke at forbrug mere. <br> At forbruge mindre og være sammen.</h2>
+                    </div>
+
+                    <!-- ÆNDRING: fra <a> til <button> -->
+                    <button class="kampagne_knap trigger-btn2" id="tilmeld-btn2" data-title="Tilmelding"
+                        data-description="Her kan du tilmelde dig kampagnen og få adgang til dine fordele.">
+                        TILMELD DIG HER
+                    </button>
+                </div>
+                <img class="indeximg2" src="img/indeximg2.webp" alt="billede af væg med citat">
+            </div>
+        </div>
+
+        <!-- Popup markup -->
+        <input type="checkbox" id="offer-toggle2" class="hidden-checkbox2" />
+        <div class="popup-overlay2" id="popup-overlay2">
+            <div class="popup-content2">
+                <button type="button2" class="close-btn2" id="close-btn2">&times;</button>
+                <h2 id="popup-title2">OPRET BRUGER</h2>
+                <form id="formindex">
+                    <input type="text" placeholder="Navn" />
+                    <input type="text" placeholder="Efternavn" />
+                    <input type="text" placeholder="E-mail" />
+                    <input type="text" placeholder="Telefon" />
+                    <input type="text" placeholder="Adresse" />
+                </form>
+                <button type="button2" class="cta-btn2">TILMELD BRUGER</button>
+            </div>
+        </div>
+
+
+        <div class="faktablok">
+            <h1>Vidste du at....?</h1>
+            <div class="procent">
+                <div class="fakta_grid">
+                    <div class="fakta-item grøn">
+                        <p class="tal">64%</p>
+                        <p class="tekst">af danskerne mener, at det er svært at finde ud af, hvad der er bæredygtigt
+                        </p>
+                    </div>
+
+                    <div class="fakta-item blå">
+                        <p class="tal">76%</p>
+                        <p class="tekst">af danskerne går op i at leve bæredygtigt</p>
+                    </div>
+
+                    <div class="fakta-item rød">
+                        <p class="tal">36%</p>
+                        <p class="tekst">af danskerne har gjort en stor indsats for at leve bæredygtigt</p>
+                    </div>
+
+                    <div class="fakta-item lyseblå">
+                        <p class="tal">65%</p>
+                        <p class="tekst">af danskerne ønsker at blive mere bæredygtige</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video_container">
+            <h1 class="videoh1">Dankort. At handle med omtanke</h1>
+            <div class="video-wrapper">
+                <video autoplay loop muted poster="preview.jpg">
+                    <source src="img/2semeksamen.mp4" type="video/mp4">
+            </div>
+            </video>
+        </div>
+
+        <div class="hentsomapp">
+            <div class="img_container">
+                <img class="app_img_desk" src="img/app_mockup-2.webp" alt="billede af mobil med app">
             </div>
             <div>
-              <h2>
-                Optjen points. <br />Tag bevidste handlinger. <br />Brug points
-                på oplevelser.
-              </h2>
-              <button
-                class="kampagne_knap"
-                onclick="document.getElementById('altompoints').scrollIntoView({ behavior: 'smooth' });"
-              >
-                ALT OM POINTS
-              </button>
-            </div>
-          </div>
-          <img
-            class="indeximg1"
-            src="img/indeximg1.webp"
-            alt="billede af vinduer"
-          />
-        </div>
+                <h1>Hent som app.</h1>
+                <h2>Download Dankort appen og få belønninger mens du mindsker dit forbrug.</h2>
 
-        <div class="blok1">
-          <div class="order">
-            <div class="dk_tekst">
-              <h2>
-                Opret dig som bruger her, eller dowload appen og tilmeld dig
-                der.
-              </h2>
-            </div>
-
-            <!-- ÆNDRING: fra <a> til <button> -->
-            <button
-              class="kampagne_knap trigger-btn2"
-              id="tilmeld-btn2"
-              data-title="Tilmelding"
-              data-description="Her kan du tilmelde dig kampagnen og få adgang til dine fordele."
-            >
-              TILMELD DIG HER
-            </button>
-          </div>
-          <img
-            class="indeximg2"
-            src="img/indeximg2.webp"
-            alt="billede af væg med citat"
-          />
-        </div>
-      </div>
-
-      <!-- Popup markup -->
-      <input type="checkbox" id="offer-toggle2" class="hidden-checkbox2" />
-      <div class="popup-overlay2" id="popup-overlay2">
-        <div class="popup-content2">
-          <button type="button2" class="close-btn2" id="close-btn2">
-            &times;
-          </button>
-          <h2 id="popup-title2">OPRET BRUGER</h2>
-          <form id="formindex">
-            <input type="text" placeholder="Navn" />
-            <input type="text" placeholder="Efternavn" />
-            <input type="text" placeholder="E-mail" />
-            <input type="text" placeholder="Telefon" />
-            <input type="text" placeholder="Adresse" />
-          </form>
-          <button type="button2" class="cta-btn2">TILMELD BRUGER</button>
-        </div>
-      </div>
-
-      <div class="hentsomapp">
-        <div class="img_container">
-          <img
-            class="app_img_desk"
-            src="img/app_mockup-2.webp"
-            alt="billede af mobil med app"
-          />
-        </div>
-        <div>
-          <h1>Hent som app.</h1>
-          <h2>
-            Download Dankort appen og få belønninger mens du mindsker dit
-            forbrug.
-          </h2>
-
-          <div class="img_container">
-            <img
-              class="app_img"
-              src="img/app_mockup-2.webp"
-              alt="billede af mobil med app"
-            />
-          </div>
-          <h2 class="bold">Det kan du i appen</h2>
-          <ul>
-            <li>
-              Få automatisk rabat når du ikke shopper på Black Friday, Cyber
-              monday eller singels day
-            </li>
-            <li>
-              Optjen point og brug dem som rabatter til kulturelle oplevelser,
-              transport eller butikker.
-            </li>
-            <li>Bliv belønnet når du shopper eller sælger brugt.</li>
-          </ul>
-
-          <!-- Knappen -->
-          <button class="app-download-trigger" id="app-download-trigger">
-            DOWNLOAD HER
-          </button>
-
-          <!-- Popup markup -->
-          <div
-            class="app-download-popup-overlay"
-            id="app-download-popup-overlay"
-            style="display: none"
-          >
-            <div class="app-download-popup-content">
-              <button
-                type="button"
-                class="app-download-popup-close"
-                id="app-download-popup-close"
-              >
-                &times;
-              </button>
-              <h2 class="app-download-popup-title">Appen er i udvikling</h2>
-              <p class="app-download-popup-description">
-                Følg med på vores sociale medier
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="altompoints">
-        <h1 class="din_profil_tekst">
-          Din profil. Points. <br />
-          Og pointshop.
-        </h1>
-        <h1 class="din_profil_tekst_2">DIN PROFIL, POINTS OG POINTSHOP</h1>
-        <div class="altompoint">
-          <div>
-            <img
-              class="points_img"
-              src="img/index_cykel.webp"
-              alt="billede af natur"
-            />
-            <div class="points_card">
-              <div class="points_card_grid">
-                <div>
-                  <h1>Min profil</h1>
-                  <p>
-                    Her finder du din Dankort profil, hvor du kan se dine
-                    oplysninger.
-                  </p>
+                <div class="img_container">
+                    <img class="app_img" src="img/app_mockup-2.webp" alt="billede af mobil med app">
                 </div>
-                <a class="knap_pil" href="din_profil.html" aria-label="Næste"
-                  >&#8594;
-                </a>
-              </div>
-            </div>
-          </div>
+                <h2 class="bold">Det kan du i appen</h2>
+                <ul>
+                    <li>Få automatisk rabat når du ikke shopper på Black Friday, Cyber monday eller singels day</li>
+                    <li>Optjen point og brug dem som rabatter til kulturelle oplevelser, transport eller butikker.
+                    </li>
+                    <li>Bliv belønnet når du shopper eller sælger brugt.</li>
+                </ul>
 
-          <div>
-            <img
-              class="points_img"
-              src="img/index_natur.webp"
-              alt="billede af natur"
-            />
-            <div class="points_card">
-              <div class="points_card_grid">
-                <div>
-                  <h1>Mine points</h1>
-                  <p>
-                    Her finder du dine optjente point og omsætte dem til
-                    rabatter.
-                  </p>
+                <!-- Knappen -->
+                <button class="app-download-trigger" id="app-download-trigger">DOWNLOAD HER</button>
+
+                <!-- Popup markup -->
+                <div class="app-download-popup-overlay" id="app-download-popup-overlay" style="display: none;">
+                    <div class="app-download-popup-content">
+                        <button type="button" class="app-download-popup-close"
+                            id="app-download-popup-close">&times;</button>
+                        <h2 class="app-download-popup-title">Appen er i udvikling</h2>
+                        <p class="app-download-popup-description">Følg med på vores sociale medier</p>
+                    </div>
                 </div>
-                <a class="knap_pil" href="din_profil.html" aria-label="Næste"
-                  >&#8594;
-                </a>
-              </div>
             </div>
-          </div>
-          <div>
-            <img
-              class="points_img"
-              src="img/index_mad2.webp"
-              alt="billede af natur"
-            />
-            <div class="points_card">
-              <div class="points_card_grid">
+        </div>
+
+
+
+        <div id="altompoints">
+
+            <h1 class="din_profil_tekst">Din profil. Points. <br> Og pointshop.</h1>
+            <h1 class="din_profil_tekst_2">DIN PROFIL, POINTS OG POINTSHOP</h1>
+            <div class="altompoint">
                 <div>
-                  <h1>Pointshop</h1>
-                  <p>
-                    Her finder du en oversigt over de belønninger, man kan bruge
-                    points på.
-                  </p>
+                    <img class="points_img" src="img/index_cykel.webp" alt="billede af natur">
+                    <div class="points_card">
+                        <div class="points_card_grid">
+                            <div>
+                                <h1>Min profil</h1>
+                                <p>Her finder du din Dankort profil, hvor du kan se dine
+                                    oplysninger.</p>
+                            </div>
+                            <a class="knap_pil" href="din_profil.html" aria-label="Næste">&#8594;
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <a class="knap_pil" href="pointshop.html" aria-label="Næste"
-                  >&#8594;
-                </a>
-              </div>
+                <div>
+                    <img class="points_img" src="img/index_natur.webp" alt="billede af natur">
+                    <div class="points_card">
+                        <div class="points_card_grid">
+                            <div>
+                                <h1>Mine points</h1>
+                                <p>Her finder du dine optjente point og omsætte dem til rabatter.</p>
+                            </div>
+                            <a class="knap_pil" href="din_profil.html" aria-label="Næste">&#8594;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="points_img" src="img/index_mad2.webp" alt="billede af natur">
+                    <div class="points_card">
+                        <div class="points_card_grid">
+                            <div>
+                                <h1>Pointshop</h1>
+                                <p>Her finder du en oversigt over de belønninger, man kan bruge points på.
+                                </p>
+                            </div>
+
+                            <a class="knap_pil" href="pointshop.html" aria-label="Næste">&#8594;
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="card1">
-          <img
-            src="img/img_5pointshop.webp"
-            alt="billede af natur"
-            class="card-img"
-          />
-
-          <div class="vidstedu_boks blue">
-            <h1>Vidste du godt?</h1>
-            <p>
-              Vidste du at ved ikke at handle du dage som balck friday, kan du
-              spare points op, som kan opsættes til rabatter?
-            </p>
-          </div>
         </div>
 
-        <div class="card2">
-          <div class="vidstedu_boks green">
-            <h1>Vidste du godt?</h1>
-            <p>Vidste du godt at du kan omsætte dine points til gavekort?</p>
-          </div>
+        <div class="faktablok">
+            <h1>Vidste du at....?</h1>
+            <div class="fakta_grid1">
+                <div class="fakta-item grøn1">
+                    <p class="tal">37%</p>
+                    <p class="tekst">af danskerne har reduceret deres strømforbrug markant</p>
+                </div>
 
-          <img
-            src="img/vindmolle.webp"
-            alt="billede af vindmøller"
-            class="card-img"
-          />
+                <div class="fakta-item blå1">
+                    <p class="tal">62%</p>
+                    <p class="tekst">af danskerne aflevere deres tøj til genbrug</p>
+                </div>
+
+                <div class="fakta-item rød1">
+                    <p class="tal">30%</p>
+                    <p class="tekst">af danskerne har reduceret deres vandforbrug markant</p>
+                </div>
+
+                <div class="fakta-item grøn1">
+                    <p class="tal">37%</p>
+                    <p class="tekst">af danskerne har reduceret deres vandforbrug markant</p>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="section">
+
+            <div class="card1">
+                <img src="img/img_5pointshop.webp" alt="billede af natur" class="card-img">
+
+                <div class="vidstedu_boks blue">
+                    <h1>Vidste du godt?</h1>
+                    <p>Vidste du at ved ikke at handle du dage som balck friday, kan du spare points op, som kan
+                        opsættes til rabatter?</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="vidstedu_boks green">
+                    <h1>Vidste du godt?</h1>
+                    <p>Vidste du godt at du kan omsætte dine points til gavekort?</p>
+                </div>
+
+                <img src="img/vindmolle.webp" alt="billede af vindmøller" class="card-img">
+            </div>
+
+        </div>
+
     </main>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <footer>
-      <div class="footer_card">
-        <div>
-          <h3>Dankort</h3>
-          <ul>
-            <li>
-              <p>Om dankort</p>
-            </li>
-            <li>
-              <p>Presse</p>
-            </li>
-            <li>
-              <p>Logo og billeder</p>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Support</h3>
-          <ul>
-            <li>
-              <p>Kontakt salg</p>
-            </li>
-            <li>
-              <p>Kontakt kundeservice</p>
-            </li>
-            <li>
-              <p>Support erhverv</p>
-            </li>
-            <li>
-              <p>Support privat</p>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3>Politikker</h3>
-          <ul>
-            <li>
-              <p>Privatlivspolitik</p>
-            </li>
-            <li>
-              <p>Cookies</p>
-            </li>
-            <li>
-              <p>AEE regulativ</p>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <div class="footer_card">
+            <div>
+                <h3>Dankort</h3>
+                <ul>
 
-      <div class="footer_card2">
-        <img src="img/dankort.svg" alt="logo" />
-        <h1>
-          Når vi handler <br />
-          sammen
-        </h1>
-      </div>
+                    <li>
+                        <p>Om dankort</p>
+                    </li>
+                    <li>
+                        <p>Presse</p>
+                    </li>
+                    <li>
+                        <p>Logo og billeder</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <ul>
+                    <li>
+                        <p>Kontakt salg</p>
+                    </li>
+                    <li>
+                        <p>Kontakt kundeservice</p>
+                    </li>
+                    <li>
+                        <p>Support erhverv</p>
+                    </li>
+                    <li>
+                        <p>Support privat</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>Politikker</h3>
+                <ul>
+                    <li>
+                        <p>Privatlivspolitik</p>
+                    </li>
+                    <li>
+                        <p>Cookies</p>
+                    </li>
+                    <li>
+                        <p>AEE regulativ</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_card2">
+            <img src="img/dankort.svg" alt="logo">
+            <h1>Når vi handler <br> sammen</h1>
+        </div>
     </footer>
+
+
+
+
+
 
     <script src="js/tilbagetiltop.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/index.js"></script>
-  </body>
-</html>
+</body>
