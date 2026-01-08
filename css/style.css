@@ -1,7 +1,19 @@
 /*************** Design og udseende **************/
-body {
-  height: 2000px;
+
+ul {
+  list-style-image: url(/img/redbullet.svg);
 }
+
+#decimal_list {
+  list-style-image: none !important;
+  list-style-type: decimal !important;
+}
+
+#decimal_list li {
+  list-style-image: none !important;
+  list-style-type: decimal !important;
+}
+
 /*** ændrer li'ernes farve ****/
 @media (prefers-color-scheme: light) {
   ul li::marker {
@@ -169,78 +181,8 @@ p {
 
   .dk_tekst h2 {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-  }
-
-  /******* faktablok 1 - MOBIL ********/
-
-  .faktablok1 {
-    background-color: rgba(207, 222, 232, 1);
-  }
-
-  .faktablok {
-    text-align: center;
-    background-color: #dbe6f0;
-    padding-top: 2rem;
-  }
-
-  .faktablok h1 {
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
-  }
-
-  .fakta-item {
-    width: 125px;
-    padding: 1rem;
-    border-radius: 50px 50px 0 0; /* Runder toppen */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .faktablok {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .fakta-item .tal {
-    font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .fakta-item .tekst {
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .grøn {
-    background-color: rgba(150, 172, 78, 1);
-    height: 75%;
-    margin-top: 96px;
-  }
-  .blå {
-    background-color: rgba(63, 110, 138, 1);
-    height: 90%;
-    margin-top: 40px;
-  }
-  .rød {
-    background-color: rgba(213, 0, 21, 1);
-    height: 63%;
-    margin-top: 139px;
-  }
-  .lyseblå {
-    background-color: rgba(116, 164, 188, 1);
-    height: 78%;
-    margin-top: 86px;
+    font-size: 28px;
+    font-weight: 400;
   }
 
   /******* Hent som app - MOBIL ******/
@@ -253,13 +195,15 @@ p {
   }
   .hentsomapp h1 {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
   }
   .hentsomapp h2 {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    font-weight: 300px;
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 1rem;
+    line-height: 2rem;
   }
 
   .img_container {
@@ -271,14 +215,15 @@ p {
     display: none;
   }
   .app_img {
-    width: 250%;
+    width: 170%;
     height: auto;
   }
 
-  .bold {
+  #bold {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
+    color: #21303f;
   }
 
   ul {
@@ -289,9 +234,9 @@ p {
   li {
     margin-bottom: 0.5rem;
     font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
+    font-size: 16px;
     color: rgba(33, 48, 63, 1);
-    line-height: 3rem;
+    line-height: 2rem;
   }
 
   .hentsomapp_knap {
@@ -307,47 +252,144 @@ p {
     margin-top: 10px;
   }
 
-  /****** video - MOBIL *******/
+  /****** HVORFOR DANKORT PLUS *******/
 
-  .video-wrapper {
-    display: flex;
-    justify-content: center; /* vandret centrering */
-    align-items: center; /* lodret centrering */
-    height: 100vh; /* fylder hele skærmhøjden */
-    margin-bottom: -10rem;
+  .nu_challenges_h1_3 {
+    font-size: 28px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+  .dankortplus {
+    background-color: #e1e1e1;
+    border-radius: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
-
-  video {
-    width: 80%;
-    height: 60%;
-    object-fit: cover;
-    border-radius: 35px;
-    margin-top: -12rem;
+  .dankortplus p {
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 30px;
   }
 
-  .videoh1 {
-    position: absolute; /* placerer ovenpå videoen */
-    background-color: white;
-    padding-left: 15px;
-    padding-bottom: 5px;
-    border-bottom-right-radius: 35px;
-    width: 200px;
-    margin-left: 3rem;
-    margin-top: 3rem;
-    z-index: 10;
-    font-size: 30px;
+  .dankortplus h2 {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 30px;
+    font-weight: bold;
+    margin-bottom: -10px;
+  }
+
+  .dankortplus h1 {
+    font-size: 28px;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+
+  .dankortplus ul {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .ulhvorfordk {
+    padding-bottom: 2rem;
+  }
+
+  .nomaimg {
+    margin-top: 0px;
+    width: 93%;
+    margin-left: 1rem;
+  }
+  .hvorfordk {
+    background-color: #cfdee8;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: -10px;
+    padding-bottom: 2rem;
+  }
+
+  .hvorfordk h1 {
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+
+  .hvorfordk ul {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
+  }
+
+  .hvorfordk ul h1 {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
+  }
+
+  .hvorfordk ul p {
+    font-weight: normal;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+
+  .sodanvirkerdet {
+    background-color: #d9e0b6;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .sodanvirkerdet h1 {
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+
+  .sodanvirkerdet ol {
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
+  }
+
+  .sodanvirkerdet p {
+    font-weight: normal;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+
+  .atag {
+    font-size: 16px;
+    padding-bottom: 40px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
   }
 
   /****** Alt om points - MOBIL ******/
-  .din_profil_tekst h1 {
+  #din_profil_tekstid {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
+    line-height: 40px;
+    margin-bottom: -1rem;
+    margin-top: 4rem;
   }
   .knap_pil {
     background: white;
-
     color: red;
     padding: 0.6rem 0.8rem;
     border-radius: 999px;
@@ -360,9 +402,14 @@ p {
   .points_card {
     background-color: rgba(236, 236, 236, 1);
     border-radius: 2rem;
-    padding: 20px 40px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    padding: 10px 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .points_card_grid h1 {
+    font-size: 20px;
+    line-height: 2rem;
   }
 
   .points_img {
@@ -376,67 +423,14 @@ p {
 
   .points_card p {
     font-family: "Raleway", sans-serif;
-    font-size: 1.4rem;
+    font-size: 16px;
   }
 
   .din_profil_tekst_2 {
     display: none;
   }
 
-  /******* faktablok 2 - MOBIL ********/
-
-  .fakta-item1 {
-    width: 500px;
-    padding: 1rem;
-    border-radius: 50px 50px 0 0; /* Runder toppen */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .fakta-item p {
-    color: rgba(247, 247, 247, 1);
-  }
-
-  .fakta-item .tal {
-    font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .fakta-item .tekst {
-    font-family: "Raleway", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-  }
-
-  .grøn1 {
-    background-color: rgba(150, 172, 78, 1);
-    height: 75.5%;
-    margin-top: 98px;
-  }
-  .blå1 {
-    background-color: rgba(63, 110, 138, 1);
-    height: 90%;
-    margin-top: 40px;
-  }
-  .rød1 {
-    background-color: rgba(213, 0, 21, 1);
-    height: 64.5%;
-    margin-top: 140px;
-  }
-  .lyseblå1 {
-    background-color: rgba(116, 164, 188, 1);
-    height: 78%;
-    margin-top: 88px;
-  }
-
   /****** Vidste du CARDS - MOBIL  ******/
-
-  p {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.4rem;
-  }
 
   .section {
     width: 100%;
@@ -489,33 +483,39 @@ p {
   }
 
   .vidstedu_boks h1 {
-    font-size: 30px;
+    font-size: 20px;
     padding-bottom: 5px;
+    font-family: "Raleway", sans-serif;
   }
 
   .vidstedu_boks p {
     margin: 0;
-    font-size: 30px;
+    font-size: 16px;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
   }
 
   /********************************************* Pointshop - MOBIL ***************************************************/
+
+  .nu_challenges_h1_dinprofil {
+    font-size: 24px;
+  }
 
   .belonning_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1400px;
-    gap: 30px;
+    gap: 10px;
     margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 4rem;
   }
 
   .mærker {
     background-color: rgba(186, 209, 223, 1);
-    padding: 50px 30px;
+    padding: 25px 15px;
     border-radius: 35px;
     transition: transform 0.3s ease;
   }
@@ -523,48 +523,40 @@ p {
     transform: scale(1.05);
   }
 
-  .pointsbanner {
-    background-color: rgba(247, 248, 237, 1);
-    border-bottom-right-radius: 2rem;
-    border-top-right-radius: 2rem;
-    padding: 6px 10px;
-    width: 82%;
-    margin-left: -1.9rem;
-    margin-top: -1rem;
-  }
-
   .pointshop_h1 h1 {
-    font-size: 30px;
+    font-size: 28px;
     font-family: "Raleway", sans-serif;
     color: rgba(28, 42, 53, 1);
     grid-row: 2;
+    margin-bottom: 1rem;
   }
 
   .pointshop_h1 h2 {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 2rem;
-    line-height: 3rem;
+    line-height: 1.5rem;
     margin-right: -11rem;
     grid-row: 2;
   }
 
   .tekstblok {
-    margin-top: 2rem;
     overflow: visible;
   }
 
   .tekstblok h2 {
     font-family: "Raleway", sans-serif;
     color: rgba(33, 48, 63, 1);
+    font-size: 20px;
   }
 
   .tekstblok h4 {
     font-family: "Raleway", sans-serif;
     color: rgba(33, 48, 63, 1);
     font-weight: normal;
-    padding-bottom: 1.5rem;
+    padding-bottom: 16px;
+    margin-top: -40px;
   }
 
   .min_profil_knap {
@@ -595,32 +587,92 @@ p {
     padding: 10px;
     font-family: "Raleway", sans-serif;
     margin-left: 2rem;
-}
+  }
 
   /************************************************* Challenges - MOBIL ************************************************/
 
   .challengesh1 {
-    font-size: 30px;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    font-size: 28px;
+    margin-left: 2rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     font-family: "Raleway", sans-serif;
   }
 
+  .challenges_text {
+    font-size: 16px;
+    line-height: 2rem;
+    margin-left: 2rem;
+    margin-right: -3rem;
+  }
+
+  .challenges_text2 h2 {
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin-left: 2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+
+  .challenges_text2 p {
+    font-size: 16px;
+    line-height: 2rem;
+    margin-left: 2rem;
+    margin-right: -10rem;
+  }
+
+  .img_vj1 {
+    height: 0%;
+    width: 0%;
+    border-radius: 35px;
+    object-fit: cover;
+  }
+
+  .img_hj1 {
+    height: 70%;
+    width: 70%;
+    border-radius: 35px;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    object-fit: cover;
+    margin-bottom: 0rem;
+  }
+
+  .img_hj2 {
+    height: 70%;
+    width: 75%;
+    border-radius: 35px;
+    z-index: -1;
+    margin-left: 10rem;
+    margin-top: 0rem;
+    object-fit: cover;
+  }
+
+  .img_hj3 {
+    height: 50%;
+    width: 70%;
+    border-radius: 30px;
+    margin-top: -2rem;
+    margin-left: 3rem;
+    object-fit: cover;
+  }
+
   .nu_challenges_h1 {
     margin-left: 1.5rem;
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 1rem;
   }
-  .mærker {
-    background-color: rgba(186, 209, 223, 1);
-    padding: 50px 30px;
-    border-radius: 35px;
+
+  .nu_challenges_h1_2 {
+    font-size: 28px;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    margin-bottom: -2rem;
   }
 
   .mærker_challenges {
     background-color: #d9e0b6;
-    padding: 50px 30px;
+    padding: 25px 15px;
     border-radius: 35px;
     transition: transform 0.3s ease;
   }
@@ -635,8 +687,8 @@ p {
     border-top-right-radius: 2rem;
     padding: 6px 10px;
     width: 95%;
-    margin-left: -1.9rem;
-    margin-top: -1rem;
+    margin-left: -15px;
+    margin-top: 1px;
   }
 
   /******************************************* challenges - MOBIL *******************************************/
@@ -694,7 +746,11 @@ p {
     min-height: 600px;
     padding: 1rem;
     border-radius: 50px;
-    background: linear-gradient(180deg, rgba(116, 164, 188, 1), rgba(116, 164, 188, 1));
+    background: linear-gradient(
+      180deg,
+      rgba(116, 164, 188, 1),
+      rgba(116, 164, 188, 1)
+    );
     border: 1px solid rgba(116, 164, 188, 1);
     box-shadow: 0 10px 30px rgba(116, 164, 188, 1);
     transition: transform 250ms ease, opacity 250ms ease, box-shadow 250ms ease;
@@ -750,7 +806,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1600px;
-    gap: 30px;
+    gap: 10px;
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: rgba(207, 222, 232, 1);
@@ -760,12 +816,15 @@ p {
   .sam_blok {
     border-radius: 35px;
     background-color: whitesmoke;
-    padding: 30px 40px;
+    padding: 15px 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #21303f;
   }
 
   .sam_blok h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .sam_h1 {
@@ -776,26 +835,26 @@ p {
   }
 
   .flere_p_vej {
-    font-size: 30px;
+    font-size: 16px;
+    font-weight: 400;
     font-family: "Raleway", sans-serif;
     text-align: center;
     background-color: rgba(207, 222, 232, 1);
     padding-bottom: 2rem;
-    font-weight: lighter;
     margin-bottom: 4rem;
   }
 
   /*********************************************** Min profil - MOBIL **************************************************/
 
   h1 {
-    font-family: ralway, sans-serif;
+    font-family: "Raleway", sans-serif;
   }
   h2 {
-    font-family: ralway, sans-serif;
+    font-family: "Raleway", sans-serif;
   }
 
   p {
-    font-family: ralway, sans-serif;
+    font-family: "Raleway", sans-serif;
   }
 
   .grid_1-1-1desk {
@@ -815,7 +874,7 @@ p {
     font-family: "Raleway", sans-serif;
   }
 
-  .h1top{
+  .h1top {
     font-size: 30px;
     font-weight: 300;
     margin-left: 1rem;
@@ -854,29 +913,31 @@ p {
     margin-left: 30px;
     padding-top: 30px;
     font-family: "Raleway", sans-serif;
+    font-weight: 500;
   }
 
   form {
     background-color: rgba(217, 224, 182, 1);
     border-radius: 50px;
-    margin: 10px 10px 10px 10px;
     padding: 20px;
+    margin-bottom: 1rem;
   }
 
   .inputfelt {
-   padding: 8px;
-    font-size: 1.2rem;
+    font-size: 16px;
     border: 2px;
-    background-color: rgba(217, 224, 182, 1);
+    background-color: #eef7c9;
     border-color: #697b36;
     border-style: solid;
+    border-radius: 15px;
     font-family: "Raleway", sans-serif;
+    margin-top: 3rem;
   }
 
-
-  label {
-    font-family: ralway, sans-serif;
-    color: #3b4225;
+  .login {
+    font-size: 16px;
+    color: #697b36;
+    text-decoration: underline;
   }
 
   .baggrundimg {
@@ -923,8 +984,21 @@ p {
     font-size: 1.3rem;
   }
 
-  .din_konto_2{
+  .din_konto_2 {
     display: none;
+  }
+
+  .h1_minprofil h1 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  .h1_minprofil p {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
   }
 
   /***** LAYOUT - MOBIL *****/
@@ -940,6 +1014,7 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
+    margin-top: -6rem;
   }
 
   .pb {
@@ -981,7 +1056,7 @@ p {
     z-index: 1;
   }
 
-   .nu_challenges_h1_dinprofil {
+  .nu_challenges_h1_dinprofil {
     margin-left: 2rem;
     margin-top: 2rem;
   }
@@ -1007,31 +1082,34 @@ p {
     opacity: 0.7;
   }
 
-   .points_container {
+  .points_container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* venstre og højre */
     gap: 10px;
     margin-bottom: -5rem;
-   }
+  }
   /******************************************* footer - MOBIL ************************************************/
 
   .footer_card {
     background-color: rgba(217, 217, 217, 1);
     border-radius: 2rem;
-    padding: 30px 60px;
-    margin-block: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
-  }
-  .footer_card h3 {
-    font-weight: bold;
-    margin-top: 40px;
-    
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
   }
 
   .footer_card p {
-    padding: -20px;
+    font-size: 16px;
   }
+
+  .footer_card h3 {
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
   .footer_card p:hover {
     text-decoration: underline;
   }
@@ -1040,10 +1118,10 @@ p {
     background-color: rgba(226, 30, 39, 1);
     border-radius: 2rem;
     padding: 40px 60px;
-    margin-left: 2rem;
-    margin-right: 2rem;
     margin-bottom: 2rem;
     margin-top: -15px;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .footer_card2 h1 {
@@ -1056,23 +1134,19 @@ p {
     width: 22%;
   }
 
-  footer{
-    padding-bottom: 2rem;
-  }
-
   .disabled::after {
-  content: "Ikke nok points";
-  font-family: "Raleway", sans-serif;
-  background-color: rgba(230, 29, 39, 1);
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
-  padding: 6px 10px;
-     width: 58%;
+    content: "Ikke nok points";
+    font-family: "Raleway", sans-serif;
+    background-color: rgba(230, 29, 39, 1);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 6px 10px;
+    width: 58%;
     position: absolute;
     top: 71px;
-  left: 0rem;
-  z-index: 1;
-}
+    left: 0rem;
+    z-index: 1;
+  }
 
   /********** tilbage til top knap - DESKTOP ***********/
 
@@ -1096,6 +1170,11 @@ p {
 /************************************************ DESKTOP - starter her *********************************************/
 @media screen and (min-width: 800px) {
   /****** menu - DESKTOP *****/
+  header {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+
   nav li {
     list-style: none;
     padding: 0;
@@ -1106,8 +1185,9 @@ p {
 
   nav a {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 16px;
     text-decoration: none;
+    font-weight: 600;
     color: rgba(33, 48, 63, 1);
   }
 
@@ -1117,8 +1197,10 @@ p {
 
   .menu {
     display: flex;
-    justify-content: space-between;
-    margin-right: 3rem;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 1.3rem;
+    margin-right: 6rem;
   }
 
   /********************************************* index - DESKTOP ****************************************************/
@@ -1152,8 +1234,8 @@ p {
   .blok2 h2 {
     font-family: "Raleway", sans-serif;
     font-size: 44px;
-    font-weight: 300;
-    line-height: 3.5rem;
+    font-weight: 400;
+    line-height: 1.3;
     margin-bottom: 1rem;
   }
 
@@ -1166,9 +1248,11 @@ p {
     font-size: 44px;
     padding-bottom: 2rem;
     margin-top: -6rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
     max-width: 85%;
-    font-weight: 300;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: -43px;
   }
 
   .plus {
@@ -1194,110 +1278,13 @@ p {
     background-color: #d50015;
   }
 
-  /******** Vidste du at.... blok 1 - DESKTOP ******/
-  .faktablok1 {
-    background-color: rgba(207, 222, 232, 1);
-  }
-
-  .faktablok {
-    text-align: center;
-    background-color: #dbe6f0;
-    padding-top: 2rem;
-  }
-
-  .faktablok p {
-    font-size: 1.8rem;
-    color: rgba(247, 247, 247, 1);
-  }
-
-  .faktablok h1 {
-    font-size: 3rem;
-    justify-self: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  .fakta-item {
-    width: 250px;
-    padding: 1rem;
-    border-radius: 50px 50px 0 0; /* Runder toppen */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .faktablok {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .fakta-item .tal {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-
-  .grøn {
-    background-color: rgba(150, 172, 78, 1);
-    height: 75%;
-    margin-top: 100px;
-  }
-  .blå {
-    background-color: rgba(63, 110, 138, 1);
-    height: 90%;
-    margin-top: 40px;
-  }
-  .rød {
-    background-color: rgba(213, 0, 21, 1);
-    height: 63%;
-    margin-top: 148px;
-  }
-  .lyseblå {
-    background-color: rgba(116, 164, 188, 1);
-    height: 78%;
-    margin-top: 88px;
-  }
-
-  /********** video - DESKTOP **********/
-  .video-wrapper {
-    display: flex;
-    justify-content: center; /* vandret centrering */
-    align-items: center; /* lodret centrering */
-    height: 100vh; /* fylder hele skærmhøjden */
-  }
-
-  .video_container{
-    position: relative;
-    display: inline-block;
-  }
-
-  video {
-    width: 70%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 35px;
-    margin-top: -5rem;
-  }
-
-  .videoh1 {
-    position: absolute; /* placerer ovenpå videoen */
-    background-color: white;
-    padding-left: 20px;
-    border-bottom-right-radius: 35px;
-    width: 475px;
-    margin-left: 13rem;
-    top: 3rem;
-    z-index: 10;
-    font-size: 44px;
-  }
-
   /************** hent som app - DESKTOP **************/
   .hentsomapp {
     background-color: rgba(207, 222, 232, 1);
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 50px;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1.5rem;
@@ -1325,10 +1312,9 @@ p {
   }
 
   .hentsomapp h2 {
-    font-size: 44px;
+    font-size: 32px;
     font-weight: 300;
     margin-top: 1rem;
-    margin-bottom: 2rem;
   }
 
   .bold {
@@ -1347,9 +1333,9 @@ p {
   .hentsomapp li {
     margin-bottom: 1rem;
     font-family: "Raleway", sans-serif;
-    font-size: 1.7rem;
+    font-size: 16px;
     color: rgba(33, 48, 63, 1);
-    line-height: 3rem;
+    line-height: 2rem;
   }
 
   .hentsomapp_knap {
@@ -1363,6 +1349,7 @@ p {
     border-radius: 4rem;
     cursor: pointer;
     margin-top: 2rem;
+    margin-bottom: 4rem;
   }
   /************** alt om points sektion - DESKTOP **************/
 
@@ -1372,7 +1359,7 @@ p {
   .din_profil_tekst_2 {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 14rem;
     font-size: 3rem;
   }
 
@@ -1409,12 +1396,18 @@ p {
     border-radius: 2rem;
   }
   .points_card_grid h1 {
-    font-size: 2rem;
+    font-size: 20px;
     margin-bottom: 0.5rem;
   }
   .points_card p {
     font-family: "Raleway", sans-serif;
-    font-size: 1.2rem;
+    font-size: 16px;
+  }
+
+  #altompoints {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 4rem;
   }
 
   .belonning_container {
@@ -1458,51 +1451,126 @@ p {
     font-weight: normal;
   }
 
-  /*********** Vidste du at... blok 2 - DESKTOP ***********/
-  .fakta-item1 {
-    width: 500px;
-    padding: 1rem;
-    border-radius: 50px 50px 0 0; /* Runder toppen */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  /****************** HVORFOR DANKORT PLUS ********************/
+
+  .dankortplus {
+    background-color: #e1e1e1;
+    border-radius: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 200px;
+    margin-right: -200px;
+    margin-left: -20px;
   }
 
-  .fakta-item p {
-    color: rgba(247, 247, 247, 1);
+  .dankortplus p {
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 30px;
   }
 
-  .grøn1 {
-    background-color: rgba(150, 172, 78, 1);
-    height: 75.5%;
-    margin-top: 100px;
+  .dankortplus h2 {
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 30px;
   }
-  .blå1 {
-    background-color: rgba(63, 110, 138, 1);
-    height: 90%;
-    margin-top: 40px;
+
+  .dankortplus h1 {
+    font-size: 36px;
+    line-height: 30px;
+    padding-top: 30px;
   }
-  .rød1 {
-    background-color: rgba(213, 0, 21, 1);
-    height: 64.5%;
-    margin-top: 148px;
+
+  .dankortplus ul {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
   }
-  .lyseblå1 {
-    background-color: rgba(116, 164, 188, 1);
-    height: 78%;
-    margin-top: 88px;
+
+  .nomaimg {
+    height: 86%;
+    width: 96%;
+    margin-left: 4rem;
+  }
+  .hvorfordk {
+    background-color: #cfdee8;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+  }
+
+  .hvorfordk h1 {
+    font-size: 36px;
+    padding-bottom: 30px;
+  }
+
+  .hvorfordk ul {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
+  }
+
+  .hvorfordk ul h1 {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
+  }
+
+  .hvorfordk ul p {
+    font-weight: normal;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+
+  .sodanvirkerdet {
+    background-color: #d9e0b6;
+    border-radius: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+  }
+
+  .sodanvirkerdet h1 {
+    font-size: 36px;
+    padding-bottom: 30px;
+  }
+
+  .sodanvirkerdet ol {
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
+  }
+
+  .sodanvirkerdet p {
+    font-weight: normal;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+
+  .atag {
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: #21303f;
   }
 
   /********** Vidste du CARD HOVER - DESKTOP ***********/
   .vidstedu_boks h1 {
-    font-size: 30px;
+    font-size: 16px;
     padding-bottom: 5px;
   }
 
   .vidstedu_boks p {
     margin: 0;
-    font-size: 30px;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
   }
@@ -1608,14 +1676,42 @@ p {
 
   /******************************************* challenges - DESKTOP *******************************************/
 
+  .img_vj1 {
+    height: 31%;
+    width: 64%;
+    border-radius: 35px;
+    object-fit: cover;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
   .challenges_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-    max-width: 1700px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1800px;
     gap: 30px;
     margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .challenges_text {
+    line-height: 1.5rem;
+    margin-left: 5rem;
+    margin-right: -9rem;
+    margin-top: 3rem;
+  }
+
+  .challenges_text2 h2 {
+    line-height: 2rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .challenges_text2 p {
+    line-height: 2rem;
+    margin-left: 5rem;
   }
 
   .challengesh1 {
@@ -1625,7 +1721,21 @@ p {
   }
 
   .nu_challenges_h1 {
-    font-size: 44px;
+    font-size: 32px;
+    margin-left: 6rem;
+    margin-bottom: 4rem;
+  }
+
+  .nu_challenges_h1_2 {
+    font-size: 32px;
+    margin-left: 6rem;
+    margin-top: 4rem;
+  }
+
+  .nu_challenges_h1_3 {
+    font-size: 32px;
+    margin-left: 6rem;
+    margin-top: 4rem;
   }
 
   .mærker {
@@ -1634,26 +1744,8 @@ p {
     border-radius: 35px;
   }
 
-  .pointsbanner {
-    background-color: rgba(247, 248, 237, 1);
-    border-bottom-right-radius: 2rem;
-    border-top-right-radius: 2rem;
-    padding: 10px 10px;
-    width: 50%;
-    margin-left: -3.8rem;
-    margin-top: -1rem;
-  }
   .point {
     font-size: 2rem;
-  }
-
-  .tekstblok h2 {
-    font-size: 2rem;
-    margin-top: 3rem;
-  }
-  .tekstblok h4 {
-    margin-top: 1rem;
-    font-size: 1.5rem;
   }
 
   /************ karrusel - DESKTOP *******************/
@@ -1701,7 +1793,11 @@ p {
   }
 
   .card {
-    background: linear-gradient(180deg, rgba(116, 164, 188, 1), rgba(116, 164, 188, 1));
+    background: linear-gradient(
+      180deg,
+      rgba(116, 164, 188, 1),
+      rgba(116, 164, 188, 1)
+    );
     border: 1px solid rgba(116, 164, 188, 1);
     border-radius: 16px;
     padding: 1rem;
@@ -1777,10 +1873,10 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     max-width: 2000px;
-    gap: 30px;
+    gap: 15px;
     margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     background-color: rgba(207, 222, 232, 1);
     padding-block: 2rem;
   }
@@ -1789,44 +1885,54 @@ p {
     padding-top: 2rem;
     padding-left: 3rem;
     background-color: rgba(207, 222, 232, 1);
-    font-size: 44px;
+    font-size: 32px;
   }
   .sam_blok {
     border-radius: 35px;
     background-color: whitesmoke;
-    padding: 30px 40px;
+    padding: 30px 10px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #21303f;
   }
 
   .sam_blok h1 {
     text-align: center;
+    font-size: 24px;
   }
 
   .flere_p_vej {
-    font-size: 44px;
+    font-size: 16px;
     font-family: "Raleway", sans-serif;
     text-align: center;
     background-color: rgba(207, 222, 232, 1);
     padding-bottom: 2rem;
-    font-weight: lighter;
+    font-weight: 400;
   }
 
   /********************************************* Pointshop - DESKTOP ***************************************************/
   .pointshop_h1 h1 {
     font-size: 44px;
     font-family: "Raleway", sans-serif;
-    color: rgba(28, 42, 53, 1);
+    color: #21303f;
     grid-row: 2;
     margin-bottom: 1rem;
   }
 
   .pointshop_h1 h2 {
     font-family: "Raleway", sans-serif;
-    font-size: 44px;
-    font-weight: 300;
-    margin-bottom: 3rem;
-    line-height: 3rem;
-    margin-right: -11rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: #21303f;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    margin-right: -9rem;
     grid-row: 2;
+  }
+
+  #pointshop_points_style {
+    margin-top: 20rem;
+    margin-left: 3rem;
   }
 
   .belonning_container {
@@ -1835,14 +1941,14 @@ p {
     max-width: 1800px;
     gap: 30px;
     margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     margin-bottom: 4rem;
   }
 
   .mærker {
     background-color: rgba(186, 209, 223, 1);
-    padding: 50px 30px;
+    padding: 30px 20px;
     border-radius: 35px;
     transition: transform 0.3s ease;
   }
@@ -1852,7 +1958,7 @@ p {
 
   .mærker_challenges {
     background-color: #d9e0b6;
-    padding: 50px 30px;
+    padding: 30px 20px;
     border-radius: 35px;
     transition: transform 0.3s ease;
   }
@@ -1867,8 +1973,8 @@ p {
     border-top-right-radius: 2rem;
     padding: 6px 10px;
     width: 82%;
-    margin-left: -1.9rem;
-    margin-top: -1rem;
+    margin-left: -20px;
+    margin-top: -0rem;
   }
 
   .tekstblok {
@@ -1888,6 +1994,11 @@ p {
     padding: 25px;
   }
 
+  .min_profil_knap_margin {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .min_profil_knap {
     background-color: rgba(230, 29, 39, 1);
     color: rgba(247, 247, 247, 1);
@@ -1898,8 +2009,7 @@ p {
     font-size: 1rem;
     border-radius: 4rem;
     cursor: pointer;
-    margin-top: 10px;
-
+    margin-top: 2rem;
     text-decoration: none;
   }
   a.min_profil_knap:hover {
@@ -1912,20 +2022,27 @@ p {
   /************************************************ Min profil - DESKTOP ************************************************/
 
   /********** overskrift - DESKTOP ***********/
+  .grid_1-1desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .felx_container {
     display: flex;
-    margin-left: 1rem;
+    margin-left: 6rem;
     margin-top: 2rem;
   }
 
   .flex-item {
     font-size: 44px;
-    margin: 29px 11px -57px 20px;
   }
 
   .h1top {
-    font-size: 44px;
-    margin: 0px 0px 0px 44px;
+    font-size: 32px;
+    display: flex;
+    justify-content: end;
+    margin-top: 4rem;
+    margin-right: 10rem;
   }
 
   /********** grid bokse top - DESKTOP ***********/
@@ -1936,8 +2053,8 @@ p {
     gap: 20px;
     margin-top: 20px;
     margin-bottom: 3rem;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 
   .grid_1-1-1desk > div:nth-of-type(2) {
@@ -1995,6 +2112,23 @@ p {
     margin-left: 30px;
     padding-top: 30px;
   }
+
+  .login {
+    text-decoration: underline;
+    color: #697b36;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .h1_minprofil {
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .h1_minprofil p {
+    margin-top: 1rem;
+  }
+
   /***** styling img bokse - DESKTOP *******/
   .dinpimg_container {
     width: 100%; /* fylder hele bredden */
@@ -2025,15 +2159,17 @@ p {
     font-size: xx-large;
   }
 
-
   .inputfelt {
     padding: 10px;
     font-size: 1.2rem;
     border: 2px;
-    background-color: rgba(217, 224, 182, 1);
+    background-color: rgb(232, 235, 216);
     border-color: #697b36;
     border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
     font-family: "Raleway", sans-serif;
+    margin-top: 1rem;
   }
 
   label {
@@ -2129,16 +2265,15 @@ p {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-
-  .nu_challenges_h1_dinprofil {
-    margin-left: 2rem;
-  }
   .belonninger_container {
     max-width: 1700px;
     gap: 30px;
-    margin: 0 auto;
+    margin-top: 0px;
     padding-left: 2rem;
     padding-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
   .belonninger h1 {
     font-size: 44px;
@@ -2163,7 +2298,7 @@ p {
   .footer_card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgba(217, 217, 217, 1);
+    background-color: #ebebeb;
     border-radius: 2rem;
     padding: 30px 60px;
     width: 100%;
@@ -2171,17 +2306,17 @@ p {
   }
   .footer_card h3 {
     font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 2rem;
-    margin-left: 3rem;
-    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-size: 16px;
   }
 
   .footer_card p {
-    line-height: 3rem;
-    font-size: 30px;
+    line-height: 20px;
+    font-size: 16px;
     font-weight: 300;
-    padding-bottom: 1rem;
+    padding-bottom: 10px;
   }
   .footer_card li {
     margin-left: 3rem;
@@ -2196,38 +2331,33 @@ p {
     border-radius: 2rem;
     padding: 40px 60px;
     height: 100%;
-    width: 80%;
+    width: 100%;
   }
 
   .footer_card2 h1 {
     color: rgba(247, 247, 247, 1);
-    padding-top: 9rem;
-    font-size: 44px;
+    padding-top: 3rem;
+    font-size: 30px;
   }
 
   .footer_card2 img {
     width: 35%;
   }
 
-footer{
-    padding-bottom: 2rem;
-  }
-
   .disabled::after {
-  content: "Ikke nok points";
-  font-family: "Raleway", sans-serif;
-  background-color: rgba(230, 29, 39, 1);
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
-  padding: 6px 10px;
-     width: 58%;
+    content: "Ikke nok points";
+    font-family: "Raleway", sans-serif;
+    background-color: rgba(230, 29, 39, 1);
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 6px 10px;
+    width: 58%;
     position: absolute;
     top: 84px;
-  left: 0rem;
-  z-index: 1;
+    left: 0rem;
+    z-index: 1;
+  }
 }
-}
-
 /********** tilbage til top knap - DESKTOP ***********/
 
 #myBtn {
@@ -2247,7 +2377,12 @@ footer{
 }
 
 #myBtn:hover {
-  background-color: rgba(194, 19, 28, 1); /* Add a dark-grey background on hover */
+  background-color: rgba(
+    194,
+    19,
+    28,
+    1
+  ); /* Add a dark-grey background on hover */
 }
 
 @media (max-width: 1024px) {
@@ -2269,5 +2404,3 @@ footer{
   position: relative;
   background-color: rgba(0, 0, 0, 0.3); /* gør kortet “mørkere” */
 }
-
-

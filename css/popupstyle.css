@@ -16,17 +16,17 @@
 /*** kanppen der trigger popup style ***/
 .trigger-btn2 {
   padding: 12px 24px;
-  background-color: #e61d27;
+  background-color: rgba(150, 172, 78, 1);
   color: white;
   border-radius: 35px;
   cursor: pointer;
   font-size: 16px;
   margin-left: 2rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .trigger-btn2:hover {
-  background-color: #d50015;
+  background-color: #a5b764;
 }
 
 /*** popuo desktop formatet style ***/
@@ -274,8 +274,7 @@
 
 .kobnu_knap:disabled {
   opacity: 0.5;
-      cursor: not-allowed;
-
+  cursor: not-allowed;
 }
 
 .trigger-btn {
@@ -406,7 +405,4 @@
   border: none;
   border-radius: 35px;
   font-family: "Raleway", sans-serif;
-}
-.belonninger_container {
-  margin-top: 2rem;
 }
