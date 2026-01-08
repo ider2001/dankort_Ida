@@ -1564,13 +1564,13 @@ p {
 
   /********** Vidste du CARD HOVER - DESKTOP ***********/
   .vidstedu_boks h1 {
-    font-size: 30px;
+    font-size: 16px;
     padding-bottom: 5px;
   }
 
   .vidstedu_boks p {
     margin: 0;
-    font-size: 30px;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: 300;
   }
